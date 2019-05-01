@@ -13,10 +13,16 @@ class CreateVendorsTable extends Migration
     public function up()
     {
         Schema::create('vendors', function (Blueprint $table) {
-            $table->increments('id');
+            $table->bigIncrements('id');
             $table->string('name');
             $table->string('email')->unique();
             $table->string('password');
+            $table->bigInteger('p_iva');
+            $table->string('address');
+            $table->string('city');
+            $table->string('country', 2);
+            $table->integer('postal_code');
+            $table->string('image')->nullable();
             $table->rememberToken();
             $table->timestamps();
         });
@@ -29,6 +35,8 @@ class CreateVendorsTable extends Migration
      */
     public function down()
     {
-        Schema::drop('vendors');
+        Schema::dropIfExist('vendors');
     }
 }
+
+// vim: set ts=4 sw=4 :

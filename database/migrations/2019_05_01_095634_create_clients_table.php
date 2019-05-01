@@ -15,6 +15,7 @@ class CreateClientsTable extends Migration
         Schema::create('clients', function (Blueprint $table) {
             $table->increments('id');
             $table->string('name');
+            $table->string('surname');
             $table->string('email')->unique();
             $table->string('password');
             $table->rememberToken();
@@ -29,6 +30,8 @@ class CreateClientsTable extends Migration
      */
     public function down()
     {
-        Schema::drop('clients');
+        Schema::dropIfExists('clients');
     }
 }
+
+// vim: set ts=4 sw=4 :

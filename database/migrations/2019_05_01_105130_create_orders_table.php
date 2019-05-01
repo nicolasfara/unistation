@@ -15,6 +15,12 @@ class CreateOrdersTable extends Migration
     {
         Schema::create('orders', function (Blueprint $table) {
             $table->bigIncrements('id');
+            $table->unsignedBigInteger('user_id');
+            $table->foreign('user_id')->references('id')->on('clients');
+            $table->unsignedBigInteger('product_id');
+            $table->foreign('product_id')->references('id')->on('products');
+            $table->timestamp('order_created_at');
+            $table->dateTime('delivery_info');
             $table->timestamps();
         });
     }
@@ -29,3 +35,5 @@ class CreateOrdersTable extends Migration
         Schema::dropIfExists('orders');
     }
 }
+
+// vim: set ts=4 sw=4 :
