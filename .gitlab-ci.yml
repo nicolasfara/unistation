@@ -10,9 +10,9 @@ services:
   - postgres:latest
 
 variables:
-  POSTGRES_DB: $DB_DATABASE
-  POSTGRES_USER: $DB_USERNAME
-  POSTGRES_PASSWORD: $DB_PASSWORD
+  POSTGRES_DB: unistation
+  POSTGRES_USER: root
+  POSTGRES_PASSWORD: secret
 
 # This folder is cached between builds
 # http://docs.gitlab.com/ce/ci/yaml/README.html#cache
