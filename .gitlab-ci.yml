@@ -75,3 +75,13 @@ test:
   # set it in your package.json script
   # comment this out if you don't have a frontend test
   - npm test
+
+deploy:
+  variables:
+      HEROKU_API_KEY: $HEROKU_API_KEY
+      HEROKU_APP_NAME: $HEROKU_APP_NAME
+  script:
+    - git remote add heroku https://heroku:$HEROKU_API_KEY@git.heroku.com/$HEROKU_APP_NAME.git
+    - git push -f heroku master
+  only:
+  - master
