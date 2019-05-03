@@ -5,7 +5,7 @@
   <li class="divider"></li>
   <li><a href="#!">three</a></li>
 </ul>
-<nav class="red lighten-2" role="navigation">
+<nav class="red lighten-2" id = "nav-home" role="navigation">
   <div class="nav-wrapper container"><a id="logo-container" href="{{ url('/') }}" class="brand-logo">Unistation</a>
     <ul class="right hide-on-med-and-down">
       <li><a href="{{ url('accedi') }}">Accedi</a></li>

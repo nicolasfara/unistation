@@ -9273,9 +9273,13 @@ input[type=range]::-ms-thumb {
   }
 }
 
+#nav-home {
+  background-color: black;
+}
+
 body {
   font: 100% Helvetica, sans-serif;
   color: black;
-  backgroung: red;
+  background-color: red;
 }
 
