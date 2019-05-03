@@ -9273,8 +9273,9 @@ input[type=range]::-ms-thumb {
   }
 }
 
-.navbar-laravel {
-  background-color: #fff;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
+body {
+  font: 100% Helvetica, sans-serif;
+  color: black;
+  backgroung: red;
 }
 
