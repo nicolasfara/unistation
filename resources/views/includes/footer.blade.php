@@ -1,4 +1,4 @@
- <footer class="page-footer">
+<footer class="page-footer">
   <div class="container">
     <div class="row">
       <div class="col l6 s12">
@@ -10,18 +10,16 @@
         <ul>
           <li><a class="grey-text text-lighten-3" href="#!">Link 1</a></li>
           <li><a class="grey-text text-lighten-3" href="#!">Link 2</a></li>
-          <li class="grey-text text-lighten-3 dropdown-button">Dropdown</li>
-          <li>
-            <ul class="grey-text text-lighten-3" style="padding-left: 20px;">
-              <li><a class="grey-text text-lighten-3" href="#!">One</a></li>
-              <li><a class="grey-text text-lighten-3" href="#!">Two</a></li>
-              <li class="divider"></li>
-              <li><a class="grey-text text-lighten-3" href="#!">Three</a></li>
-            </ul>
-          </li>
+          <li><a class="grey-text text-lighten-3" href="#!">Link 3</a></li>
+          <li><a class="grey-text text-lighten-3" href="#!">Link 4</a></li>
         </ul>
       </div>
     </div>
   </div>
- 
+  <div class="footer-copyright">
+    <div class="container">
+    © 2014 Copyright Text
+    <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
+    </div>
+  </div>
 </footer>
