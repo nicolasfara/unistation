@@ -1,12 +1,13 @@
 <!-- Dropdown Structure -->
-<ul id="dropdown1" class="dropdown-content">
+<!--ul id="dropdown1" class="dropdown-content">
   <li><a href="#!">one</a></li>
   <li><a href="#!">two</a></li>
   <li class="divider"></li>
   <li><a href="#!">three</a></li>
-</ul>
+</ul-->
 <nav class="red lighten-2" role="navigation">
   <div class="nav-wrapper container"><a id="logo-container" href="{{ url('/') }}" class="brand-logo">Unistation</a>
+    <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
     <ul class="right hide-on-med-and-down">
       <li><a href="{{ url('accedi') }}">Accedi</a></li>
       <li><a href="{{ url('registrati') }}">Registrati</a></li>
@@ -14,7 +15,6 @@
   <!--  <ul id="nav-mobile" class="side-nav">
       <li><a href="{{ url('cards') }}">Cards</a></li>
       <li><a href="#!">Link 2</a></li>
-    
       <li class="no-padding">
       <ul class="collapsible collapsible-accordion">
         <li class="bold"><a class="collapsible-header  waves-effect waves-teal">Dropdown</a>
@@ -33,3 +33,8 @@
     <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
   </div>-->
 </nav>
+
+<ul class="sidenav" id="mobile-demo">
+  <li><a href="{{ url('accedi') }}">Accedi</a></li>
+  <li><a href="{{ url('registrati') }}">Registrati</a></li>
+</ul>

@@ -7,7 +7,8 @@
     <meta name="csrf-token" content="{{ csrf_token() }}">
     <title>@yield('title', config('app.name') )</title>
     <meta name="description" content="The HTML5 Herald">
-    <meta name="author" content="SitePoint">
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">   <meta name="author" content="SitePoint">
     @yield('meta')
     @stack('styles')
   </head>
