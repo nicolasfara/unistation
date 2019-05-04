@@ -35,6 +35,10 @@
       </div>
 @endsection
 
+@section('footer')
+@include('layouts.footer')
+@endsection
+
 @push('styles')
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 @endpush

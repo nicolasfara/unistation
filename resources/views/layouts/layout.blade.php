@@ -17,7 +17,8 @@
     <main>
       @yield('content')
     </main>
-    @include('includes.footer')
+
+    @yield('footer')
 
     @stack('scripts')
   </body>
