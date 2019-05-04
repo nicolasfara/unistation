@@ -1,22 +1,31 @@
-hideSlide();
-showSlides();
+function fadeIn(el, display){
+  el.style.opacity = 0;
+  el.style.display = display || "block";
 
-function hideSlide(){
-  var slides = document.getElementsByClassName("mySlide");
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";  
-  }
-}
-function showSlides() {
-  var slides = document.getElementsByClassName("mySlide");
-  for(var i = 0; i < slides.length; i++) {
-    //setTimeout(function() {
-    	//slides[i].style.display = "inline";  
-    //},2000); // Change image every 2 seconds
-    (function(i){ 
+  (function fade() {
+    var val = parseFloat(el.style.opacity);
+    if (!((val += .1) > 1)) {
+      el.style.opacity = val;
+      requestAnimationFrame(fade);
+    }
+  })();
+};
 
-         setTimeout(function() { slides[i].style.display = "inline"; }, 2000);
+document.addEventListener("DOMContentLoaded", () => {
+  var slide_components = document.getElementsByClassName('home-rule')
+  Array.from(slide_components).forEach(elem => {
+    elem.style.display = 'none'
+  })
 
-     })(i);
-  } 
-}
+  var delay = 500
+  let box_elem = Array.from(slide_components).reverse()
+
+  let timer = setInterval(elem => {
+    fadeIn(elem.pop(), 'block')
+    console.log(elem)
+    if (elem.length === 0) {
+      console.log('empty array')
+      clearInterval(timer)
+    }
+  }, 1000, box_elem)
+});
