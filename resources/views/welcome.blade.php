@@ -36,7 +36,7 @@
 @endsection
 
 @section('footer')
-@include('layouts.footer')
+@include('includes.footer')
 @endsection
 
 @push('styles')
