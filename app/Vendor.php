@@ -16,7 +16,7 @@ class Vendor extends Authenticatable
      * @var array
      */
     protected $fillable = [
-        'name', 'email', 'password',
+        'name', 'email', 'password', 'p_iva'
     ];
 
     /**
@@ -39,3 +39,5 @@ class Vendor extends Authenticatable
         $this->notify(new VendorResetPassword($token));
     }
 }
+
+// vim: set ts=4 sw=4 :

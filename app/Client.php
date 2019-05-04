@@ -38,4 +38,11 @@ class Client extends Authenticatable
     {
         $this->notify(new ClientResetPassword($token));
     }
+
+    public function orders()
+    {
+        return $this->hasMany('App\Order');
+    }
 }
+
+// vim: set ts=4 sw=4 :
