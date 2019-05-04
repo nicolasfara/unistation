@@ -145,8 +145,6 @@ __webpack_require__(/*! ./home */ "./resources/js/home.js");
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-//hideSlide();
-//showSlides();
 function fadeIn(el, display) {
   el.style.opacity = 0;
   el.style.display = display || "block";
@@ -167,8 +165,8 @@ document.addEventListener("DOMContentLoaded", function () {
   Array.from(slide_components).forEach(function (elem) {
     elem.style.display = 'none';
   });
-  var delay = 500;
   var box_elem = Array.from(slide_components).reverse();
+  var delay = 1000;
   var timer = setInterval(function (elem) {
     fadeIn(elem.pop(), 'block');
     console.log(elem);
@@ -177,31 +175,8 @@ document.addEventListener("DOMContentLoaded", function () {
       console.log('empty array');
       clearInterval(timer);
     }
-  }, 1000, box_elem);
+  }, delay, box_elem);
 });
-
-function hideSlide() {
-  var slides = document.getElementsByClassName("mySlide");
-
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
-  }
-}
-
-function showSlides() {
-  var slides = document.getElementsByClassName("mySlide");
-
-  for (var i = 0; i < slides.length; i++) {
-    //setTimeout(function() {
-    //slides[i].style.display = "inline";  
-    //},2000); // Change image every 2 seconds
-    (function (i) {
-      setTimeout(function () {
-        slides[i].style.display = "inline";
-      }, 2000);
-    })(i);
-  }
-}
 
 /***/ }),
 

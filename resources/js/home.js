@@ -17,8 +17,8 @@ document.addEventListener("DOMContentLoaded", () => {
     elem.style.display = 'none'
   })
 
-  var delay = 500
   let box_elem = Array.from(slide_components).reverse()
+  let delay = 1000
 
   let timer = setInterval(elem => {
     fadeIn(elem.pop(), 'block')
@@ -27,5 +27,5 @@ document.addEventListener("DOMContentLoaded", () => {
       console.log('empty array')
       clearInterval(timer)
     }
-  }, 1000, box_elem)
+  }, delay, box_elem)
 });
