@@ -4,6 +4,7 @@
 <div class="valign-wrapper row login-box">
   <div class="col card hoverable s10 pull-s1 m6 pull-m3 l4 pull-l4">
     <form class="form-horizontal" role="form" method="POST" action="{{ url('/client/login') }}">
+      @csrf
       <div class="card-content">
         <span class="card-title">Effettua il login</span>
         <div class="row">
