@@ -145,33 +145,6 @@ __webpack_require__(/*! ./home */ "./resources/js/home.js");
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-
-hideSlide();
-showSlides();
-
-function hideSlide() {
-  var slides = document.getElementsByClassName("mySlide");
-
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
-  }
-}
-
-function showSlides() {
-  var slides = document.getElementsByClassName("mySlide");
-
-  for (var i = 0; i < slides.length; i++) {
-    //setTimeout(function() {
-    //slides[i].style.display = "inline";  
-    //},2000); // Change image every 2 seconds
-    (function (i) {
-      setTimeout(function () {
-        slides[i].style.display = "inline";
-      }, 2000);
-    })(i);
-  }
-}
-
 function fadeIn(el, display) {
   el.style.opacity = 0;
   el.style.display = display || "block";
@@ -204,7 +177,6 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   }, delay, box_elem);
 });
->>>>>>> fa45588f462ce0e6d7d28b898d4c946a136f66d8
 
 /***/ }),
 
