@@ -986,9 +986,7 @@
 }
 
 .teal,
-.page-footer,
-.red.lighten-2,
-.red.page-footer {
+.page-footer {
   background-color: #009688 !important;
 }
 
@@ -997,8 +995,7 @@
 }
 
 .teal.lighten-5,
-.lighten-5.page-footer,
-.lighten-5.red.lighten-2 {
+.lighten-5.page-footer {
   background-color: #e0f2f1 !important;
 }
 
@@ -1007,8 +1004,7 @@
 }
 
 .teal.lighten-4,
-.lighten-4.page-footer,
-.lighten-4.red.lighten-2 {
+.lighten-4.page-footer {
   background-color: #b2dfdb !important;
 }
 
@@ -1017,8 +1013,7 @@
 }
 
 .teal.lighten-3,
-.lighten-3.page-footer,
-.lighten-3.red.lighten-2 {
+.lighten-3.page-footer {
   background-color: #80cbc4 !important;
 }
 
@@ -1027,9 +1022,7 @@
 }
 
 .teal.lighten-2,
-.page-footer,
-.page-footer.red,
-.lighten-2.red {
+.page-footer {
   background-color: #4db6ac !important;
 }
 
@@ -1038,8 +1031,7 @@
 }
 
 .teal.lighten-1,
-.lighten-1.page-footer,
-.lighten-1.red.lighten-2 {
+.lighten-1.page-footer {
   background-color: #26a69a !important;
 }
 
@@ -1048,8 +1040,7 @@
 }
 
 .teal.darken-1,
-.darken-1.page-footer,
-.darken-1.red.lighten-2 {
+.darken-1.page-footer {
   background-color: #00897b !important;
 }
 
@@ -1058,8 +1049,7 @@
 }
 
 .teal.darken-2,
-.darken-2.page-footer,
-.darken-2.red.lighten-2 {
+.darken-2.page-footer {
   background-color: #00796b !important;
 }
 
@@ -1068,8 +1058,7 @@
 }
 
 .teal.darken-3,
-.darken-3.page-footer,
-.darken-3.red.lighten-2 {
+.darken-3.page-footer {
   background-color: #00695c !important;
 }
 
@@ -1078,8 +1067,7 @@
 }
 
 .teal.darken-4,
-.darken-4.page-footer,
-.darken-4.red.lighten-2 {
+.darken-4.page-footer {
   background-color: #004d40 !important;
 }
 
@@ -1088,8 +1076,7 @@
 }
 
 .teal.accent-1,
-.accent-1.page-footer,
-.accent-1.red.lighten-2 {
+.accent-1.page-footer {
   background-color: #a7ffeb !important;
 }
 
@@ -1098,8 +1085,7 @@
 }
 
 .teal.accent-2,
-.accent-2.page-footer,
-.accent-2.red.lighten-2 {
+.accent-2.page-footer {
   background-color: #64ffda !important;
 }
 
@@ -1108,8 +1094,7 @@
 }
 
 .teal.accent-3,
-.accent-3.page-footer,
-.accent-3.red.lighten-2 {
+.accent-3.page-footer {
   background-color: #1de9b6 !important;
 }
 
@@ -1118,8 +1103,7 @@
 }
 
 .teal.accent-4,
-.accent-4.page-footer,
-.accent-4.red.lighten-2 {
+.accent-4.page-footer {
   background-color: #00bfa5 !important;
 }
 

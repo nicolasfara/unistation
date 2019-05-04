@@ -5,12 +5,16 @@
   <li class="divider"></li>
   <li><a href="#!">three</a></li>
 </ul-->
-<nav class="red lighten-2" role="navigation">
+<nav class="teal lighten-2" role="navigation">
   <div class="nav-wrapper container"><a id="logo-container" href="{{ url('/') }}" class="brand-logo">Unistation</a>
     <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
     <ul class="right hide-on-med-and-down">
-      <li><a href="{{ url('accedi') }}">Accedi</a></li>
-      <li><a href="{{ url('registrati') }}">Registrati</a></li>
+      @auth
+      @endauth
+      @guest
+      <li><a href="{{ url('/client/login') }}">Accedi</a></li>
+      <li><a href="{{ url('/client/register') }}">Registrati</a></li>
+      @endguest
     </ul>
   <!--  <ul id="nav-mobile" class="side-nav">
       <li><a href="{{ url('cards') }}">Cards</a></li>
@@ -35,6 +39,10 @@
 </nav>
 
 <ul class="sidenav" id="mobile-demo">
-  <li><a href="{{ url('accedi') }}">Accedi</a></li>
-  <li><a href="{{ url('registrati') }}">Registrati</a></li>
+  @auth
+  @endauth
+  @guest
+  <li><a href="{{ url('client/login') }}">Accedi</a></li>
+  <li><a href="{{ url('client/register') }}">Registrati</a></li>
+  @endguest
 </ul>

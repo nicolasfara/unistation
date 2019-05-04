@@ -145,6 +145,7 @@ __webpack_require__(/*! ./home */ "./resources/js/home.js");
 /*! no static exports found */
 /***/ (function(module, exports) {
 
+
 hideSlide();
 showSlides();
 
@@ -170,6 +171,40 @@ function showSlides() {
     })(i);
   }
 }
+
+function fadeIn(el, display) {
+  el.style.opacity = 0;
+  el.style.display = display || "block";
+
+  (function fade() {
+    var val = parseFloat(el.style.opacity);
+
+    if (!((val += .1) > 1)) {
+      el.style.opacity = val;
+      requestAnimationFrame(fade);
+    }
+  })();
+}
+
+;
+document.addEventListener("DOMContentLoaded", function () {
+  var slide_components = document.getElementsByClassName('home-rule');
+  Array.from(slide_components).forEach(function (elem) {
+    elem.style.display = 'none';
+  });
+  var box_elem = Array.from(slide_components).reverse();
+  var delay = 1000;
+  var timer = setInterval(function (elem) {
+    fadeIn(elem.pop(), 'block');
+    console.log(elem);
+
+    if (elem.length === 0) {
+      console.log('empty array');
+      clearInterval(timer);
+    }
+  }, delay, box_elem);
+});
+>>>>>>> fa45588f462ce0e6d7d28b898d4c946a136f66d8
 
 /***/ }),
 
@@ -6354,8 +6389,8 @@ document.addEventListener('DOMContentLoaded', function () {
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! /home/martina/Documents/uni/tec-web/unistation/resources/js/app.js */"./resources/js/app.js");
-module.exports = __webpack_require__(/*! /home/martina/Documents/uni/tec-web/unistation/resources/sass/app.scss */"./resources/sass/app.scss");
+__webpack_require__(/*! /home/nicolas/Documents/uni/tec-web/unistation/resources/js/app.js */"./resources/js/app.js");
+module.exports = __webpack_require__(/*! /home/nicolas/Documents/uni/tec-web/unistation/resources/sass/app.scss */"./resources/sass/app.scss");
 
 
 /***/ })
