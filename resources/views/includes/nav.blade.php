@@ -10,6 +10,7 @@
     <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
     <ul class="right hide-on-med-and-down">
       @auth
+      <li><a>{{ Auth::user()->name }}</a></li>
       @endauth
       @guest
       <li><a href="{{ url('/client/login') }}">Accedi</a></li>
@@ -40,6 +41,7 @@
 
 <ul class="sidenav" id="mobile-demo">
   @auth
+  <li><a>{{ Auth::user()->name }}</a></li>
   @endauth
   @guest
   <li><a href="{{ url('client/login') }}">Accedi</a></li>
