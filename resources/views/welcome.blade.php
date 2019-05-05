@@ -1,5 +1,9 @@
 @extends('layouts.layout')
 
+@section('nav')
+@include('includes.nav')
+@endsection
+
 @section('content')
  <div class="section no-pad-bot" id="index-banner">
     <div class="container">
