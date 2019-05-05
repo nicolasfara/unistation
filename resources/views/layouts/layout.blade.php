@@ -10,11 +10,12 @@
     <!--Import Google Icon Font-->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">   <meta name="author" content="SitePoint">
     @yield('meta')
-    @stack('styles')
+    <link href="{{ asset('css/app.css') }}" rel="stylesheet">
   </head>
 
   <body>
-    @include('includes.nav')
+    <!--@include('includes.nav')-->
+    @yield('nav')
     <!-- @include('includes.partials.messages')-->
     <main>
       @yield('content')
@@ -22,6 +23,6 @@
 
     @yield('footer')
 
-    @stack('scripts')
+    <script type="text/javascript" src="{{ asset('js/app.js') }}"></script>
   </body>
 </html>

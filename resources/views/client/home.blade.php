@@ -1,4 +1,8 @@
-@extends('client.layout.auth')
+@extends('layouts.layout')
+
+@section('nav')
+@include('includes.nav')
+@endsection
 
 @section('content')
 <div class="container">
@@ -8,7 +12,10 @@
                 <div class="panel-heading">Dashboard</div>
 
                 <div class="panel-body">
-                    You are logged in as Client! {{ Auth::user()->name }}
+                    You are logged in as Client!
+                    @auth
+                    {{ Auth::user()->id }}
+                    @endauth
                 </div>
             </div>
         </div>

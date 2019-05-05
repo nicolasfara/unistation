@@ -9321,3 +9321,11 @@ body {
   color: black;
 }
 
+.login-box {
+  height: 100%;
+}
+
+.register-box {
+  height: 100%;
+}
+
