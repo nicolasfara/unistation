@@ -9,10 +9,10 @@
       @csrf
       <div class="card-content">
         @if(Request::is('client/*'))
-        <span class="card-title">Effettua il login Cliente</span>
+        <span class="card-title">Login area clienti</span>
         @endif
         @if(Request::is('vendor/*'))
-        <span class="card-title">Effettua il login Venditore</span>
+        <span class="card-title">Login area venditori</span>
         @endif
         <div class="row">
           <div class="input-field col s12">
