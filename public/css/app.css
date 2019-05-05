@@ -9329,6 +9329,12 @@ body {
   font-weight: bold;
 }
 
+#slide {
+  border: 1px solid;
+  border-color: rgba(0, 0, 0, 0.3);
+  border-radius: 25px;
+}
+
 .login-box {
   height: 100%;
 }
