@@ -9321,6 +9321,14 @@ body {
   color: black;
 }
 
+.icon-block {
+  text-align: center;
+}
+
+.header.center.orange-text {
+  font-weight: bold;
+}
+
 .login-box {
   height: 100%;
 }
