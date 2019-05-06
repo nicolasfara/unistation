@@ -38,7 +38,7 @@
         <div class="col s12 m6 l4 center-align">
           <div class="card">
             <div class="card-image ">
-              <img src="/images/logos/Third.png" class="responsive-img" alt="Thirs-logo">
+              <img src="/images/logos/Third.png" class="responsive-img" alt="Third-logo">
             </div>
             <div class="card-content">
               <h4>Enjoy!</h4>
