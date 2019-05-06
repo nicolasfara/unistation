@@ -19,8 +19,7 @@
               <img src="/images/logos/First.png" class="responsive-img" alt="First-logo">
             </div>
             <div class="card-content">
-              <p> Accedi e seleziona il tipo di pasto </p>
-              <br>
+              <h4>Registrati</h4>
             </div>
           </div>
         </div>
@@ -30,8 +29,7 @@
               <img src="/images/logos/Second.png" class="responsive-img" alt="Second-logo">
             </div>
             <div class="card-content">
-              <p> Ordina il tuo cibo preferito </p>
-              <br>
+              <h4>Ordina</h4>
             </div>
           </div>
         </div>
@@ -41,7 +39,7 @@
               <img src="/images/logos/Third.png" class="responsive-img" alt="Thirs-logo">
             </div>
             <div class="card-content">
-              <p> Te lo porteremo in tempi record al Campus!</p>
+              <h4>Enjoy!</h4>
             </div>
           </div>
         </div>
