@@ -1,9 +1,7 @@
 @extends('layouts.layout')
-
 @section('nav')
 @include('includes.nav')
 @endsection
-
 @section('content')
 <div class="section no-pad-bot" id="index-banner">
   <div class="container">
@@ -29,18 +27,18 @@
         <div class="col s12 m6 l4 center-align">
           <div class="card">
             <div class="card-image">
-              <img src="/images/logos/Second.png" class="responsive-img"  alt="Second-logo" >
+              <img src="/images/logos/Second.png" class="responsive-img" alt="Second-logo">
             </div>
-              <div class="card-content">
-                <p> Ordina il tuo cibo preferito </p>
-                <br>
-              </div>
+            <div class="card-content">
+              <p> Ordina il tuo cibo preferito </p>
+              <br>
+            </div>
           </div>
         </div>
         <div class="col s12 m6 l4 center-align">
           <div class="card">
-            <div class="card-image">
-              <!--img src="/images/logos/Third.png" class="responsive-img"  alt="Thirs-logo"-->
+            <div class="card-image ">
+              <img src="/images/logos/Third.png" class="responsive-img" alt="Thirs-logo">
             </div>
             <div class="card-content">
               <p> Te lo porteremo in tempi record al Campus!</p>
@@ -56,5 +54,6 @@
 @section('footer')
 @include('includes.footer')
 @endsection
+
 
 <!-- vim:set sw=2 ts=2 sts=2 ft=html expandtab:-->
