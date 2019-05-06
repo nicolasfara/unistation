@@ -1,7 +1,9 @@
-@extends('layouts.layout') 
-@section('nav') 
-@include('includes.nav') 
-@endsection 
+@extends('layouts.layout')
+
+@section('nav')
+@include('includes.nav')
+@endsection
+
 @section('content')
 <div class="section no-pad-bot" id="index-banner">
   <div class="container">
@@ -47,7 +49,11 @@
     </div>
   </div>
 </div>
-@endsection 
+@endsection
+
 @section('footer')
 @include('includes.footer')
 @endsection
+
+
+<!-- vim:set sw=2 ts=2 sts=2 ft=html expandtab:-->
