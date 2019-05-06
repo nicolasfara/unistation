@@ -12,7 +12,7 @@ function fadeIn(el, display){
 };
 
 document.addEventListener("DOMContentLoaded", () => {
-  var slide_components = document.getElementsByClassName('home-rule')
+  var slide_components = document.getElementsByClassName('card')
   Array.from(slide_components).forEach(elem => {
     elem.style.display = 'none'
   })

@@ -161,7 +161,7 @@ function fadeIn(el, display) {
 
 ;
 document.addEventListener("DOMContentLoaded", function () {
-  var slide_components = document.getElementsByClassName('home-rule');
+  var slide_components = document.getElementsByClassName('card');
   Array.from(slide_components).forEach(function (elem) {
     elem.style.display = 'none';
   });
