@@ -1,21 +1,15 @@
-$font-stack:    Helvetica, sans-serif;
-$primary-color: #333;
-
 body {
   font: 100% $font-stack;
   color: black;
-
- 
 }
 .header.center.orange-text{
 	font-weight: bold;
 }
-.card-image{
-  padding-top: 50px;
-  padding-right: 30px;
-  padding-bottom: 50px;
-  padding-left: 30px;
-}
 .card-content{
 	text-align:center;
+}
+.card-image{
+	text-align:center;
+	height: 30%; 
+	width: 30%;
 }

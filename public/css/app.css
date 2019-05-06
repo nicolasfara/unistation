@@ -9317,7 +9317,7 @@ main {
 }
 
 body {
-  font: 100% Helvetica, sans-serif;
+  font: 100% -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
   color: black;
 }
 
@@ -9325,15 +9325,14 @@ body {
   font-weight: bold;
 }
 
-.card-image {
-  padding-top: 50px;
-  padding-right: 30px;
-  padding-bottom: 50px;
-  padding-left: 30px;
-}
-
 .card-content {
   text-align: center;
+}
+
+.card-image {
+  text-align: center;
+  height: 30%;
+  width: 30%;
 }
 
 .login-box {
