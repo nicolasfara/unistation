@@ -9,6 +9,7 @@
     <meta name="description" content="The HTML5 Herald">
     <!--Import Google Icon Font-->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">   <meta name="author" content="SitePoint">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     @yield('meta')
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
   </head>
