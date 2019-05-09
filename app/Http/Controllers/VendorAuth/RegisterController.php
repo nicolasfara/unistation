@@ -52,6 +52,7 @@ class RegisterController extends Controller
             'name' => 'required|max:255',
             'email' => 'required|email|max:255|unique:vendors',
             'password' => 'required|min:6|confirmed',
+            'p_iva' => 'required|max:11',
         ]);
     }
 
@@ -66,6 +67,7 @@ class RegisterController extends Controller
         return Vendor::create([
             'name' => $data['name'],
             'email' => $data['email'],
+            'p_iva' => $data['p_iva'],
             'password' => bcrypt($data['password']),
         ]);
     }
