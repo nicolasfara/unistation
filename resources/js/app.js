@@ -9,4 +9,5 @@ require('./materialize.min')
 require('./nav')
 require('./home')
 require('./client-home')
+require('./vendor_editprofile')
 

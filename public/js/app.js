@@ -138,6 +138,8 @@ __webpack_require__(/*! ./home */ "./resources/js/home.js");
 
 __webpack_require__(/*! ./client-home */ "./resources/js/client-home.js");
 
+__webpack_require__(/*! ./vendor_editprofile */ "./resources/js/vendor_editprofile.js");
+
 /***/ }),
 
 /***/ "./resources/js/client-home.js":
@@ -6366,6 +6368,46 @@ document.addEventListener('DOMContentLoaded', function () {
 
 /***/ }),
 
+/***/ "./resources/js/vendor_editprofile.js":
+/*!********************************************!*\
+  !*** ./resources/js/vendor_editprofile.js ***!
+  \********************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+/*
+ * vendor_editprofile.js
+ * Copyright (C) 2019 nicolasfara <nicolas.farabegoli@gmail.com>
+ *
+ * Distributed under terms of the MIT license.
+ */
+function hide_all() {
+  document.getElementsByClassName('editprofile')[0].style.display = "none";
+  document.getElementsByClassName('vendororders')[0].style.display = "none";
+  document.getElementsByClassName('vendorproducts')[0].style.display = "none";
+}
+
+function show_vendor_edit_profile() {
+  hide_all();
+  document.getElementsByClassName('editprofile')[0].style.display = "block";
+}
+
+function show_vendor_orders() {
+  hide_all();
+  document.getElementsByClassName('vendororders')[0].style.display = "block";
+}
+
+function show_vendor_products() {
+  hide_all();
+  document.getElementsByClassName('vendorproducts')[0].style.display = "block";
+}
+
+document.getElementById("editprofile-btn").addEventListener("click", show_vendor_edit_profile);
+document.getElementById("vendor-order-btn").addEventListener("click", show_vendor_orders);
+document.getElementById("vendor-edit-products-btn").addEventListener("click", show_vendor_products);
+
+/***/ }),
+
 /***/ "./resources/sass/app.scss":
 /*!*********************************!*\
   !*** ./resources/sass/app.scss ***!
@@ -6384,8 +6426,8 @@ document.addEventListener('DOMContentLoaded', function () {
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! /home/martina/Documents/uni/tec-web/unistation/resources/js/app.js */"./resources/js/app.js");
-module.exports = __webpack_require__(/*! /home/martina/Documents/uni/tec-web/unistation/resources/sass/app.scss */"./resources/sass/app.scss");
+__webpack_require__(/*! /home/nicolas/Documents/uni/tec-web/unistation/resources/js/app.js */"./resources/js/app.js");
+module.exports = __webpack_require__(/*! /home/nicolas/Documents/uni/tec-web/unistation/resources/sass/app.scss */"./resources/sass/app.scss");
 
 
 /***/ })
