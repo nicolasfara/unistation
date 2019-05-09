@@ -7,5 +7,6 @@
 //require('./bootstrap');
 require('./materialize.min')
 require('./nav')
-require('./home');
+require('./home')
+require('./client-home')
 

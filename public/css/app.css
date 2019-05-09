@@ -9661,16 +9661,6 @@ body {
   font-weight: bold;
 }
 
-.card-content {
-  text-align: center;
-}
-
-.card-image {
-  text-align: center;
-  height: 30%;
-  width: 30%;
-}
-
 .login-box {
   height: 100%;
 }

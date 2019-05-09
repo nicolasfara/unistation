@@ -136,6 +136,29 @@ __webpack_require__(/*! ./nav */ "./resources/js/nav.js");
 
 __webpack_require__(/*! ./home */ "./resources/js/home.js");
 
+__webpack_require__(/*! ./client-home */ "./resources/js/client-home.js");
+
+/***/ }),
+
+/***/ "./resources/js/client-home.js":
+/*!*************************************!*\
+  !*** ./resources/js/client-home.js ***!
+  \*************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+/*
+ * client-home.js
+ * Copyright (C) 2019 nicolasfara <nicolas.farabegoli@gmail.com>
+ *
+ * Distributed under terms of the MIT license.
+ */
+var tabs = document.querySelectorAll('.tabs');
+
+for (var i = 0; i < tabs.length; i++) {
+  M.Tabs.init(tabs[i]);
+}
+
 /***/ }),
 
 /***/ "./resources/js/home.js":
