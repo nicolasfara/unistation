@@ -19,9 +19,9 @@ header, main, footer {
       <div class="background">
         <img src="{{ asset('images/placeholders/imageprofile-placeholder-350x350.png') }}">
       </div>
-      <a href="#user"><img class="circle" src="{{ asset('images/placeholders/imageprofile-placeholder-350x350.png') }}"></a>
-      <a href="#name"><span class="white-text name">{{ Auth::user()->name }}</span></a>
-      <a href="#email"><span class="white-text email">{{ Auth::user()->email }}</span></a>
+      <a><img class="circle" src="{{ asset('images/placeholders/imageprofile-placeholder-350x350.png') }}"></a>
+      <a><span class="white-text name">{{ Auth::user()->name }}</span></a>
+      <a><span class="white-text email">{{ Auth::user()->email }}</span></a>
     </div>
   </li>
   <li><a id="vendor-order-btn" class="sidenav-close"><i class="material-icons">local_mall</i>Richieste ordini</a></li>
@@ -39,9 +39,17 @@ header, main, footer {
 </ul>
 <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>
 
-@include('vendor.editprofile')
-@include('vendor.vendorproducts')
-@include('vendor.vendororders')
+<div class="editprofile container" style="display: none;">
+  @include('vendor.editprofile')
+</div>
+
+<div class="vendorproducts container" style="display: none;">
+  @include('vendor.vendorproducts')
+</div>
+
+<div class="vendororders container">
+  @include('vendor.vendororders')
+</div>
 
 <script>
 document.addEventListener('DOMContentLoaded', function() {
