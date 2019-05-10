@@ -13,6 +13,12 @@ header, main, footer {
 }
 </style>
 
+<nav class="teal lighten-2" role="navigation">
+  <div class="nav-wrapper container"><a id="logo-container" href="{{ url('/') }}" class="brand-logo">Unistation</a>
+    <a href="#" data-target="slide-out" class="left sidenav-trigger hide-on-medium-and-up"><i class="material-icons">menu</i></a>
+  </div>
+</nav>
+
 <ul id="slide-out" class="sidenav sidenav-fixed">
   <li>
     <div class="user-view">
@@ -24,11 +30,11 @@ header, main, footer {
       <a><span class="white-text email">{{ Auth::user()->email }}</span></a>
     </div>
   </li>
-  <li><a id="vendor-order-btn" class="sidenav-close"><i class="material-icons">local_mall</i>Richieste ordini</a></li>
-  <li><a id="vendor-edit-products-btn" class="sidenav-close"><i class="material-icons">mode_edit</i>Gestisci prodotti</a></li>
+  <li><a id="vendor-order-btn" class="sidenav-close waves-effect"><i class="material-icons">local_mall</i>Richieste ordini</a></li>
+  <li><a id="vendor-edit-products-btn" class="sidenav-close waves-effect"><i class="material-icons">mode_edit</i>Gestisci prodotti</a></li>
   <li><div class="divider"></div></li>
   <li><a class="subheader">Impostazioni</a></li>
-  <li><a id="editprofile-btn" class="sidenav-clone waves-effect"><i class="material-icons">build</i>Modifica profilo</a></li>
+  <li><a id="editprofile-btn" class="sidenav-close waves-effect"><i class="material-icons">build</i>Modifica profilo</a></li>
   <li><a class="subheader"></a></li>
   <li>
     <li><a href="{{ route('logout') }}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();"> {{ __('Logout') }} </a>
@@ -37,7 +43,6 @@ header, main, footer {
     </form>
   </li>
 </ul>
-<a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>
 
 <div class="editprofile container" style="display: none;">
   @include('vendor.editprofile')
