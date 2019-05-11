@@ -59,11 +59,13 @@ header, main, footer {
 <script>
 document.addEventListener('DOMContentLoaded', function() {
   var sidenav = document.querySelectorAll('.sidenav');
-  var instances = M.Sidenav.init(sidenav, {  });
+  M.Sidenav.init(sidenav, {  });
   var collapsible = document.querySelectorAll('.collapsible');
-  var instances = M.Collapsible.init(collapsible, {  });
+  M.Collapsible.init(collapsible, {  });
   var tabs = document.querySelectorAll('.tabs');
   M.Tabs.init(tabs, {  });
+  var modal = document.querySelectorAll('.modal');
+  M.Modal.init(modal, {  });
 });
 </script>
 @endsection
