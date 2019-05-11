@@ -18,7 +18,8 @@
         <div class="col s12 m6 l4 center-align">
           <div class="card">
             <div class="card-image">
-              <img src="/images/logos/First.png" class="responsive-img" alt="First-logo">
+              <i class="material-icons" style="font-size: 130px;">edit</i>
+              <!--img src="{{ asset('images/logos/First.png') }}" class="responsive-img" alt="first-logo"-->
             </div>
             <div class="card-content">
               <h4>Registrati</h4>
@@ -28,7 +29,8 @@
         <div class="col s12 m6 l4 center-align">
           <div class="card">
             <div class="card-image">
-              <img src="/images/logos/Second.png" class="responsive-img" alt="Second-logo">
+              <i class="material-icons" style="font-size: 130px;">assignment</i>
+              <!--img src="{{ asset('images/logos/Second.png') }}" class="responsive-img" alt="second-logo"-->
             </div>
             <div class="card-content">
               <h4>Ordina</h4>
@@ -38,7 +40,8 @@
         <div class="col s12 m6 l4 center-align">
           <div class="card">
             <div class="card-image ">
-              <img src="/images/logos/Third.png" class="responsive-img" alt="Third-logo">
+              <i class="material-icons" style="font-size: 130px;">free_breakfast</i>
+              <!--img src="{{ asset('images/logos/Third.png') }}" class="responsive-img" alt="third-logo"-->
             </div>
             <div class="card-content">
               <h4>Enjoy!</h4>
