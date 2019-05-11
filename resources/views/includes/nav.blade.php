@@ -20,8 +20,8 @@
   <li><a href="{{ url('client/login') }}">Accedi</a></li>
   <li><a href="{{ url('client/register') }}">Registrati</a></li>
   @else
-  <li><a href="{{ route('logout') }}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();"> {{ __('Logout') }} </a>
-  <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+  <li><a onclick="event.preventDefault(); document.getElementById('logout-form').submit();"> {{ __('Logout') }} </a>
+  <form id="logout-form" action="{{ url('client/logout') }}" method="POST" style="display: none;">
     @csrf
   </form>
   @endguest

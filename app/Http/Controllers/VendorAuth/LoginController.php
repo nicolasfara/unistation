@@ -18,7 +18,7 @@ class LoginController extends Controller
     | redirecting them to your home screen. The controller uses a trait
     | to conveniently provide its functionality to your applications.
     |
-    */
+     */
 
     use AuthenticatesUsers, LogsoutGuard {
         LogsoutGuard::logout insteadof AuthenticatesUsers;
@@ -61,3 +61,6 @@ class LoginController extends Controller
         return Auth::guard('vendor');
     }
 }
+
+
+// vim: set ts=4 sw=4 :

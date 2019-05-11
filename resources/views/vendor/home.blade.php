@@ -37,8 +37,8 @@ header, main, footer {
   <li><a id="editprofile-btn" class="sidenav-close waves-effect"><i class="material-icons">build</i>Modifica profilo</a></li>
   <li><div class="divider"></div></li>
   <li>
-    <li><a href="{{ route('logout') }}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();"><i class="material-icons">exit_to_app</i> {{ __('Logout') }} </a>
-    <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+    <li><a class="waves-effect" onclick="event.preventDefault(); document.getElementById('logout-form').submit();"><i class="material-icons">exit_to_app</i> {{ __('Logout') }} </a>
+    <form id="logout-form" action="{{ url('vendor/logout') }}" method="POST" style="display: none;">
       @csrf
     </form>
   </li>
