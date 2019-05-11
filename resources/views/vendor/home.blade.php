@@ -15,7 +15,7 @@ header, main, footer {
 
 <nav class="teal lighten-2" role="navigation">
   <div class="nav-wrapper container"><a id="logo-container" href="{{ url('/') }}" class="brand-logo">Unistation</a>
-    <a href="#" data-target="slide-out" class="left sidenav-trigger hide-on-medium-and-up"><i class="material-icons">menu</i></a>
+    <a data-target="slide-out" class="left sidenav-trigger hide-on-medium-and-up"><i class="material-icons">menu</i></a>
   </div>
 </nav>
 
@@ -35,9 +35,9 @@ header, main, footer {
   <li><div class="divider"></div></li>
   <li><a class="subheader">Impostazioni</a></li>
   <li><a id="editprofile-btn" class="sidenav-close waves-effect"><i class="material-icons">build</i>Modifica profilo</a></li>
-  <li><a class="subheader"></a></li>
+  <li><div class="divider"></div></li>
   <li>
-    <li><a href="{{ route('logout') }}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();"> {{ __('Logout') }} </a>
+    <li><a href="{{ route('logout') }}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();"><i class="material-icons">exit_to_app</i> {{ __('Logout') }} </a>
     <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
       @csrf
     </form>
@@ -58,8 +58,12 @@ header, main, footer {
 
 <script>
 document.addEventListener('DOMContentLoaded', function() {
-  var elems = document.querySelectorAll('.sidenav');
-  var instances = M.Sidenav.init(elems, {  });
+  var sidenav = document.querySelectorAll('.sidenav');
+  var instances = M.Sidenav.init(sidenav, {  });
+  var collapsible = document.querySelectorAll('.collapsible');
+  var instances = M.Collapsible.init(collapsible, {  });
+  var tabs = document.querySelectorAll('.tabs');
+  M.Tabs.init(tabs, {  });
 });
 </script>
 @endsection
