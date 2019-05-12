@@ -75,7 +75,7 @@ return [
     */
 
     'middleware' => [
-        'auth:user',
+        'auth:client',
         Authorize::class,
     ],
 

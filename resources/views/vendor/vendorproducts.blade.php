@@ -28,10 +28,14 @@
                   <label for="update_dish_price">Prezzo</label>
                 </div>
                 <div class="input-field col s1">
-                  <a class="btn-flat"><i class="material-icons">delete</i></a>
+                  <a onclick="event.preventDefault(); document.getElementById('delete-product{{ $product->id }}-form').submit();" class="btn-flat"><i class="material-icons">delete</i></a>
                 </div>
                 <button class="waves-effect waves-light btn" type="submit" name="action">Aggiorna</button>
               </div>
+            </form>
+            <form id="delete-product{{ $product->id }}-form" action="{{ route('products.destroy', $product->id) }}" method="POST" style="display: none;">
+              @csrf
+              @method('DELETE')
             </form>
           </div>
         </li>
@@ -64,7 +68,7 @@
             <label>Tipo prodotto</label>
           </div>
           <div class="input-field col s2">
-            <input name="new_dish_price" id="new_input_price" type="number" step="0.01" class="validate">
+            <input name="new_dish_price" id="new_dish_price" type="number" step="0.01" class="validate">
             <label for="new_dish_price">Prezzo</label>
           </div>
         </div>

@@ -17,7 +17,10 @@ class ProductController extends Controller
      */
     public function index()
     {
+        $types = Product::getProductsType();
+        $products = Product::where('vendor_id', Auth::id())->get();
 
+        return view('vendor.home', ['types' => $types, 'products' => $products]);
     }
 
     /**
@@ -59,10 +62,7 @@ class ProductController extends Controller
         $new_product->vendor_id = Auth::id();
         $new_product->save();
 
-        $types = Product::getProductsType();
-        $products = Product::where('vendor_id', Auth::id())->get();
-
-        return view('vendor.home', ['types' => $types, 'products' => $products]);
+        return $this->index();
     }
 
     /**
@@ -98,16 +98,11 @@ class ProductController extends Controller
     {
         $update_product = Product::find($id);
 
-        if (!empty($update_product)) {
-            $update_product->name = $request->input('update_dish_name');
-            $update_product->price = $request->input('update_dish_price');
-            $update_product->save();
-        }
+        $update_product->name = $request->input('update_dish_name');
+        $update_product->price = $request->input('update_dish_price');
+        $update_product->save();
 
-        $types = Product::getProductsType();
-        $products = Product::where('vendor_id', Auth::id())->get();
-
-        return view('vendor.home', ['types' => $types, 'products' => $products]);
+        return $this->index();
     }
 
     /**
@@ -118,7 +113,9 @@ class ProductController extends Controller
      */
     public function destroy($id)
     {
-        //
+        Product::find($id)->delete();
+
+        return $this->index();
     }
 }
 
