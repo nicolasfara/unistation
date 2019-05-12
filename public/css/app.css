@@ -9669,3 +9669,7 @@ body {
   height: 100%;
 }
 
+.collapsible-header {
+  display: block;
+}
+

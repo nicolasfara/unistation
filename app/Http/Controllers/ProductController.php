@@ -39,9 +39,9 @@ class ProductController extends Controller
     public function store(Request $request)
     {
         $validator = Validator::make($request->all(), [
-            'dish_name' => 'required',
-            'type' => 'required',
-            'dish_price' => 'required',
+            'new_dish_name' => 'required',
+            'new_type' => 'required',
+            'new_dish_price' => 'required',
         ]);
 
         if ($validator->fails()) {
@@ -98,9 +98,11 @@ class ProductController extends Controller
     {
         $update_product = Product::find($id);
 
-        $update_product->name = $request->input('update_dish_name');
-        $update_product->price = $request->input('update_dish_price');
-        $update_product->save();
+        if (!empty($update_product)) {
+            $update_product->name = $request->input('update_dish_name');
+            $update_product->price = $request->input('update_dish_price');
+            $update_product->save();
+        }
 
         $types = Product::getProductsType();
         $products = Product::where('vendor_id', Auth::id())->get();
