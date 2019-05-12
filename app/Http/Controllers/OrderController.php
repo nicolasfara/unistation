@@ -2,13 +2,10 @@
 
 namespace App\Http\Controllers;
 
-use Validator;
-use Log;
-use App\Product;
-use Illuminate\Support\Facades\Auth;
+use App\Order;
 use Illuminate\Http\Request;
 
-class ProductController extends Controller
+class OrderController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -17,7 +14,7 @@ class ProductController extends Controller
      */
     public function index()
     {
-        return redirect()->route('vendor.home');
+        //
     }
 
     /**
@@ -38,28 +35,7 @@ class ProductController extends Controller
      */
     public function store(Request $request)
     {
-        $validator = Validator::make($request->all(), [
-            'new_dish_name' => 'required',
-            'new_type' => 'required',
-            'new_dish_price' => 'required',
-        ]);
-
-        if ($validator->fails()) {
-            return;
-        }
-
-        $post_data = $request->all();
-
-        Log::debug($post_data);
-
-        $new_product = new Product;
-        $new_product->name = $request->input('new_dish_name');
-        $new_product->price = $request->input('new_dish_price');
-        $new_product->type = $request->input('new_type');
-        $new_product->vendor_id = Auth::id();
-        $new_product->save();
-
-        return $this->index();
+        //
     }
 
     /**
@@ -93,13 +69,7 @@ class ProductController extends Controller
      */
     public function update(Request $request, $id)
     {
-        $update_product = Product::find($id);
-
-        $update_product->name = $request->input('update_dish_name');
-        $update_product->price = $request->input('update_dish_price');
-        $update_product->save();
-
-        return $this->index();
+        //
     }
 
     /**
@@ -110,9 +80,7 @@ class ProductController extends Controller
      */
     public function destroy($id)
     {
-        Product::find($id)->delete();
-
-        return $this->index();
+        //
     }
 }
 

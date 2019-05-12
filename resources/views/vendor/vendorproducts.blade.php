@@ -7,7 +7,7 @@
   @foreach($types as $type)
     <div id="{{ $type }}" class="col s12">
       <ul class="collapsible popout">
-        @foreach($products as $product)
+        @forelse($products as $product)
         @if($product->type == $type)
         <li>
           <div class="collapsible-header">
@@ -40,7 +40,9 @@
           </div>
         </li>
         @endif
-        @endforeach
+        @empty
+        <span>Non ci sono prodotti qui... Aggiungine uno ora!</span>
+        @endforelse
       </ul>
     </div>
   @endforeach
