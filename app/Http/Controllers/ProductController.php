@@ -53,9 +53,9 @@ class ProductController extends Controller
         Log::debug($post_data);
 
         $new_product = new Product;
-        $new_product->name = $request->input('dish_name');
-        $new_product->price = $request->input('dish_price');
-        $new_product->type = $request->input('type');
+        $new_product->name = $request->input('new_dish_name');
+        $new_product->price = $request->input('new_dish_price');
+        $new_product->type = $request->input('new_type');
         $new_product->vendor_id = Auth::id();
         $new_product->save();
 
@@ -96,7 +96,16 @@ class ProductController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $update_product = Product::find($id);
+
+        $update_product->name = $request->input('update_dish_name');
+        $update_product->price = $request->input('update_dish_price');
+        $update_product->save();
+
+        $types = Product::getProductsType();
+        $products = Product::where('vendor_id', Auth::id())->get();
+
+        return view('vendor.home', ['types' => $types, 'products' => $products]);
     }
 
     /**

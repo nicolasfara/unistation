@@ -14,22 +14,22 @@
             {{ $product->name }}
           </div>
           <div class="collapsible-body">
-            <form class="col s12" action="{{ url('products/$product->id') }}" method="POST">
+            <form id="update-product-form" class="col s12" action="{{ url('products/$product->id') }}" method="POST">
               @csrf
               @method('PATCH')
               <div class="row">
                 <div class="input-field col s9">
-                  <input id="dish_name" type="text" class="validate" value="{{ $product->name }}">
-                  <label for="dish_name">Nome Piatto</label>
+                  <input id="update_dish_name" type="text" class="validate" value="{{ $product->name }}">
+                  <label for="update_dish_name">Nome Piatto</label>
                 </div>
                 <div class="input-field col s2">
-                  <input id="price" type="number" step="0.01" class="validate" value="{{ $product->price }}">
-                  <label for="price">Prezzo</label>
+                  <input id="update_dish_price" type="number" step="0.01" class="validate" value="{{ $product->price }}">
+                  <label for="update_dish_price">Prezzo</label>
                 </div>
                 <div class="input-field col s1">
                   <a class="btn-flat"><i class="material-icons">delete</i></a>
                 </div>
-                <a class="waves-effect waves-light btn">Aggiorna</a>
+                <a class="waves-effect waves-light btn" onclick="event.preventDefault(); document.getElementById('update-product-form').submit();">Aggiorna</a>
               </div>
             </form>
           </div>
@@ -50,11 +50,11 @@
         @csrf
         <div class="row">
           <div class="input-field col s8">
-            <input name="dish_name" id="input_dish_name" type="text" class="validate">
-            <label for="input_dish_name">Nome Piatto</label>
+            <input name="new_dish_name" id="input_dish_name" type="text" class="validate">
+            <label for="new_dish_name">Nome Piatto</label>
           </div>
           <div class="input-field col s2">
-            <select name="type" required>
+            <select name="new_type" required>
               <option value="" disabled selected>Seleziona tipo</option>
               @foreach($types as $type)
               <option value="{{ $type }}">{{ $type }}</option>
@@ -63,8 +63,8 @@
             <label>Tipo prodotto</label>
           </div>
           <div class="input-field col s2">
-            <input name="dish_price" id="input_price" type="number" step="0.01" class="validate">
-            <label for="input_price">Prezzo</label>
+            <input name="new_dish_price" id="input_price" type="number" step="0.01" class="validate">
+            <label for="new_dish_price">Prezzo</label>
           </div>
         </div>
       </form>
