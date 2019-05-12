@@ -66,6 +66,8 @@ document.addEventListener('DOMContentLoaded', function() {
   M.Tabs.init(tabs, {  });
   var modal = document.querySelectorAll('.modal');
   M.Modal.init(modal, {  });
+  var select = document.querySelectorAll('select');
+  M.FormSelect.init(select, {  });
 });
 </script>
 @endsection

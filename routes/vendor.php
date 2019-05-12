@@ -9,7 +9,8 @@ Route::get('/home', function () {
 
     //dd($users);
     $types = Product::getProductsType();
+    $products = Product::where('vendor_id', Auth::id())->get();
 
-    return view('vendor.home', ['types' => $types]);
+    return view('vendor.home', ['types' => $types, 'products' => $products]);
 })->name('home');
 
