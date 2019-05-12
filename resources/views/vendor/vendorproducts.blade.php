@@ -40,7 +40,7 @@
     </div>
   @endforeach
   <!-- Modal Trigger -->
-  <button data-target="add-new-product" class="btn-floating btn-large waves-effect waves-light red modal-trigger"><i class="material-icons">add</i></button>
+  <a data-target="add-new-product" class="btn-floating btn-large waves-effect waves-light red right modal-trigger"><i class="material-icons">add</i></a>
 
   <!-- Modal Structure -->
   <div id="add-new-product" class="modal">
