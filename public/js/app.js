@@ -6361,6 +6361,10 @@ M.anime = function () {
  *
  * Distributed under terms of the MIT license.
  */
+function dropdown1() {
+  console.log("Hello world!");
+}
+
 document.addEventListener('DOMContentLoaded', function () {
   var elems = document.querySelectorAll('.sidenav');
   var instances = M.Sidenav.init(elems, {});
@@ -6426,8 +6430,8 @@ document.getElementById("vendor-edit-products-btn").addEventListener("click", sh
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! /home/nicolas/Documents/uni/tec-web/unistation/resources/js/app.js */"./resources/js/app.js");
-module.exports = __webpack_require__(/*! /home/nicolas/Documents/uni/tec-web/unistation/resources/sass/app.scss */"./resources/sass/app.scss");
+__webpack_require__(/*! /home/martina/Documents/uni/tec-web/unistation/resources/js/app.js */"./resources/js/app.js");
+module.exports = __webpack_require__(/*! /home/martina/Documents/uni/tec-web/unistation/resources/sass/app.scss */"./resources/sass/app.scss");
 
 
 /***/ })

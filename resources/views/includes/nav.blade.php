@@ -6,10 +6,14 @@
       <li><a href="{{ url('/client/login') }}">Accedi</a></li>
       <li><a href="{{ url('/client/register') }}">Registrati</a></li>
       @else
-      <li><a href="{{ route('logout') }}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();"> {{ __('Logout') }} </a>
-      <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
-        @csrf
-      </form>
+      <ul id="dropdown1" class="dropdown-content">
+        <li><a  id="uno" href="#!">one</a></li>
+        <li><a href="#!">two</a></li>
+        <li><a href="#!">three</a></li>
+      </ul>
+      <div class="nav-wrapper">
+        <li><a onclick="document.getElementById('uno').style.display='block'" class="dropdown-trigger" id="io" href="#!" data-target="dropdown1">Dropdown<i class="material-icons right">arrow_drop_down</i></a></li>
+    </div>
       @endguest
     </ul>
   </div>
