@@ -2,8 +2,9 @@
   <h1>Modifica profilo</h1>
   <div class="valign-wrapper row login-box">
     <div class="col card hoverable s12">
-      <form class="form-horizontal" role="form" method="POST" action="">
+      <form class="form-horizontal" enctype="multipart/form-data" method="POST" action="{{ route('vendor-edit.update', Auth::id()) }}">
         @csrf
+        @method('PATCH')
         <div class="card-content">
           <div class="row">
             <div class="input-field col s12">
@@ -27,7 +28,7 @@
             <div class="file-field input-field">
               <div class="btn">
                 <span>File</span>
-                <input type="file">
+                <input name="newavatar" type="file">
               </div>
               <div class="file-path-wrapper">
                 <input class="file-path validate" type="text" placeholder="Carica avatar">

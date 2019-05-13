@@ -57,3 +57,4 @@ Route::group(['prefix' => 'client'], function () {
 
 Route::resource('products', 'ProductController')->middleware('auth:vendor');
 Route::resource('orders', 'OrderController')->middleware('auth:vendor');
+Route::resource('vendor-edit', 'VendorController')->middleware('auth:vendor');

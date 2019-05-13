@@ -3,8 +3,8 @@
     <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
     <ul class="right hide-on-med-and-down">
       @guest
-      <li><a href="{{ url('/client/login') }}">Accedi</a></li>
-      <li><a href="{{ url('/client/register') }}">Registrati</a></li>
+      <li><a href="{{ url('client/login') }}">Accedi</a></li>
+      <li><a href="{{ url('client/register') }}">Registrati</a></li>
       @else
       <ul id="user-dropdown" class="dropdown-content">
         <li><a href="#!"><i class="material-icons">shop</i>Ordini</a></li>
@@ -30,6 +30,8 @@
   <li><a href="{{ url('client/login') }}">Accedi</a></li>
   <li><a href="{{ url('client/register') }}">Registrati</a></li>
   @else
+  <li><a href="#!"><i class="material-icons">shopping_cart</i>Carrello</a></li>
+  <li class="divider" tabindex="-1"></li>
   <li><a href="#!"><i class="material-icons">shop</i>Ordini</a></li>
   <li><a href="#!"><i class="material-icons">settings</i>Gestisci profilo</a></li>
   <li class="divider" tabindex="-1"></li>

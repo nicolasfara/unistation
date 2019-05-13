@@ -23,9 +23,9 @@ header, main, footer {
   <li>
     <div class="user-view">
       <div class="background">
-        <img src="{{ asset('images/placeholders/imageprofile-placeholder-350x350.png') }}">
+        <img class="responsive-img" src="{{ asset('images/placeholders/imageprofile-placeholder-350x350.png') }}">
       </div>
-      <a><img class="circle" src="{{ asset('images/placeholders/imageprofile-placeholder-350x350.png') }}"></a>
+      <a><img class="responsive-img circle" src="{{ asset(Auth::user()->image) }}"></a>
       <a><span class="white-text name">{{ Auth::user()->name }}</span></a>
       <a><span class="white-text email">{{ Auth::user()->email }}</span></a>
     </div>
