@@ -22,12 +22,12 @@ header, main, footer {
 <ul id="slide-out" class="sidenav sidenav-fixed">
   <li>
     <div class="user-view">
-      <div class="background">
+      <!--div class="background">
         <img class="responsive-img" src="{{ asset('images/placeholders/imageprofile-placeholder-350x350.png') }}">
-      </div>
+      </div-->
       <a><img class="responsive-img circle" src="{{ asset(Auth::user()->image) }}"></a>
-      <a><span class="white-text name">{{ Auth::user()->name }}</span></a>
-      <a><span class="white-text email">{{ Auth::user()->email }}</span></a>
+      <a><span class="black-text name">{{ Auth::user()->name }}</span></a>
+      <a><span class="black-text email">{{ Auth::user()->email }}</span></a>
     </div>
   </li>
   <li><a id="vendor-order-btn" class="sidenav-close waves-effect"><i class="material-icons">local_mall</i>Richieste ordini</a></li>
