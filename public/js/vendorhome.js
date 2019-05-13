@@ -1,5 +1,5 @@
 /*
- * vendor_editprofile.js
+ * vendorhome.js
  * Copyright (C) 2019 nicolasfara <nicolas.farabegoli@gmail.com>
  *
  * Distributed under terms of the MIT license.
@@ -26,6 +26,17 @@ function show_vendor_products() {
   document.getElementsByClassName('vendorproducts')[0].style.display = "block";
 }
 
-document.getElementById("editprofile-btn").addEventListener("click", show_vendor_edit_profile);
-document.getElementById("vendor-order-btn").addEventListener("click", show_vendor_orders);
-document.getElementById("vendor-edit-products-btn").addEventListener("click", show_vendor_products);
+document.addEventListener('DOMContentLoaded', function() {
+  var tabs = document.querySelectorAll('.tabs');
+  M.Tabs.init(tabs, {  });
+  var modal = document.querySelectorAll('.modal');
+  M.Modal.init(modal, {  });
+  var sidenav = document.querySelectorAll('.sidenav');
+  M.Sidenav.init(sidenav, {  });
+
+  document.getElementById("editprofile-btn").addEventListener("click", show_vendor_edit_profile);
+  document.getElementById("vendor-order-btn").addEventListener("click", show_vendor_orders);
+  document.getElementById("vendor-edit-products-btn").addEventListener("click", show_vendor_products);
+});
+
+

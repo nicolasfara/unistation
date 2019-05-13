@@ -4,10 +4,23 @@
  * building robust, powerful web applications using Vue and Laravel.
  */
 
-//require('./bootstrap');
-require('./materialize.min')
-require('./nav')
-require('./home')
-require('./client-home')
-require('./vendor_editprofile')
-
+//require('./materialize.min')
+//require('./nav')
+//require('./home')
+//require('./client-home')
+//require('./vendor_editprofile')
+//
+//document.addEventListener('DOMContentLoaded', function() {
+//  var sidenav = document.querySelectorAll('.sidenav');
+//  M.Sidenav.init(sidenav, {  });
+//  var collapsible = document.querySelectorAll('.collapsible');
+//  M.Collapsible.init(collapsible, {  });
+//  var select = document.querySelectorAll('select');
+//  M.FormSelect.init(select, {  });
+//  var dropdowns = document.querySelectorAll('.dropdown-trigger')
+//  M.Dropdown.init(dropdowns);
+//  console.log('Components initialized')
+//
+//  //
+//  show_card_fadein()
+//});

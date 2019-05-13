@@ -6,13 +6,19 @@
       <li><a href="{{ url('/client/login') }}">Accedi</a></li>
       <li><a href="{{ url('/client/register') }}">Registrati</a></li>
       @else
-      <ul id="dropdown1" class="dropdown-content">
-        <li><a  id="uno" href="#!">one</a></li>
-        <li><a href="#!">two</a></li>
-        <li><a href="#!">three</a></li>
+      <ul id="user-dropdown" class="dropdown-content">
+        <li><a href="#!"><i class="material-icons">shop</i>Ordini</a></li>
+        <li><a href="#!"><i class="material-icons">settings</i>Gestisci profilo</a></li>
+        <li class="divider" tabindex="-1"></li>
+        <li><a onclick="event.preventDefault(); document.getElementById('logout-form').submit();"><i class="material-icons">exit_to_app</i>{{ __('Logout') }}</a></li>
       </ul>
       <div class="nav-wrapper">
-        <li><a onclick="document.getElementById('uno').style.display='block'" class="dropdown-trigger" id="io" href="#!" data-target="dropdown1">Dropdown<i class="material-icons right">arrow_drop_down</i></a></li>
+        <li><a class="dropdown-trigger" href="#!" data-target="user-dropdown">{{ Auth::user()->name }}<i class="material-icons right">arrow_drop_down</i></a></li>
+        <li><a href="#!"><i class="material-icons right">shopping_cart</i></a></li>
+
+        <form id="logout-form" action="{{ url('client/logout') }}" method="POST" style="display: none;">
+          @csrf
+        </form>
     </div>
       @endguest
     </ul>
@@ -24,9 +30,9 @@
   <li><a href="{{ url('client/login') }}">Accedi</a></li>
   <li><a href="{{ url('client/register') }}">Registrati</a></li>
   @else
-  <li><a onclick="event.preventDefault(); document.getElementById('logout-form').submit();"> {{ __('Logout') }} </a>
-  <form id="logout-form" action="{{ url('client/logout') }}" method="POST" style="display: none;">
-    @csrf
-  </form>
+  <li><a href="#!"><i class="material-icons">shop</i>Ordini</a></li>
+  <li><a href="#!"><i class="material-icons">settings</i>Gestisci profilo</a></li>
+  <li class="divider" tabindex="-1"></li>
+  <li><a onclick="event.preventDefault(); document.getElementById('logout-form').submit();"><i class="material-icons">exit_to_app</i>{{ __('Logout') }}</a>
   @endguest
 </ul>

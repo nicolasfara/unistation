@@ -58,5 +58,9 @@
 @include('includes.footer')
 @endsection
 
+@section('scripts')
+<script type="text/javascript" src="{{ asset('js/home.js') }}"></script>
+@endsection
+
 
 <!-- vim:set sw=2 ts=2 sts=2 ft=html expandtab:-->

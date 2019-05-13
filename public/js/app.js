@@ -129,7 +129,6 @@ module.exports = g;
  * includes Vue and other libraries. It is a great starting point when
  * building robust, powerful web applications using Vue and Laravel.
  */
-//require('./bootstrap');
 __webpack_require__(/*! ./materialize.min */ "./resources/js/materialize.min.js");
 
 __webpack_require__(/*! ./nav */ "./resources/js/nav.js");
@@ -139,6 +138,24 @@ __webpack_require__(/*! ./home */ "./resources/js/home.js");
 __webpack_require__(/*! ./client-home */ "./resources/js/client-home.js");
 
 __webpack_require__(/*! ./vendor_editprofile */ "./resources/js/vendor_editprofile.js");
+
+document.addEventListener('DOMContentLoaded', function () {
+  var sidenav = document.querySelectorAll('.sidenav');
+  M.Sidenav.init(sidenav, {});
+  var collapsible = document.querySelectorAll('.collapsible');
+  M.Collapsible.init(collapsible, {});
+  var tabs = document.querySelectorAll('.tabs');
+  M.Tabs.init(tabs, {});
+  var modal = document.querySelectorAll('.modal');
+  M.Modal.init(modal, {});
+  var select = document.querySelectorAll('select');
+  M.FormSelect.init(select, {});
+  var dropdowns = document.querySelectorAll('.dropdown-trigger');
+  M.Dropdown.init(dropdowns);
+  console.log('Components initialized'); //
+
+  show_card_fadein();
+});
 
 /***/ }),
 
@@ -185,7 +202,8 @@ function fadeIn(el, display) {
 }
 
 ;
-document.addEventListener("DOMContentLoaded", function () {
+
+function show_card_fadein() {
   var slide_components = document.getElementsByClassName('card');
   Array.from(slide_components).forEach(function (elem) {
     elem.style.display = 'none';
@@ -194,14 +212,12 @@ document.addEventListener("DOMContentLoaded", function () {
   var delay = 1000;
   var timer = setInterval(function (elem) {
     fadeIn(elem.pop(), 'block');
-    console.log(elem);
 
     if (elem.length === 0) {
-      console.log('empty array');
       clearInterval(timer);
     }
   }, delay, box_elem);
-});
+}
 
 /***/ }),
 
@@ -6406,9 +6422,21 @@ function show_vendor_products() {
   document.getElementsByClassName('vendorproducts')[0].style.display = "block";
 }
 
-document.getElementById("editprofile-btn").addEventListener("click", show_vendor_edit_profile);
-document.getElementById("vendor-order-btn").addEventListener("click", show_vendor_orders);
-document.getElementById("vendor-edit-products-btn").addEventListener("click", show_vendor_products);
+var editprofile = document.getElementById("editprofile-btn");
+var order = document.getElementById("vendor-order-btn");
+var editproduct = document.getElementById("vendor-edit-products-btn");
+
+if (editprofile != null) {
+  editprofile.addEventListener("click", show_vendor_edit_profile);
+}
+
+if (order != null) {
+  order.addEventListener("click", show_vendor_orders);
+}
+
+if (editproduct != null) {
+  editprofile.addEventListener("click", show_vendor_products);
+}
 
 /***/ }),
 
@@ -6430,8 +6458,8 @@ document.getElementById("vendor-edit-products-btn").addEventListener("click", sh
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! /home/martina/Documents/uni/tec-web/unistation/resources/js/app.js */"./resources/js/app.js");
-module.exports = __webpack_require__(/*! /home/martina/Documents/uni/tec-web/unistation/resources/sass/app.scss */"./resources/sass/app.scss");
+__webpack_require__(/*! /home/nicolas/Documents/uni/tec-web/unistation/resources/js/app.js */"./resources/js/app.js");
+module.exports = __webpack_require__(/*! /home/nicolas/Documents/uni/tec-web/unistation/resources/sass/app.scss */"./resources/sass/app.scss");
 
 
 /***/ })

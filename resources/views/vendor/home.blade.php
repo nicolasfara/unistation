@@ -55,19 +55,8 @@ header, main, footer {
 <div class="vendororders container">
   @include('vendor.vendororders')
 </div>
+@endsection
 
-<script>
-document.addEventListener('DOMContentLoaded', function() {
-  var sidenav = document.querySelectorAll('.sidenav');
-  M.Sidenav.init(sidenav, {  });
-  var collapsible = document.querySelectorAll('.collapsible');
-  M.Collapsible.init(collapsible, {  });
-  var tabs = document.querySelectorAll('.tabs');
-  M.Tabs.init(tabs, {  });
-  var modal = document.querySelectorAll('.modal');
-  M.Modal.init(modal, {  });
-  var select = document.querySelectorAll('select');
-  M.FormSelect.init(select, {  });
-});
-</script>
+@section('scripts')
+<script type="text/javascript" src="{{ asset('js/vendorhome.js') }}"></script>
 @endsection
