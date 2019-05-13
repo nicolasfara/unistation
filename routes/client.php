@@ -8,7 +8,9 @@ Route::get('/home', function () {
     $users[] = Auth::guard('client')->user();
 
     //dd($users);
+    $types = Product::getProductsType();
+    $products = Product::all();
 
-    return view('client.home');
+    return view('client.home', ['types' => $types, 'products' => $products]);
 })->name('home');
 
