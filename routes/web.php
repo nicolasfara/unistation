@@ -39,6 +39,7 @@ Route::group(['prefix' => 'vendor'], function () {
   Route::post('/password/reset', 'VendorAuth\ResetPasswordController@reset')->name('password.email');
   Route::get('/password/reset', 'VendorAuth\ForgotPasswordController@showLinkRequestForm')->name('password.reset');
   Route::get('/password/reset/{token}', 'VendorAuth\ResetPasswordController@showResetForm');
+
 });
 
 Route::group(['prefix' => 'client'], function () {
@@ -53,6 +54,8 @@ Route::group(['prefix' => 'client'], function () {
   Route::post('/password/reset', 'ClientAuth\ResetPasswordController@reset')->name('password.email');
   Route::get('/password/reset', 'ClientAuth\ForgotPasswordController@showLinkRequestForm')->name('password.reset');
   Route::get('/password/reset/{token}', 'ClientAuth\ResetPasswordController@showResetForm');
+
+  Route::get('/settings', 'ClientSettingsController@showClientSettings')->name('settings');
 });
 
 Route::resource('products', 'ProductController')->middleware('auth:vendor');
