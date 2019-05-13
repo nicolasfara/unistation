@@ -25,7 +25,11 @@ header, main, footer {
       <!--div class="background">
         <img class="responsive-img" src="{{ asset('images/placeholders/imageprofile-placeholder-350x350.png') }}">
       </div-->
+      @if(Auth::user()->image != null)
       <a><img class="responsive-img circle" src="{{ asset(Auth::user()->image) }}"></a>
+      @else
+      <img class="responsive-img" src="{{ asset('images/placeholders/imageprofile-placeholder-350x350.png') }}">
+      @endif
       <a><span class="black-text name">{{ Auth::user()->name }}</span></a>
       <a><span class="black-text email">{{ Auth::user()->email }}</span></a>
     </div>
