@@ -92,10 +92,8 @@ class VendorController extends Controller
         }
 
         if ($request->hasFile('newavatar')){
-            $path = $request->file('newavatar')->store('public/avatar');
-            $path = str_replace('public/', '', $path);
-            $path = 'storage/' . $path;
-            Storage::delete(str_replace('storage/avatar/', '', $vendor->image));
+            $path = $request->file('newavatar')->store('avatar');
+            Storage::delete($vendor->image);
             $vendor->image = $path;
         }
 

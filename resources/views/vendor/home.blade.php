@@ -26,7 +26,8 @@ header, main, footer {
         <img class="responsive-img" src="{{ asset('images/placeholders/imageprofile-placeholder-350x350.png') }}">
       </div-->
       @if(Auth::user()->image != null)
-      <a><img class="responsive-img circle" src="{{ asset(Auth::user()->image) }}"></a>
+      <!--a><img class="responsive-img circle" src="{{ asset(Auth::user()->image) }}"></a-->
+      <a><img class="responsive-img circle" src="{{ url(Storage::url(Auth::user()->image)) }}"></a>
       @else
       <img class="responsive-img" src="{{ asset('images/placeholders/imageprofile-placeholder-350x350.png') }}">
       @endif
