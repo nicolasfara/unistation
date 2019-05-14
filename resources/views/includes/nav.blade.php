@@ -14,7 +14,7 @@
       </ul>
       <div class="nav-wrapper">
         <li><a class="dropdown-trigger" href="#!" data-target="user-dropdown">{{ Auth::user()->name }}<i class="material-icons right">arrow_drop_down</i></a></li>
-        <li><a href="#!"><i class="material-icons right">shopping_cart</i></a></li>
+        <li><a href="{{ url('client/cart') }}"><i class="material-icons right">shopping_cart</i></a></li>
 
         <form id="logout-form" action="{{ url('client/logout') }}" method="POST" style="display: none;">
           @csrf

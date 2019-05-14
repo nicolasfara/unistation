@@ -57,6 +57,7 @@ Route::group(['prefix' => 'client'], function () {
 
   Route::get('/settings', 'ClientSettingsController@showClientSettings')->name('settings');
   Route::get('/clientorders', 'ClientOrdersController@showClientOrders')->name('clientorders');
+  Route::get('/cart', 'CartController@showCart')->name('cart');
 });
 
 Route::resource('products', 'ProductController')->middleware('auth:vendor');
