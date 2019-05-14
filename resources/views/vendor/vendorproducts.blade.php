@@ -11,11 +11,38 @@
         @if($product->type == $type)
         <li>
           <div class="collapsible-header">
-            {{ $product->name }}
-            <div class="right">{{ $product->price }}&euro;</div>
+            <!--div class="row valign-wrapper">
+              <div class="col s2">
+                @if($product->image != null)
+                <img src="Storage::url($product->image)" alt="" class="circle responsive-img">
+                @else
+                <img src="https://s3-eu-west-1.amazonaws.com/unistation/placeholders/imageprofile-placeholder-350x350.png" alt="" class="circle responsive-img">
+                @endif
+              </div>
+              <div class="col s8">
+                <span class="black-text">
+                {{ $product->name }}
+                </span>
+              </div>
+              <div class="col s2">
+                <div class="right">{{ $product->price }}&euro;</div>
+              </div>
+            </div-->
+            <ul class="collection">
+              <li class="collection-item avatar">
+                @if($product->image != null)
+                <img src="{{ Storage::url($product->image) }}" alt="" class="circle responsive-img">
+                @else
+                <img src="https://s3-eu-west-1.amazonaws.com/unistation/placeholders/imageprofile-placeholder-350x350.png" alt="" class="circle responsive-img">
+                @endif
+                <span class="title">{{ $product->name }}</span>
+                <!--p>First Line</p-->
+                <div class="secondary-content">{{ $product->price }}&euro;</div>
+              </li>
+            </ul>
           </div>
           <div class="collapsible-body">
-            <form id="update-product-form" class="col s12" action="{{ route('products.update', ['id' => $product->id]) }}" method="POST">
+            <form id="update-product-form" enctype="multipart/form-data" class="col s12" action="{{ route('products.update', ['id' => $product->id]) }}" method="POST">
               @csrf
               @method('PATCH')
               <div class="row">
@@ -30,8 +57,19 @@
                 <div class="input-field col s1">
                   <a onclick="event.preventDefault(); document.getElementById('delete-product{{ $product->id }}-form').submit();" class="btn-flat"><i class="material-icons">delete</i></a>
                 </div>
-                <button class="waves-effect waves-light btn" type="submit" name="action">Aggiorna</button>
               </div>
+              <div class="row">
+                <div class="file-field input-field col s12 m6">
+                  <div class="btn">
+                    <span>Carica</span>
+                    <input name="productimg" type="file">
+                  </div>
+                  <div class="file-path-wrapper">
+                    <input class="file-path validate" type="text" placeholder="Carica un' immagine per il prodotto">
+                  </div>
+                </div>
+              </div>
+              <button class="waves-effect waves-light btn" type="submit">Aggiorna</button>
             </form>
             <form id="delete-product{{ $product->id }}-form" action="{{ route('products.destroy', $product->id) }}" method="POST" style="display: none;">
               @csrf

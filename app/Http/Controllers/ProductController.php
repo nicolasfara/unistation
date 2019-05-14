@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Validator;
 use Log;
 use App\Product;
+use Storage;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Http\Request;
 
@@ -57,6 +58,13 @@ class ProductController extends Controller
         $new_product->price = $request->input('new_dish_price');
         $new_product->type = $request->input('new_type');
         $new_product->vendor_id = Auth::id();
+
+        if ($request->hasFile('product_img')) {
+            $path = $request->file('product_img')->save('products');
+            Storage::delete($new_product->image);
+            $new_product->image = $path;
+        }
+
         $new_product->save();
 
         return $this->index();
@@ -97,6 +105,17 @@ class ProductController extends Controller
 
         $update_product->name = $request->input('update_dish_name');
         $update_product->price = $request->input('update_dish_price');
+
+        if ($request->hasFile('productimg')) {
+            $file = $request->file('productimg');
+            $path = Storage::putFile('products', $file, 'public');
+            Storage::delete($update_product->image);
+            $update_product->image = $path;
+            Log::debug("in");
+        }
+
+        Log::debug("out");
+
         $update_product->save();
 
         return $this->index();

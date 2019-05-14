@@ -34,6 +34,7 @@ header, main, footer {
       <a><span class="black-text email">{{ Auth::user()->email }}</span></a>
     </div>
   </li>
+  <li><div class="divider"></div></li>
   <li><a id="vendor-order-btn" class="sidenav-close waves-effect"><i class="material-icons">local_mall</i>Richieste ordini</a></li>
   <li><a id="vendor-edit-products-btn" class="sidenav-close waves-effect"><i class="material-icons">mode_edit</i>Gestisci prodotti</a></li>
   <li><div class="divider"></div></li>

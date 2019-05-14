@@ -71,7 +71,6 @@ class VendorController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
         $vendor = Vendor::find($id);
 
         $vendor_name = $request->input('vendor_name');
@@ -92,7 +91,8 @@ class VendorController extends Controller
         }
 
         if ($request->hasFile('newavatar')){
-            $path = $request->file('newavatar')->store('avatar');
+            $file = $request->file('newavatar');
+            $path = Storage::putFile('avatar', $file, 'public');
             Storage::delete($vendor->image);
             $vendor->image = $path;
         }
