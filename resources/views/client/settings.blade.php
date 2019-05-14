@@ -11,6 +11,7 @@
         @csrf
         @method('PATCH')
         <div class="card-content">
+        	<span class="card-title">Modifica il tuo profilo</span>
           <div class="row">
             <div class="input-field col s12">
               <label for="client_name">Nome</label>
@@ -47,4 +48,7 @@
       </form>
     </div>
   </div>
+@endsection
+@section('scripts')
+<script type="text/javascript" src="{{ asset('js/clienthome.js') }}"></script>
 @endsection

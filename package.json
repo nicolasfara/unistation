@@ -25,6 +25,7 @@
     },
     "dependencies": {
         "laravel-echo": "^1.5.3",
+        "laravel-echo-server": "^1.5.2",
         "materialize-css": "^1.0.0-rc.2",
         "materialize-social": "^1.0.3",
         "materialize-social-scss": "0.0.2",
