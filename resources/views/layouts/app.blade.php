@@ -15,9 +15,7 @@
   </head>
 
   <body>
-    <!--@include('includes.nav')-->
     @yield('nav')
-    <!-- @include('includes.partials.messages')-->
     <main>
       @yield('content')
     </main>
