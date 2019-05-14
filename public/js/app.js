@@ -86,6 +86,7 @@
 /************************************************************************/
 /******/ ({
 
+<<<<<<< HEAD
 /***/ "./node_modules/laravel-echo/dist/echo.js":
 /*!************************************************!*\
   !*** ./node_modules/laravel-echo/dist/echo.js ***!
@@ -215,10 +216,19 @@ var Connector = function () {
     }]);
     return Connector;
 }();
+=======
+/***/ "./resources/js/app.js":
+/*!*****************************!*\
+  !*** ./resources/js/app.js ***!
+  \*****************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+>>>>>>> 980991a403d68ff2dab8827c56aa93f8c774b0c3
 
 /**
  * This class represents a basic channel.
  */
+<<<<<<< HEAD
 var Channel = function () {
   function Channel() {
     classCallCheck(this, Channel);
@@ -1361,6 +1371,8 @@ __webpack_require__.r(__webpack_exports__);
  * includes Vue and other libraries. It is a great starting point when
  * building robust, powerful web applications using Vue and Laravel.
  */
+=======
+>>>>>>> 980991a403d68ff2dab8827c56aa93f8c774b0c3
 //require('./materialize.min')
 //require('./nav')
 //require('./home')
@@ -1382,6 +1394,7 @@ __webpack_require__.r(__webpack_exports__);
 //  show_card_fadein()
 //});
 
+<<<<<<< HEAD
 window.Echo = new laravel_echo__WEBPACK_IMPORTED_MODULE_0__["default"]({
   broadcaster: 'pusher',
   key: "4a06878a7e2abf7e04df",
@@ -1394,6 +1407,8 @@ window.Echo = new laravel_echo__WEBPACK_IMPORTED_MODULE_0__["default"]({
   }
 });
 
+=======
+>>>>>>> 980991a403d68ff2dab8827c56aa93f8c774b0c3
 /***/ }),
 
 /***/ "./resources/sass/app.scss":
@@ -1414,8 +1429,8 @@ window.Echo = new laravel_echo__WEBPACK_IMPORTED_MODULE_0__["default"]({
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! /home/nicolas/Documents/uni/tec-web/unistation/resources/js/app.js */"./resources/js/app.js");
-module.exports = __webpack_require__(/*! /home/nicolas/Documents/uni/tec-web/unistation/resources/sass/app.scss */"./resources/sass/app.scss");
+__webpack_require__(/*! /home/martina/Documents/uni/tec-web/unistation/resources/js/app.js */"./resources/js/app.js");
+module.exports = __webpack_require__(/*! /home/martina/Documents/uni/tec-web/unistation/resources/sass/app.scss */"./resources/sass/app.scss");
 
 
 /***/ })
