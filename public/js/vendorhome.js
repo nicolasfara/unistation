@@ -33,6 +33,8 @@ document.addEventListener('DOMContentLoaded', function() {
   M.Modal.init(modal, {  });
   var sidenav = document.querySelectorAll('.sidenav');
   M.Sidenav.init(sidenav, {  });
+  var collapsible = document.querySelectorAll('.collapsible');
+  M.Collapsible.init(collapsible, {  });
 
   document.getElementById("editprofile-btn").addEventListener("click", show_vendor_edit_profile);
   document.getElementById("vendor-order-btn").addEventListener("click", show_vendor_orders);
