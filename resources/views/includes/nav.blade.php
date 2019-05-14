@@ -8,7 +8,7 @@
       @else
       <ul id="user-dropdown" class="dropdown-content">
         <li><a href="#!"><i class="material-icons">shop</i>Ordini</a></li>
-        <li><a href="#!"><i class="material-icons">settings</i>Gestisci profilo</a></li>
+        <li><a href="{{ url('client/settings') }}"><i class="material-icons">settings</i>Gestisci profilo</a></li>
         <li class="divider" tabindex="-1"></li>
         <li><a onclick="event.preventDefault(); document.getElementById('logout-form').submit();"><i class="material-icons">exit_to_app</i>{{ __('Logout') }}</a></li>
       </ul>
@@ -33,7 +33,7 @@
   <li><a href="#!"><i class="material-icons">shopping_cart</i>Carrello</a></li>
   <li class="divider" tabindex="-1"></li>
   <li><a href="#!"><i class="material-icons">shop</i>Ordini</a></li>
-  <li><a href="#!"><i class="material-icons">settings</i>Gestisci profilo</a></li>
+  <li><a href="{{ url('client/settings') }}"><i class="material-icons">settings</i>Gestisci profilo</a></li>
   <li class="divider" tabindex="-1"></li>
   <li><a onclick="event.preventDefault(); document.getElementById('logout-form').submit();"><i class="material-icons">exit_to_app</i>{{ __('Logout') }}</a>
   @endguest
