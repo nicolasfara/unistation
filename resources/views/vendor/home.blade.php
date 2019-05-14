@@ -63,5 +63,20 @@ header, main, footer {
 @endsection
 
 @section('scripts')
+<script src="https://js.pusher.com/4.4/pusher.min.js"></script>
 <script type="text/javascript" src="{{ asset('js/vendorhome.js') }}"></script>
+<!--script type="text/javascript" src="{{ asset('js/vendor-order.js') }}"></script-->
+<script type="text/javascript">
+Pusher.logToConsole = true;
+
+var pusher = new Pusher('4a06878a7e2abf7e04df', {
+  cluster: 'eu',
+  forceTLS: true
+});
+
+var channel = pusher.subscribe('unistation-development');
+channel.bind('App\\Events\\OrderMade', data => {
+  console.log(data.message)
+});
+</script>
 @endsection
