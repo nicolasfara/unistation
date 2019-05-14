@@ -5,9 +5,7 @@
 @endsection
 
 @section('content')
-<div class="container">
-  <h1>Modifica profilo</h1>
-  <div class="valign-wrapper row login-box">
+  <div class="valign-wrapper row register-box">
     <div class="col card hoverable s10 pull-s1 m6 pull-m3 l4 pull-l4">
       <form class="form-horizontal" enctype="multipart/form-data" method="POST" action="{{ route('client-edit.update', Auth::id()) }}">
         @csrf
@@ -49,6 +47,4 @@
       </form>
     </div>
   </div>
-</div>
-
 @endsection
