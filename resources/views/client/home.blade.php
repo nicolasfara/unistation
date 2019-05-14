@@ -23,23 +23,27 @@
             <div class="col s12 m4">
               <div class="card">
                 <div class="card-image">
-                  <img class="responsive-img" src="{{ asset('images/placeholders/image-placeholder-350x350.png') }}">
-                  <a class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">send</i></a>
-                </div>
-                <div class="card-content">
-                  <span class="card-title">{{ $product->name }}</span>
-                  <p>I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.</p>
-                </div>
+                 @if($product->image != null)
+                 <img src="{{ Storage::url($product->image) }}" alt="" class="circle responsive-img">
+                 @else
+                 <img src="https://s3-eu-west-1.amazonaws.com/unistation/placeholders/imageprofile-placeholder-350x350.png" alt="" class="circle responsive-img">
+                 @endif
+                 <a class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">add_shopping_cart</i></a>
+               </div>
+               <div class="card-content" >
+                <span class="card-title center-align">{{ $product->name }}</span>
+                <p class="right-align">{{ $product->price }}&euro;</p>
               </div>
             </div>
-            @endif
-            @endforeach
           </div>
+          @endif
+          @endforeach
         </div>
-        @endforeach
       </div>
+      @endforeach
     </div>
   </div>
+</div>
 </div>
 @endsection
 
