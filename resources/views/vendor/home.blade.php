@@ -63,5 +63,7 @@ header, main, footer {
 @endsection
 
 @section('scripts')
+<script type="text/javascript" src="{{ asset('js/app.js') }}"></script>
 <script type="text/javascript" src="{{ asset('js/vendorhome.js') }}"></script>
+<script type="text/javascript" src="{{ asset('js/vendor-order.js') }}"></script>
 @endsection
