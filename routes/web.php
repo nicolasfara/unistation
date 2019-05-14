@@ -56,7 +56,7 @@ Route::group(['prefix' => 'client'], function () {
   Route::get('/password/reset/{token}', 'ClientAuth\ResetPasswordController@showResetForm');
 
   Route::get('/settings', 'ClientSettingsController@showClientSettings')->name('settings');
-  Route::get('/orders', 'ClientOrdersController@showClientOrders')->name('clientorders');
+  Route::get('/orders', 'ClientOrdersController@showClientOrders')->name('orders');
   Route::get('/cart', 'CartController@showCart')->name('cart');
 });
 

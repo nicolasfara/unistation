@@ -15,7 +15,7 @@ class ClientOrdersController extends Controller
         LogsoutGuard::logout insteadof AuthenticatesUsers;
     }
 
-    public $redirectTo = '/client/clientorders';
+    public $redirectTo = '/client/orders';
 
     public function __construct() {
         //$this->middleware('client.guest', ['except' => 'logout']);
@@ -23,7 +23,7 @@ class ClientOrdersController extends Controller
     }
 
     public function showClientOrders() {
-        return view('client.clientorders');
+        return view('client.orders');
     }
 }
 
