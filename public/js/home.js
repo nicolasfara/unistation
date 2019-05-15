@@ -49,6 +49,8 @@ document.addEventListener('DOMContentLoaded', function() {
   M.FormSelect.init(select, {  });
   var dropdowns = document.querySelectorAll('.dropdown-trigger')
   M.Dropdown.init(dropdowns);
+  var cart = document.querySelectorAll('.shopping-cart')
+  M.Dropdown.init(cart);
   console.log('Components initialized')
 
   //
