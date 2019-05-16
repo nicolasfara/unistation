@@ -7,7 +7,6 @@
 @section('content')
 <div class="container">
   <div class="row">
-
     <table id="cart" class="table table-hover table-condensed centered">
       <thead>
         <tr>
