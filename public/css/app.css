@@ -9642,6 +9642,23 @@ input[type=range]::-ms-thumb {
   background-color: #9412cd !important;
 }
 
+.badge {
+  background-color: #e0e0e0;
+  border-radius: 25px;
+  color: black;
+  display: inline-block;
+  font-size: 12px;
+  line-height: 1;
+  padding: 3px 7px;
+  text-align: center;
+  vertical-align: middle;
+  white-space: nowrap;
+}
+
+span.badge {
+  color: 616161;
+}
+
 body {
   display: flex;
   min-height: 100vh;
