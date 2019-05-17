@@ -21,20 +21,18 @@
                  <tbody>
                   <tr>
                     <td>Tagliatelle al ragù</td>
-                     <td data-th="Quantità">
-              <form class="input_qta">
-                <input type="number" name="quantity"
-                min="1" max="100" step="1" value="1">
-              </form>
-            </td>
+                    <td data-th="Quantità">
+                      <form class="input_qta">
+                        <input type="number" name="quantity"
+                        min="1" max="100" step="1" value="1">
+                      </form>
+                    </td>
                     <td>5 €</td>
                     <td><a class="waves-effect waves-light btn "><i class="material-icons">refresh</i></a></td>
                     <td><a class="waves-effect waves-light btn "><i class="material-icons"> delete</i></a></td>
                   </tr>
                 </tbody>
               </table>
-
-
             </div>
           </div>
         </div>
