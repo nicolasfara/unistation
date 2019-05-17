@@ -22,10 +22,10 @@
                   <tr>
                     <td>Tagliatelle al ragù</td>
                     <td data-th="Quantità">
-                      <form class="input_qta">
-                        <input type="number" name="quantity"
-                        min="1" max="100" step="1" value="1">
-                      </form>
+                      <div class="input-field col s6">
+                        <input name="new_quantity" id="new_quantity" type="number" step="1" class="validate">
+                        <label for="new_dish_price">Quantità</label>
+                      </div>
                     </td>
                     <td>5 €</td>
                     <td><a class="waves-effect waves-light btn "><i class="material-icons">refresh</i></a></td>
