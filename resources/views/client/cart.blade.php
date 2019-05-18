@@ -59,7 +59,7 @@
                   <td id=tot>{{ Cart::session(Auth::id())->getTotal() }}&euro;</td>
                 </tr>
                 <tr>
-                  <td><button class="btn waves-effect waves-light" type="submit" name="action" href="{{ url('client/payment') }}">Checkout<i class="material-icons right">send</i> </button></td>
+                  <td><a class="btn waves-effect waves-light" type="submit" name="action" href="{{ url('client/payment') }}">Checkout<i class="material-icons right">send</i> </a></td>
                </tr>
              </tbody>
            </table>
