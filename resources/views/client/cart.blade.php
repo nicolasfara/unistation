@@ -20,7 +20,7 @@
                  </thead>
                  <tbody>
                   @foreach($cart_content as $elem)
-                  <tr>
+                  <tr id="row-{{ $elem->id }}">
                     <td>{{ $elem->name }}</td>
                     <td data-th="Quantità">
                       <div class="input-field col s6">
@@ -30,7 +30,7 @@
                     </td>
                     <td>{{ $elem->price }}&euro;</td>
                     <td><a class="waves-effect waves-light btn "><i class="material-icons">refresh</i></a></td>
-                    <td><a class="waves-effect waves-light btn "><i class="material-icons"> delete</i></a></td>
+                    <td><a onclick="removeFromCart({{ $elem->id }})"class="waves-effect waves-light btn "><i class="material-icons">delete</i></a></td>
                   </tr>
                   @endforeach
                 </tbody>
@@ -59,7 +59,7 @@
                   <td>{{ Cart::session(Auth::id())->getTotal() }}€</td>
                 </tr>
                 <tr>
-                  <td> <button class="btn waves-effect waves-light" type="submit" name="action" href="{{ url('client/payment') }}">Checkout<i class="material-icons right">send</i> </button></td>
+                  <td><button class="btn waves-effect waves-light" type="submit" name="action" href="{{ url('client/payment') }}">Checkout<i class="material-icons right">send</i> </button></td>
                </tr>
              </tbody>
            </table>
@@ -75,5 +75,19 @@
 @endsection
 @section('scripts')
 <script type="text/javascript" src="{{ asset('js/clienthome.js') }}"></script>
+<script>
+function removeFromCart(product_id) {
+  console.log("ok")
+  var req = new HttpClient();
+  req.get("{{ url('client/cart/remove') }}?product_id=" + product_id, function(response) {
+    var cart_qty = document.getElementById('cart_qty')
+    var row = document.getElementById('row-' + product_id)
+    row.parentNode.removeChild(row)
+    console.log("removed")
+    var res_parsed = JSON.parse(response)
+    cart_qty.textContent = res_parsed.cart_qty
+  });
+}
+</script>
 @endsection
 

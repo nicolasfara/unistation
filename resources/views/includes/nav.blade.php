@@ -16,10 +16,8 @@
         <li><a class="dropdown-trigger" href="#!" data-target="user-dropdown">{{ Auth::user()->name }}<i class="material-icons right">arrow_drop_down</i></a></li>
         <li>
           <a href="{{ url('client/cart') }}">
-            <i class="material-icons left">shopping_cart</i>
-            @if(!Cart::session(Auth::id())->isEmpty())
+            <i id="shop" class="material-icons left">shopping_cart</i>
             <span id="cart_qty" class="badge">{{ Cart::session(Auth::id())->getTotalQuantity() }}</span>
-            @endif
           </a>
         </li>
 

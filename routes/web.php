@@ -58,7 +58,8 @@ Route::group(['prefix' => 'client'], function () {
   Route::get('/settings', 'ClientSettingsController@showClientSettings')->name('settings');
   Route::get('/orders', 'ClientOrdersController@showClientOrders')->name('orders');
   Route::get('/cart', 'CartController@showCart')->name('cart');
-  Route::get('/cart/add', 'CartController@addToCart')->name('add.cart');
+  Route::get('/cart/add', 'CartController@addToCart');
+  Route::get('/cart/remove', 'CartController@removeFromCart');
   Route::get('/payment', 'PaymentController@showPayment')->name('client.payment');
 });
 

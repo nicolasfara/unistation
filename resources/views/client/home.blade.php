@@ -54,7 +54,11 @@ function addToCart(product_id) {
   var req = new HttpClient()
   req.get("{{ url('client/cart/add') }}?product_id=" + product_id, function(response) {
     var cart_qty = document.getElementById('cart_qty')
+    if (cart_qty.style.display === 'none') {
+      cart_qty.style.display = 'block'
+    }
     var res_parsed = JSON.parse(response)
+    console.log(res_parsed.cart_qty)
     cart_qty.textContent = res_parsed.cart_qty
     M.toast({html: 'Prodotto aggiunto', classes: 'rounded'})
   })

@@ -41,18 +41,20 @@ class CartController extends Controller
             'quantity' => 1,
             'attributes' => array()
         ));
-        Log::debug('Element succesfully add to cart');
-        Log::debug(Cart::getContent());
-        //return response(Cart::Session(Auth::id)->getTotalQuantity(), 200)->header('Content-Type', 'text/plain');
         $cart_qty = Cart::session(Auth::id())->getTotalQuantity();
+        Log::debug($cart_qty);
         return response()->json([
             'cart_qty' => $cart_qty,
         ]);
     }
 
     public function removeFromCart() {
+        Log::debug("Removed");
         Cart::session(Auth::id())->remove(Input::get('product_id'));
-        return response(Cart::Session(Auth::id)->getTotalQuantity(), 200)->header('Content-Type', 'text/plain');
+        $cart_qty = Cart::session(Auth::id())->getTotalQuantity();
+        return response()->json([
+            'cart_qty' => $cart_qty,
+        ]);
     }
 }
 
