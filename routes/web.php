@@ -60,6 +60,7 @@ Route::group(['prefix' => 'client'], function () {
   Route::get('/cart', 'CartController@showCart')->name('cart');
   Route::get('/cart/add', 'CartController@addToCart');
   Route::get('/cart/remove', 'CartController@removeFromCart');
+  Route::get('/cart/update', 'CartController@updateQuantity');
   Route::get('/payment', 'PaymentController@showPayment')->name('client.payment');
 });
 

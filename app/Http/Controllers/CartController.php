@@ -56,6 +56,23 @@ class CartController extends Controller
             'cart_qty' => $cart_qty,
         ]);
     }
+
+    public function updateQuantity(){
+        Cart::session(Auth::id())->update(Input::get('product_id'), array(
+            'quantity' => array(
+                'relative' => false,
+                'value' =>  Input::get('quantity')
+            ),
+        ));
+        $cart_qty = Cart::session(Auth::id())->getTotalQuantity();
+        $stot = Cart::session(Auth::id())->getSubTotal();
+        $tot = Cart::session(Auth::id())->getTotal();
+        return response()->json([
+            'cart_qty' => $cart_qty,
+            'stot' => $stot,
+            'tot' => $tot,
+        ]);
+    }
 }
 
 // vim: set ts=4 sw=4 :
