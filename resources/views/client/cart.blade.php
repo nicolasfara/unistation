@@ -57,7 +57,7 @@
                   <td>7 €</td>
                 </tr>
                 <tr>
-                 <td> <button class="btn waves-effect waves-light" type="submit" name="action">Checkout<i class="material-icons right">send</i> </button></td>
+                  <td> <button class="btn waves-effect waves-light" type="submit" name="action" href="{{ url('client/payment') }}">Checkout<i class="material-icons right">send</i> </button></td>
                </tr>
              </tbody>
            </table>
