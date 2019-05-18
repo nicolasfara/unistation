@@ -19,18 +19,20 @@
                    <h5 class="center">Il tuo carrello</h5>
                  </thead>
                  <tbody>
+                  @foreach($cart_content as $elem)
                   <tr>
-                    <td>Tagliatelle al ragù</td>
+                    <td>{{ $elem->name }}</td>
                     <td data-th="Quantità">
                       <div class="input-field col s6">
-                        <input name="new_quantity" id="new_quantity" type="number" step="1" class="validate">
+                        <input name="new_quantity" id="new_quantity" type="number" step="1" class="validate" value="{{ $elem->quantity }}">
                         <label for="new_dish_price">Quantità</label>
                       </div>
                     </td>
-                    <td>5 €</td>
+                    <td>{{ $elem->price }}&euro;</td>
                     <td><a class="waves-effect waves-light btn "><i class="material-icons">refresh</i></a></td>
                     <td><a class="waves-effect waves-light btn "><i class="material-icons"> delete</i></a></td>
                   </tr>
+                  @endforeach
                 </tbody>
               </table>
             </div>
@@ -46,15 +48,15 @@
               <tbody>
                 <tr>
                   <td>Subtotale</td>
-                  <td>5 €</td>
+                  <td>{{ Cart::session(Auth::id())->getSubTotal() }}&euro;</td>
                 </tr>
                 <tr>
                   <td>Spese di spedizione</td>
-                  <td>2 €</td>
+                  <td>Gratis</td>
                 </tr>
                 <tr>
                   <td>Totale</td>
-                  <td>7 €</td>
+                  <td>{{ Cart::session(Auth::id())->getTotal() }}€</td>
                 </tr>
                 <tr>
                   <td> <button class="btn waves-effect waves-light" type="submit" name="action" href="{{ url('client/payment') }}">Checkout<i class="material-icons right">send</i> </button></td>

@@ -28,7 +28,7 @@
                  @else
                  <img src="https://s3-eu-west-1.amazonaws.com/unistation/placeholders/imageprofile-placeholder-350x350.png" alt="" class="circle responsive-img">
                  @endif
-                 <a class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">add_shopping_cart</i></a>
+                 <a id"add_btn" onclick="addToCart({{ $product->id }})" class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">add_shopping_cart</i></a>
                </div>
                <div class="card-content" >
                 <span class="card-title center-align">{{ $product->name }}</span>
@@ -49,4 +49,15 @@
 
 @section('scripts')
 <script type="text/javascript" src="{{ asset('js/clienthome.js') }}"></script>
+<script>
+function addToCart(product_id) {
+  var req = new HttpClient()
+  req.get("{{ url('client/cart/add') }}?product_id=" + product_id, function(response) {
+    var cart_qty = document.getElementById('cart_qty')
+    var res_parsed = JSON.parse(response)
+    cart_qty.textContent = res_parsed.cart_qty
+    M.toast({html: 'Prodotto aggiunto', classes: 'rounded'})
+  })
+}
+</script>
 @endsection
