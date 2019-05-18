@@ -16,7 +16,7 @@
           <i class="fa fa-instagram"></i> Sign in with instagram</a>
       </div>
       <div class="col l4 s12">
-        <h5 class="white-text">Hai un'attività? Unisiciti a noi!</h5>
+        <h5 class="white-text">Hai un'attività? Unisciti a noi!</h5>
         <ul>
           <li><a class="grey-text text-lighten-3" href="{{ url('vendor/register') }}">Registrati</a></li>
           <li><a class="grey-text text-lighten-3" href="{{ url('vendor/login') }}">Accedi</a></li>

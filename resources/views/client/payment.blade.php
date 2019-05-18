@@ -5,9 +5,11 @@
 @endsection
 
 @section('content')
-<div class="container pippo" >
-  <div class="row">
-    <div class="col-sm-12">
+<div class="section no-pad-bot" id="index-banner">
+  <div class="container">
+    <div class="row">
+      <div class="section no-pad-bot" id="index-banner">
+        <div id="" class="col s12">
       <h4>Completa ordine</h4>
     </div>
   </div>
@@ -43,13 +45,13 @@
         <input type="text" name="intestatario" class="form-control" id="intestatario" value="" placeholder="Nome e cognome intestatario">
       </div>
     </div>
-    
+
     <div class="row">
       <div class="col-sm-12">
         <p>Data di scadenza</p>
       </div>
     </div>
-    
+
     <div class="row">
       <div class="col-sm-2">
         <div class="form-group">
@@ -110,6 +112,8 @@
     </div>
   </form>
 
+</div>
+</div>
 </div>
 @endsection
 @section('scripts')
