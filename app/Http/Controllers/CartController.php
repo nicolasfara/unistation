@@ -52,16 +52,22 @@ class CartController extends Controller
         Log::debug("Removed");
         Cart::session(Auth::id())->remove(Input::get('product_id'));
         $cart_qty = Cart::session(Auth::id())->getTotalQuantity();
+        $cart_qty = Cart::session(Auth::id())->getTotalQuantity();
+        $stot = Cart::session(Auth::id())->getSubTotal();
+        $tot = Cart::session(Auth::id())->getTotal();
         return response()->json([
             'cart_qty' => $cart_qty,
+            'stot' => $stot,
+            'tot' => $tot,
         ]);
     }
 
     public function updateQuantity(){
+        Log::debug("Update");
         Cart::session(Auth::id())->update(Input::get('product_id'), array(
             'quantity' => array(
                 'relative' => false,
-                'value' =>  Input::get('quantity')
+                'value' => Input::get('quantity')
             ),
         ));
         $cart_qty = Cart::session(Auth::id())->getTotalQuantity();

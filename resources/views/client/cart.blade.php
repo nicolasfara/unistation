@@ -24,13 +24,13 @@
                     <td>{{ $elem->name }}</td>
                     <td data-th="Quantità">
                       <div class="input-field col s6">
-                        <input name="qty" id="new_quantity" type="number" step="1" class="validate" value="{{ $elem->quantity }}">
+                        <input name="qty" id="new_quantity_{{ $elem->id }}" type="number" step="1" class="validate" value="{{ $elem->quantity }}">
                         <label for="qty">Quantità</label>
                       </div>
                     </td>
                     <td>{{ $elem->price }}&euro;</td>
                     <td><a onclick="updateQuantity({{ $elem->id }})" class="waves-effect waves-light btn "><i class="material-icons">refresh</i></a></td>
-                    <td><a onclick="removeFromCart({{ $elem->id }})"class="waves-effect waves-light btn "><i class="material-icons">delete</i></a></td>
+                    <td><a onclick="removeFromCart({{ $elem->id }})" class="waves-effect waves-light btn "><i class="material-icons">delete</i></a></td>
                   </tr>
                   @endforeach
                 </tbody>
@@ -81,17 +81,19 @@ function removeFromCart(product_id) {
   var req = new HttpClient();
   req.get("{{ url('client/cart/remove') }}?product_id=" + product_id, function(response) {
     var cart_qty = document.getElementById('cart_qty')
+    var subtot = document.getElementById('subtot')
+    var tot = document.getElementById('tot')
     var row = document.getElementById('row-' + product_id)
     row.parentNode.removeChild(row)
-    console.log("removed")
     var res_parsed = JSON.parse(response)
     cart_qty.textContent = res_parsed.cart_qty
+    subtot.textContent = res_parsed.stot + '\u20AC'
+    tot.textContent = res_parsed.tot + '\u20AC'
   });
 }
 
-
 function updateQuantity(product_id) {
-  var quantity = document.getElementById('new_quantity').value
+  var quantity = document.getElementById('new_quantity_' + product_id).value
   var req = new HttpClient();
   req.get("{{ url('client/cart/update') }}?product_id=" + product_id +"&quantity=" + quantity, function(response) {
     var cart_qty = document.getElementById('cart_qty')
