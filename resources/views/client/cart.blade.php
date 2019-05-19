@@ -77,7 +77,6 @@
 <script type="text/javascript" src="{{ asset('js/clienthome.js') }}"></script>
 <script>
 function removeFromCart(product_id) {
-  console.log("ok")
   var req = new HttpClient();
   req.get("{{ url('client/cart/remove') }}?product_id=" + product_id, function(response) {
     var cart_qty = document.getElementById('cart_qty')
