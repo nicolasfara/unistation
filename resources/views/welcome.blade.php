@@ -16,15 +16,15 @@
     <div class="section">
       <div class="row">
         <div class="col s12 m6 l4 center-align">
-          <div class="card">
-            <div class="card-image">
+          <!--div class="card">
+            <div class="card-image"-->
               <i class="material-icons" style="font-size: 130px;">edit</i>
               <!--img src="{{ asset('images/logos/First.png') }}" class="responsive-img" alt="first-logo"-->
-            </div>
-            <div class="card-content">
+            <!--/div>
+            <div class="card-content"-->
               <h4>Registrati</h4>
-            </div>
-          </div>
+            <!--/div>
+          </div-->
         </div>
         <div class="col s12 m6 l4 center-align">
           <div class="card">
