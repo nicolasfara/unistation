@@ -12,34 +12,26 @@
         <span class="card-title">Completa Ordine</span>
         <div class="row">
           <div class="input-field col s12">
-
             <form action="#">
-              <p>
-                <label>
+              <div  class="col s4">
+                <label class="radio-inline">
                   <input name="group1" type="radio" checked />
-                  <span>Mastercard</span>
+                  <span><i class=" fa fa-cc-mastercard  fa-2x"></i></span>
                 </label>
-              </p>
-              <p>
-                <label>
+              </div>
+              <div  class="col s4">
+                <label class="radio-inline">
                   <input name="group1" type="radio" />
-                  <span>Visa</span>
+                  <span><i class="fa fa-cc-visa fa-2x"></i></span>
                 </label>
-              </p>
-              <p>
-                <label>
-                  <input class="with-gap" name="group1" type="radio"  />
-                  <span>PayPal</span>
+              </div>
+              <div  class="col s4">
+                <label class="radio-inline">
+                  <input name="group1" type="radio" />
+                  <span><i class="fa fa-cc-paypal fa-2x"></i></span>
                 </label>
-              </p>
-            </form>
-
-          </div>
-        </div>
-        <div class="row">
-          <div class="input-field col s12">
-            <label for="number_card">Numero carta</label>
-            <input type="text" class="validate" name="number_card" id="number_card" value=""/>
+              </div>
+            </form> 
           </div>
         </div>
         <div class="row">
@@ -49,34 +41,42 @@
           </div>
         </div>
         <div class="row">
+          <div class="input-field col s6">
+            <label for="number_card">Numero carta</label>
+            <input type="text" class="validate" name="number_card" id="number_card" value=""/>
+          </div>
+          <div class="input-field col s6">
+            <input name="cvv" id="cvv" type="text" class="validate" >
+            <label for="cvv">CVV</label>
+          </div>
+        </div>
+        <div class="row">
           <div class="col-sm-2">
             <div class="input-field col s6">
-              <input name="qty" id="new_quantity" type="number" step="1" min="1" max="12" class="validate" value="">
-              <label for="qty">Mese scadenza</label>
+              <input name="monnth" id="month" type="number" step="1" min="1" max="12" class="validate" value="">
+              <label for="month">Mese scadenza</label>
             </div>
           </div>
-               <div class="input-field col s6">
-              <input name="qty" id="new_quantity" type="number" step="1" min="2019" max="2025" class="validate" value="">
-              <label for="qty">Anno scadenza</label>
-            </div>
+          <div class="input-field col s6">
+            <input name="year" id="year" type="number" step="1" min="2019" max="2030" class="validate" value="">
+            <label for="year">Anno scadenza</label>
           </div>
-          <div class="row">
-            <div class="col-sm-2">
-              <h5>Totale : 7 euro</h5>
-            </div>
-          </div>
-
-
         </div>
-
-        <div class="card-action right-align">
-          <input type="submit" class="btn teal lighten-1 waves-effect waves-light" value="Paga ora">
+        <div class="row">
+          <div class="col s12 right-align">
+            <h5>Totale : 7 euro</h5>
+          </div>
         </div>
-      </form>
-    </div>
+      </div>
+
+      <div class="card-action right-align">
+        <input type="submit" class="btn teal lighten-1 waves-effect waves-light" value="Paga ora">
+      </div>
+    </form>
   </div>
-  @endsection
-  @section('scripts')
-  <script type="text/javascript" src="{{ asset('js/clienthome.js') }}"></script>
-  @endsection
+</div>
+@endsection
+@section('scripts')
+<script type="text/javascript" src="{{ asset('js/clienthome.js') }}"></script>
+@endsection
 

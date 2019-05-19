@@ -9690,3 +9690,9 @@ body {
   display: block;
 }
 
+@media only screen and (max-width: 600px) {
+  .fa {
+    font-size: 1.33em;
+  }
+}
+
