@@ -45,7 +45,7 @@ class PaymentController extends Controller
         $cart_content = Cart::session(Auth::id())->getContent();
 
         $new_order = new Order();
-        $new_order->user_id = Auth::id();
+        $new_order->client_id = Auth::id();
         $new_order->delivered = false;
         $new_order->order_created_at = Carbon::now();
         $new_order->delivery_info = Carbon::create(2019, 05, 19, 23, 14, 17, 'Europe/Rome'); //TODO: fix with real value
