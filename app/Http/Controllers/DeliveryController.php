@@ -27,7 +27,7 @@ class DeliveryController extends Controller
         $order_query->save();
 
         Log::debug("saved");
-        $client = Client::find($order_query->user_id);
+        $client = Client::find($order_query->client_id);
 
         Log::debug($client);
         Mail::to($client)->send(new OrderShipped());

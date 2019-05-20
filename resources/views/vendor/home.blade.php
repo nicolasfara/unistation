@@ -94,7 +94,6 @@ channel.bind('App\\Events\\OrderMade', data => {
 });
 
 function delivered(order_id) {
-  //TODO: send DB request for activate delivery flag
   console.log('Delivered')
   var req = new HttpClient()
   req.get("{{ url('vendor/order-delivered') }}?order_id=" + order_id, function(response) {
@@ -103,6 +102,7 @@ function delivered(order_id) {
     //  badge.parentNode.removeChild(badge)
     //M.toast({html: 'Ordine spedito!'})
     location.reload()
+    console.log("refresh")
   })
 }
 </script>
