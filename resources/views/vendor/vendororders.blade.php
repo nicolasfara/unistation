@@ -20,10 +20,12 @@
 
           <tbody>
             @foreach($order->products as $prod)
+            @if(in_array($prod->id, $avail_prod))
             <tr>
               <td>{{ $prod->name }}</td>
               <td>{{ $prod->pivot->quantity }}</td>
             </tr>
+            @endif
             @endforeach
           </tbody>
         </table>

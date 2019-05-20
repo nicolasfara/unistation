@@ -35,7 +35,7 @@ header, main, footer {
     </div>
   </li>
   <li><div class="divider"></div></li>
-  <li><a id="vendor-order-btn" class="sidenav-close waves-effect"><i class="material-icons">local_mall</i>Richieste ordini</a></li>
+  <li><a onclick="closeBadge()" id="vendor-order-btn" class="sidenav-close waves-effect"><i class="material-icons">local_mall</i>Richieste ordini</a></li>
   <li><a id="vendor-edit-products-btn" class="sidenav-close waves-effect"><i class="material-icons">mode_edit</i>Gestisci prodotti</a></li>
   <li><div class="divider"></div></li>
   <li><a class="subheader">Impostazioni</a></li>
@@ -81,10 +81,16 @@ channel.bind('App\\Events\\OrderMade', data => {
   console.log(data)
   if (data.vendors.includes({{ Auth::id() }})) {
     var btn = document.getElementById('vendor-order-btn')
-    btn.insertAdjacentHTML('beforeend', "<span class='new badge'></span>")
+    btn.insertAdjacentHTML('beforeend', "<span id="new-badge" class='new badge'></span>")
     location.reload()
   }
 });
+
+function closeBadge() {
+  var badge = document.getElementById('new-badge')
+  if (badge != null)
+    badge.parentNode.removeChild(badge)
+}
 
 function delivered(order_id) {
   //TODO: send DB request for activate delivery flag

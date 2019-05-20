@@ -70,7 +70,6 @@ class PaymentController extends Controller
 
         return redirect()->route('client.home');
     }
-
 }
 
 
