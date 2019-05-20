@@ -94,20 +94,20 @@
       <form id="add-product-form" class="col s12" action="{{ url('products') }}" method="POST">
         @csrf
         <div class="row">
-          <div class="input-field col s8">
+          <div class="input-field col s4 m8">
             <input name="new_dish_name" id="new_dish_name" type="text" class="validate">
             <label for="new_dish_name">Nome Piatto</label>
           </div>
-          <div class="input-field col s2">
+          <div class="input-field col s4 m2">
             <select name="new_type">
-              <option value="" disabled selected>Seleziona tipo</option>
+              <option value="" disabled selected>Tipo</option>
               @foreach($types as $type)
               <option value="{{ $type }}">{{ $type }}</option>
               @endforeach
             </select>
             <label>Tipo prodotto</label>
           </div>
-          <div class="input-field col s2">
+          <div class="input-field col s4 m2">
             <input name="new_dish_price" id="new_dish_price" type="number" step="0.01" class="validate">
             <label for="new_dish_price">Prezzo</label>
           </div>
