@@ -79,6 +79,11 @@ channel.bind('App\\Events\\OrderMade', data => {
   console.log(data.message)
   var data = JSON.parse(data.message)
   console.log(data)
+  if (data.vendors.includes({{ Auth::id() }})) {
+    var btn = document.getElementById('vendor-order-btn')
+    btn.insertAdjacentHTML('beforeend', "<span class='new badge'></span>")
+    location.reload()
+  }
 });
 
 function delivered(order_id) {
