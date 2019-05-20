@@ -99,7 +99,7 @@
             <label for="new_dish_name">Nome Piatto</label>
           </div>
           <div class="input-field col s2">
-            <select name="new_type" required>
+            <select name="new_type">
               <option value="" disabled selected>Seleziona tipo</option>
               @foreach($types as $type)
               <option value="{{ $type }}">{{ $type }}</option>

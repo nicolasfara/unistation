@@ -35,6 +35,8 @@ document.addEventListener('DOMContentLoaded', function() {
   M.Sidenav.init(sidenav, {  });
   var collapsible = document.querySelectorAll('.collapsible');
   M.Collapsible.init(collapsible, {  });
+  var select = document.querySelectorAll('select');
+  M.FormSelect.init(select, {  });
 
   document.getElementById("editprofile-btn").addEventListener("click", show_vendor_edit_profile);
   document.getElementById("vendor-order-btn").addEventListener("click", show_vendor_orders);
