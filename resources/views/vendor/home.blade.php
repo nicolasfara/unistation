@@ -35,7 +35,14 @@ header, main, footer {
     </div>
   </li>
   <li><div class="divider"></div></li>
-  <li><a onclick="closeBadge()" id="vendor-order-btn" class="sidenav-close waves-effect"><i class="material-icons">local_mall</i>Richieste ordini</a></li>
+  <li>
+    <a onclick="closeBadge()" id="vendor-order-btn" class="sidenav-close waves-effect">
+      <i class="material-icons">local_mall</i>Richieste ordini
+      @if($new_order_count > 0)
+      <span id="new-badge" class="badge new"></span>
+      @endif
+    </a>
+  </li>
   <li><a id="vendor-edit-products-btn" class="sidenav-close waves-effect"><i class="material-icons">mode_edit</i>Gestisci prodotti</a></li>
   <li><div class="divider"></div></li>
   <li><a class="subheader">Impostazioni</a></li>
@@ -80,8 +87,8 @@ channel.bind('App\\Events\\OrderMade', data => {
   var data = JSON.parse(data.message)
   console.log(data)
   if (data.vendors.includes({{ Auth::id() }})) {
-    var btn = document.getElementById('vendor-order-btn')
-    btn.insertAdjacentHTML('beforeend', "<span id="new-badge" class='new badge'></span>")
+    //var btn = document.getElementById('vendor-order-btn')
+    //btn.insertAdjacentHTML('beforeend', "<span id="new-badge" class='new badge'></span>")
     location.reload()
   }
 });
@@ -97,10 +104,11 @@ function delivered(order_id) {
   console.log('Delivered')
   var req = new HttpClient()
   req.get("{{ url('vendor/order-delivered') }}?order_id=" + order_id, function(response) {
-    var badge = document.getElementById('badge-' + order_id)
-    if (badge != null)
-      badge.parentNode.removeChild(badge)
-    M.toast({html: 'Ordine spedito!'})
+    //var badge = document.getElementById('badge-' + order_id)
+    //if (badge != null)
+    //  badge.parentNode.removeChild(badge)
+    //M.toast({html: 'Ordine spedito!'})
+    location.reload()
   })
 }
 </script>
