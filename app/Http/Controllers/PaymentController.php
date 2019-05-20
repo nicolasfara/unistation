@@ -50,6 +50,7 @@ class PaymentController extends Controller
         $new_order->order_created_at = Carbon::now();
         $new_order->delivery_info = Carbon::create(2019, 05, 19, 23, 14, 17, 'Europe/Rome'); //TODO: fix with real value
         //                                         Y     M   D   H   M   S    TZ
+        $new_order->total = Cart::session(Auth::id())->getTotal();
         $new_order->save();
 
         $products = array();

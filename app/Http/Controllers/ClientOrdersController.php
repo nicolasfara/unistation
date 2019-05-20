@@ -7,6 +7,7 @@ use App\Http\Controllers\Controller;
 use Illuminate\Foundation\Auth\AuthenticatesUsers;
 use Illuminate\Support\Facades\Auth;
 use Hesto\MultiAuth\Traits\LogsoutGuard;
+use App\Client;
 
 class ClientOrdersController extends Controller
 {
@@ -23,7 +24,8 @@ class ClientOrdersController extends Controller
     }
 
     public function showClientOrders() {
-        return view('client.orders');
+        $orders = Client::find(Auth::id())->orders()->get();
+        return view('client.orders', ['orders' => $orders]);
     }
 }
 
