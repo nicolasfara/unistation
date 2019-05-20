@@ -88,7 +88,7 @@
   <a data-target="add-new-product" class="btn-floating btn-large waves-effect waves-light red right modal-trigger"><i class="material-icons">add</i></a>
 
   <!-- Modal Structure -->
-  <div id="add-new-product" class="modal">
+  <div id="add-new-product" class="modal modal-fixed-footer">
     <div class="modal-content">
       <h4>Aggiungi nuovo prodotto</h4>
       <form id="add-product-form" class="col s12" action="{{ url('products') }}" method="POST">

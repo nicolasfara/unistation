@@ -36,7 +36,7 @@ header, main, footer {
   </li>
   <li><div class="divider"></div></li>
   <li>
-    <a onclick="closeBadge()" id="vendor-order-btn" class="sidenav-close waves-effect">
+    <a id="vendor-order-btn" class="sidenav-close waves-effect">
       <i class="material-icons">local_mall</i>Richieste ordini
       @if($new_order_count > 0)
       <span id="new-badge" class="badge new"></span>
@@ -92,12 +92,6 @@ channel.bind('App\\Events\\OrderMade', data => {
     location.reload()
   }
 });
-
-function closeBadge() {
-  var badge = document.getElementById('new-badge')
-  if (badge != null)
-    badge.parentNode.removeChild(badge)
-}
 
 function delivered(order_id) {
   //TODO: send DB request for activate delivery flag
