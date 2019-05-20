@@ -5,7 +5,7 @@
     <div class="collapsible-header">
       Ordine numero: #{{ $order->id }}
       @if($order->delivered == false)
-      <span class="new badge"></span>
+      <span id="badge-{{ $order->id }}" class="new badge"></span>
       @endif
     </div>
     <div class="collapsible-body">
@@ -32,7 +32,7 @@
         Data di consegna: {{ $order->delivery_info }}
       </div>
       <div class="row">
-        <button class="btn">Spedisci</button>
+        <button onclick="delivered({{ $order->id }})" class="btn">Spedisci</button>
       </div>
     </div>
   </li>

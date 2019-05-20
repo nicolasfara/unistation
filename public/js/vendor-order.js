@@ -5,15 +5,16 @@
  * Distributed under terms of the MIT license.
  */
 
-// Enable pusher logging - don't include this in production
-Pusher.logToConsole = true;
+var HttpClient = function() {
+  this.get = function(aUrl, aCallback) {
+    var anHttpRequest = new XMLHttpRequest();
+    anHttpRequest.onreadystatechange = function() {
+      if (anHttpRequest.readyState == 4 && anHttpRequest.status == 200)
+        aCallback(anHttpRequest.responseText);
+    }
 
-var pusher = new Pusher('4a06878a7e2abf7e04df', {
-  cluster: 'eu',
-  forceTLS: true
-});
+    anHttpRequest.open("GET", aUrl, true);
+    anHttpRequest.send(null);
+  }
+}
 
-var channel = pusher.subscribe('unistation-development');
-channel.bind('App\\Events\\OrderMade', data => {
-  console.log('hola')
-});

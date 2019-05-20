@@ -65,7 +65,7 @@ header, main, footer {
 @section('scripts')
 <script src="https://js.pusher.com/4.4/pusher.min.js"></script>
 <script type="text/javascript" src="{{ asset('js/vendorhome.js') }}"></script>
-<!--script type="text/javascript" src="{{ asset('js/vendor-order.js') }}"></script-->
+<script type="text/javascript" src="{{ asset('js/vendor-order.js') }}"></script>
 <script type="text/javascript">
 Pusher.logToConsole = true;
 
@@ -78,7 +78,19 @@ var channel = pusher.subscribe('unistation-development');
 channel.bind('App\\Events\\OrderMade', data => {
   console.log(data.message)
   var data = JSON.parse(data.message)
-  console.log(data.)
+  console.log(data)
 });
+
+function delivered(order_id) {
+  //TODO: send DB request for activate delivery flag
+  console.log('Delivered')
+  var req = new HttpClient()
+  req.get("{{ url('vendor/order-delivered') }}?order_id=" + order_id, function(response) {
+    var badge = document.getElementById('badge-' + order_id)
+    if (badge != null)
+      badge.parentNode.removeChild(badge)
+    M.toast({html: 'Ordine spedito!'})
+  })
+}
 </script>
 @endsection

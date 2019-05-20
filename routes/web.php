@@ -40,6 +40,8 @@ Route::group(['prefix' => 'vendor'], function () {
   Route::get('/password/reset', 'VendorAuth\ForgotPasswordController@showLinkRequestForm')->name('password.reset');
   Route::get('/password/reset/{token}', 'VendorAuth\ResetPasswordController@showResetForm');
 
+  Route::get('/order-delivered', 'DeliveryController@sendNotificationOnDelivery');
+
 });
 
 Route::group(['prefix' => 'client'], function () {
