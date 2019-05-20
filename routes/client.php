@@ -11,9 +11,6 @@ Route::get('/home', function () {
     $types = Product::getProductsType();
     $products = Product::all();
 
-    //Pusher::trigger('unistation-development', 'ordermade', 'hello world');
-    event(new App\Events\OrderMade('Someone'));
-
     return view('client.home', ['types' => $types, 'products' => $products]);
 })->name('home');
 

@@ -7,31 +7,30 @@
 @section('content')
 <div class="valign-wrapper row register-box">
   <div class="col card hoverable s10 pull-s1 m6 pull-m3 l4 pull-l4">
-    <form class="form-horizontal" enctype="multipart/form-data" method="POST" action="">
+    <form class="form-horizontal" enctype="multipart/form-data" method="POST" action="{{ url('client/payment/confirm_order') }}">
+      @csrf
       <div class="card-content">
         <span class="card-title">Completa Ordine</span>
         <div class="row">
           <div class="input-field col s12">
-            <form action="#">
-              <div  class="col s4">
-                <label class="radio-inline">
-                  <input name="group1" type="radio" checked />
-                  <span><i class=" fa fa-cc-mastercard  fa-2x"></i></span>
-                </label>
-              </div>
-              <div  class="col s4">
-                <label class="radio-inline">
-                  <input name="group1" type="radio" />
-                  <span><i class="fa fa-cc-visa fa-2x"></i></span>
-                </label>
-              </div>
-              <div  class="col s4">
-                <label class="radio-inline">
-                  <input name="group1" type="radio" />
-                  <span><i class="fa fa-cc-paypal fa-2x"></i></span>
-                </label>
-              </div>
-            </form> 
+            <div  class="col s4">
+              <label class="radio-inline">
+                <input name="group1" type="radio" checked />
+                <span><i class=" fa fa-cc-mastercard  fa-2x"></i></span>
+              </label>
+            </div>
+            <div  class="col s4">
+              <label class="radio-inline">
+                <input name="group1" type="radio" />
+                <span><i class="fa fa-cc-visa fa-2x"></i></span>
+              </label>
+            </div>
+            <div  class="col s4">
+              <label class="radio-inline">
+                <input name="group1" type="radio" />
+                <span><i class="fa fa-cc-paypal fa-2x"></i></span>
+              </label>
+            </div>
           </div>
         </div>
         <div class="row">

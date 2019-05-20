@@ -77,6 +77,8 @@ var pusher = new Pusher('4a06878a7e2abf7e04df', {
 var channel = pusher.subscribe('unistation-development');
 channel.bind('App\\Events\\OrderMade', data => {
   console.log(data.message)
+  var data = JSON.parse(data.message)
+  console.log(data.)
 });
 </script>
 @endsection

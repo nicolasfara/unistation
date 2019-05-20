@@ -62,6 +62,7 @@ Route::group(['prefix' => 'client'], function () {
   Route::get('/cart/remove', 'CartController@removeFromCart');
   Route::get('/cart/update', 'CartController@updateQuantity');
   Route::get('/payment', 'PaymentController@showPayment')->name('client.payment');
+  Route::post('/payment/confirm_order', 'PaymentController@sendPayment')->name('client.confirm-order');
 });
 
 Route::resource('products', 'ProductController')->middleware('auth:vendor');
