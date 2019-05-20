@@ -38,6 +38,11 @@ class Vendor extends Authenticatable
     {
         $this->notify(new VendorResetPassword($token));
     }
+
+    public function orders()
+    {
+        return $this->belongsToMany('App\Order', 'order_vendor');
+    }
 }
 
 // vim: set ts=4 sw=4 :

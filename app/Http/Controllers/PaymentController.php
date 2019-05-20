@@ -58,6 +58,7 @@ class PaymentController extends Controller
         }
 
         $new_order->products()->attach($products);
+        $new_order->vendors()->attach($this->getVendorsFromCart($cart_content));
 
         $data = array(
             'vendors' => $this->getVendorsFromCart($cart_content),
