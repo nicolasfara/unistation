@@ -7,3 +7,13 @@ body {
   font-weight: bold;
 }
 
+immagine {
+	width: 300px;
+	z-index: -1;
+	border: 2px solid red;
+}
+
+responsive-img {
+	width: 100%; 
+	height: auto;
+}

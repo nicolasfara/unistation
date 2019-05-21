@@ -1,5 +1,6 @@
 <footer class="teal page-footer">
-  <div class="container">
+<div class = "teal">
+  <div class="container teal">
     <div class="row">
       <div class="col l4 s12">
         <h5 class="white-text">Unistation</h5>
@@ -24,6 +25,7 @@
       </div>
     </div>
   </div>
+</div>
   <div class="teal lighten-1 footer-copyright">
     <div class="container">
       © Copyright 2019 Unistation - Tutti i diritti riservati.

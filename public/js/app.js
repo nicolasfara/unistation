@@ -1384,8 +1384,8 @@ __webpack_require__.r(__webpack_exports__);
 
 window.Echo = new laravel_echo__WEBPACK_IMPORTED_MODULE_0__["default"]({
   broadcaster: 'pusher',
-  key: "",
-  cluster: "mt1",
+  key: "4a06878a7e2abf7e04df",
+  cluster: "eu",
   encrypted: true,
   auth: {
     headers: {
@@ -1414,8 +1414,8 @@ window.Echo = new laravel_echo__WEBPACK_IMPORTED_MODULE_0__["default"]({
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! /home/martina/Documents/uni/tec-web/unistation/resources/js/app.js */"./resources/js/app.js");
-module.exports = __webpack_require__(/*! /home/martina/Documents/uni/tec-web/unistation/resources/sass/app.scss */"./resources/sass/app.scss");
+__webpack_require__(/*! C:\Users\andre\Desktop\ProgettoUniStation\unistation\resources\js\app.js */"./resources/js/app.js");
+module.exports = __webpack_require__(/*! C:\Users\andre\Desktop\ProgettoUniStation\unistation\resources\sass\app.scss */"./resources/sass/app.scss");
 
 
 /***/ })
