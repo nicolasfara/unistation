@@ -10,10 +10,28 @@
 	<img class="responsive-img" src="{{ asset('images/food.jpg') }}" style = "width: auto; height: 100%;">
   </div> -->
     <div class="container">
+	  <div class="carousel carousel-slider center">
+		<div class="carousel-fixed-item center">
+		  <img class="responsive-img" src="{{ asset('images/logo.png') }}" style = "display: block; margin-left: auto; margin-right: auto;">
+		  <div class="row center">
+			<h4 class="header col s12 light"> Il food a portata di un click</h4>
+		  </div>	
+		</div>
+		<div class="carousel-item deep-orange white-text" href="#one!">
+		  <!-- <p class="white-text">This is your first panel</p> -->
+		</div>
+		<div class="carousel-item red white-text" href="#two!">
+		  <!-- <p class="white-text">This is your second panel</p> -->
+		</div>
+		<div class="carousel-item green white-text" href="#three!"> 
+		  <!-- <p class="white-text">This is your third panel</p> -->
+		</div>
+		<div class="carousel-item yellow white-text" href="#four!">
+          <!-- <p class="white-text">This is your fourth panel</p> -->
+		</div>
+	  </div>
       <!-- <h1 class="header center orange-text">Unistation</h1> -->
-	  <img class="responsive-img" src="{{ asset('images/logo.png') }}" style = "display: block; margin-left: auto; margin-right: auto;">
-      <div class="row center">
-        <h4 class="header col s12 light"> Il food a portata di un click</h4>
+	  
 	  </div>
     </div>
     <div class="container">
@@ -63,6 +81,38 @@
             </div>
           </div>
         </div>
+      </div>
+	  <div class="slider">
+		<ul class="slides">
+		  <li>
+			<img src="https://lorempixel.com/580/250/nature/1"> <!-- random image -->
+			<div class="caption center-align">
+			  <h3>This is our big Tagline!</h3>
+			  <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+			</div>
+		  </li>
+		  <li>
+			<img src="https://lorempixel.com/580/250/nature/2"> <!-- random image -->
+			<div class="caption left-align">
+			  <h3>Left Aligned Caption</h3>
+			  <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+			</div>
+		  </li>
+		  <li>
+			<img src="https://lorempixel.com/580/250/nature/3"> <!-- random image -->
+			<div class="caption right-align">
+			  <h3>Right Aligned Caption</h3>
+			  <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+			</div>
+		  </li>
+		  <li>
+			<img src="https://lorempixel.com/580/250/nature/4"> <!-- random image -->
+			<div class="caption center-align">
+			  <h3>This is our big Tagline!</h3>
+			  <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+            </div>
+		  </li>
+		</ul>
       </div>
     </div>
 </div>

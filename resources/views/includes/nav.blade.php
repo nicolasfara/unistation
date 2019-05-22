@@ -31,7 +31,7 @@
   </div>
 </nav>
 
-<ul class="sidenav" id="mobile-demo">
+<ul class="sidenav deep-orange" id="mobile-demo">
   @guest
   <li><a href="{{ url('client/login') }}">Accedi</a></li>
   <li><a href="{{ url('client/register') }}">Registrati</a></li>
