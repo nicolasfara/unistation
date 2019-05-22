@@ -1,4 +1,4 @@
-<nav class="teal lighten-1" role="navigation">
+<nav class="deep-orange darken-3" role="navigation">
   <div class="nav-wrapper container">
     <a id="logo-container" href="{{ url('/') }}" class="brand-logo" style = "font-family: bookman;">Unistation</a>
     <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>

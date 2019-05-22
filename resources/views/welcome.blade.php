@@ -5,11 +5,11 @@
 @endsection
 
 @section('content')
-<div class="section no-pad-bot teal lighten-2" id="index-banner"">
+<div class="section no-pad-bot deep-orange lighten-2" id="index-banner"">
   <!-- <div class="immagine" style="height: 50%; z-index: -1; border: 2px solid red;">
 	<img class="responsive-img" src="{{ asset('images/food.jpg') }}" style = "width: auto; height: 100%;">
   </div> -->
-    <div class="container teal lighten-2">
+    <div class="container deep-orange lighten-2">
       <!-- <h1 class="header center orange-text">Unistation</h1> -->
 	  <img class="responsive-img" src="{{ asset('images/logo.png') }}" style = "display: block; margin-left: auto; margin-right: auto;">
       <div class="row center">
@@ -19,8 +19,8 @@
     <div class="container">
       <div class="section">
         <div class="row">
-          <div class="col s12 m6 l4 center-align teal lighten-2">
-            <div class="card teal lighten-2 z-depth-0">
+          <div class="col s12 m6 l4 center-align deep-orange lighten-2">
+            <div class="card deep-orange lighten-2 z-depth-0">
               <div class="card-image">
                 <i class="material-icons" style="font-size: 130px;">edit</i>
                 <!--img src="{{ asset('images/logos/First.png') }}" class="responsive-img" alt="first-logo"-->
@@ -31,10 +31,15 @@
             </div>
           </div>
 		  <div class="col s12 m6 l4 center-align">
-            <div class="card teal lighten-2 z-depth-0">
+            <div class="card deep-orange lighten-2 z-depth-0">
               <div class="card-image">
-                <i class="material-icons" style="font-size: 130px;">assignment</i>
-                <!--img src="{{ asset('images/logos/First.png') }}" class="responsive-img" alt="first-logo"-->
+				<div class= "left" style="margin-left: -15%; margin-top: 35%;">
+				  <i class="material-icons" style="font-size: 50px;">navigate_next</i>
+                </div>
+				<div>
+				  <i class="material-icons" style="font-size: 130px;">assignment</i>
+                </div>
+				<!--img src="{{ asset('images/logos/First.png') }}" class="responsive-img" alt="first-logo"-->
               </div>
               <div class="card-content">
                 <h4 class = "light">Ordina</h4>
@@ -42,9 +47,14 @@
             </div>
           </div>
           <div class="col s12 m6 l4 center-align">
-            <div class="card teal lighten-2 z-depth-0">
+            <div class="card deep-orange lighten-2 z-depth-0">
               <div class="card-image ">
-                <i class="material-icons" style="font-size: 130px;">free_breakfast</i>
+			    <div class= "left" style="margin-left: -15%; margin-top: 35%;">
+				  <i class="material-icons" style="font-size: 50px;">navigate_next</i>
+                </div>
+				<div>
+				  <i class="material-icons" style="font-size: 130px;">free_breakfast</i>
+                </div>
                 <!--img src="{{ asset('images/logos/Third.png') }}" class="responsive-img" alt="third-logo"-->
               </div>
               <div class="card-content">
