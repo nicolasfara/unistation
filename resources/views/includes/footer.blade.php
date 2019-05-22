@@ -1,4 +1,4 @@
-<footer class="deep-orange darken-3 page-footer">
+<footer class="deep-orange darken-1 page-footer">
   <div class="container">
     <div class="row">
       <div class="col l4 s12">
@@ -24,8 +24,8 @@
       </div>
     </div>
   </div>
-  <div class="white footer-copyright">
-    <div class="container deep-orange-text">
+  <div class="deep-orange darken-3 footer-copyright">
+    <div class="container deep-orange darken-3">
       © Copyright 2019 Unistation - Tutti i diritti riservati.
       <a class="grey-text text-lighten-4 right" href="https://www.unibo.it/it">Unibo</a>
     </div>
