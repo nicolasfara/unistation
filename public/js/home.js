@@ -53,6 +53,8 @@ document.addEventListener('DOMContentLoaded', function() {
   M.Carousel.init(carousel, { fullWidth: true, indicators: true });
   var slider = document.querySelectorAll('.slider');
   M.Slider.init(slider, { });
+  var parallax = document.querySelectorAll('.parallax');
+  M.Parallax.init(parallax, { });
   //var cart = document.querySelectorAll('.shopping-cart')
   //M.Dropdown.init(cart, { 'coverTrigger': false, 'constrainWidth': false });
   console.log('Components initialized')
