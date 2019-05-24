@@ -59,7 +59,19 @@
                   <td id=tot>{{ Cart::session(Auth::id())->getTotal() }}&euro;</td>
                 </tr>
                 <tr>
-                  <td><a class="btn waves-effect waves-light" type="submit" name="action" href="{{ url('client/payment') }}">Checkout<i class="material-icons right">send</i> </a></td>
+                  <div class="row">
+                    <div class="col s6 input-field">
+                      <input id="date" type="text" class="datepicker">
+                      <label for="date">Giorno di consegna</label>
+                    </div>
+                    <div class="col s6 input-field">
+                      <input id="time" type="text" class="timepicker">
+                      <label for="time">Ora di consegna</label>
+                    </div>
+                  </div>
+                </tr>
+                <tr>
+                  <td><a class="btn waves-effect waves-light" type="submit" name="action" onclick="sendOrder()">Checkout<i class="material-icons right">send</i> </a></td>
                </tr>
              </tbody>
            </table>
@@ -104,6 +116,12 @@ function updateQuantity(product_id) {
     subtot.textContent = res_parsed.stot + '\u20AC'
     tot.textContent = res_parsed.tot + '\u20AC'
   });
+}
+
+function sendOrder() {
+  var m_date = document.getElementById('date').value
+  var time = document.getElementById('time').value
+  location.href = '{{ url('client/payment') }}' + '?date=' + m_date + '&time=' + time
 }
 </script>
 @endsection

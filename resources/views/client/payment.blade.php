@@ -67,7 +67,8 @@
           </div>
         </div>
       </div>
-
+      <input type="hidden" id="date" name="date" value="">
+      <input type="hidden" id="time" name="time" value="">
       <div class="card-action right-align">
         <input type="submit" class="btn teal lighten-1 waves-effect waves-light" value="Paga ora">
       </div>
@@ -77,5 +78,18 @@
 @endsection
 @section('scripts')
 <script type="text/javascript" src="{{ asset('js/clienthome.js') }}"></script>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  var url = new URL(window.location.href)
+  var m_date = url.searchParams.get('date')
+  var time = url.searchParams.get('time')
+
+  var c_date = document.getElementById('date')
+  var c_time = document.getElementById('time')
+
+  c_time.value = time
+  c_date.value = m_date
+});
+</script>
 @endsection
 

@@ -12,6 +12,10 @@ document.addEventListener('DOMContentLoaded', function() {
   M.Dropdown.init(dropdown, { 'coverTrigger': false, 'constrainWidth': false });
   var sidenav = document.querySelectorAll('.sidenav');
   M.Sidenav.init(sidenav, {  });
+  var date = document.querySelectorAll('.datepicker');
+  M.Datepicker.init(date, { 'format': 'd-m-yyyy' });
+  var time = document.querySelectorAll('.timepicker');
+  M.Timepicker.init(time, { 'twelveHour' : false });
 });
 
 
