@@ -34,7 +34,11 @@
         Data di consegna: {{ $order->delivery_info }}
       </div>
       <div class="row">
-        <button onclick="delivered({{ $order->id }})" class="btn">Spedisci</button>
+        @if($order->delivered == false)
+        <a onclick="delivered({{ $order->id }})" class="btn">Spedisci</a>
+        @else
+        <a class="btn disabled">Spedisci</a>
+        @endif
       </div>
     </div>
   </li>
