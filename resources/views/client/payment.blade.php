@@ -37,28 +37,43 @@
           <div class="input-field col s12">
             <label for="client_name">Intestatario</label>
             <input type="text" class="validate" name="client_name" id="client_name" value=""/>
+            @error('client_name')
+            <span>{{ $message }}</span>
+            @enderror
           </div>
         </div>
         <div class="row">
           <div class="input-field col s6">
-            <label for="number_card">Numero carta</label>
-            <input type="text" class="validate" name="number_card" id="number_card" value=""/>
+            <label for="card_number">Numero carta</label>
+            <input type="text" class="validate" name="card_number" id="card_number" value=""/>
+            @error('card_number')
+            <span>{{ $message }}</span>
+            @enderror
           </div>
           <div class="input-field col s6">
             <input name="cvv" id="cvv" type="text" class="validate" >
             <label for="cvv">CVV</label>
+            @error('cvv')
+            <span>{{ $message }}</span>
+            @enderror
           </div>
         </div>
         <div class="row">
           <div class="col-sm-2">
             <div class="input-field col s6">
-              <input name="monnth" id="month" type="number" step="1" min="1" max="12" class="validate" value="">
-              <label for="month">Mese scadenza</label>
+              <input name="expiration_month" id="expiration_month" type="number" class="validate" value="">
+              <label for="expiration_month">Mese scadenza</label>
+              @error('expiration_month')
+              <span>{{ $message }}</span>
+              @enderror
             </div>
           </div>
           <div class="input-field col s6">
-            <input name="year" id="year" type="number" step="1" min="2019" max="2030" class="validate" value="">
-            <label for="year">Anno scadenza</label>
+            <input name="expiration_year" id="exipration_year" type="number" class="validate" value="">
+            <label for="expiration_year">Anno scadenza</label>
+            @error('expiration_year')
+            <span>{{ $message }}</span>
+            @enderror
           </div>
         </div>
         <div class="row">
@@ -69,8 +84,13 @@
       </div>
       <input type="hidden" id="date" name="date" value="">
       <input type="hidden" id="time" name="time" value="">
-      <div class="card-action right-align">
-        <input type="submit" class="btn teal lighten-1 waves-effect waves-light" value="Paga ora">
+      <div class="row card-action">
+        <div class="left-align col s6">
+          <a href="{{ url('client/cart') }}" class="btn-flat waves-effect waves-light">Indietro</a>
+        </div>
+        <div class="right-align col s6">
+          <button type="submit" class="btn teal lighten-1 waves-effect waves-light">Paga Ora</button>
+        </div>
       </div>
     </form>
   </div>

@@ -14,6 +14,10 @@ use Hesto\MultiAuth\Traits\LogsoutGuard;
 use Log;
 use App\Order;
 use Illuminate\Support\Facades\Input;
+use LVR\CreditCard\CardCvc;
+use LVR\CreditCard\CardNumber;
+use LVR\CreditCard\CardExpirationYear;
+use LVR\CreditCard\CardExpirationMonth;
 
 class PaymentController extends Controller
 {
@@ -36,12 +40,25 @@ class PaymentController extends Controller
         return array_unique($vendors);
     }
 
-    public function showPayment() {
+    public function showPayment(Request $request) {
+        $validator = $request->validate([
+            'date' => 'required',
+            'time' => 'required',
+        ]);
         return view('client.payment');
     }
 
     public function sendPayment(Request $request) {
         Log::debug("Payment");
+
+        $validator = $request->validate([
+            'client_name' => 'required',
+            'card_number' => ['required', new CardNumber($request->input('card_number'))],
+            'expiration_year' => ['required', new CardExpirationYear($request->input('expiration_month'))],
+            'expiration_month' => ['required', new CardExpirationMonth($request->input('expiration_year'))],
+            'cvv' => ['required', new CardCvc($request->input('card_number'))]
+        ]);
+
         $cart_content = Cart::session(Auth::id())->getContent();
 
         $date = Carbon::createFromFormat('d-m-Y H:m', $request->input('date') . ' ' . $request->input('time'));

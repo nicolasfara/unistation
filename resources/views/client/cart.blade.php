@@ -63,15 +63,30 @@
                     <div class="col s6 input-field">
                       <input id="date" type="text" class="datepicker">
                       <label for="date">Giorno di consegna</label>
+                      @error('date')
+                      <span>{{ $message }}</span>
+                      @enderror
                     </div>
                     <div class="col s6 input-field">
                       <input id="time" type="text" class="timepicker">
                       <label for="time">Ora di consegna</label>
+                      @error('time')
+                      <span>{{ $message }}</span>
+                      @enderror
                     </div>
                   </div></td>
                 </tr>
                 <tr>
-                  <td><a class="btn waves-effect waves-light" type="submit" name="action" onclick="sendOrder()">Checkout<i class="material-icons right">send</i> </a></td>
+                  <td>
+                    <div class="row">
+                      <div class="col s6">
+                        <a href="{{ url('client/home') }}" class="btn-flat waves-effect">Indietro</a>
+                      </div>
+                      <div class="col s6">
+                        <a class="btn waves-effect waves-light" type="submit" name="action" onclick="sendOrder()">Checkout<i class="material-icons right">send</i></a>
+                      </div>
+                    </div>
+                  </td>
                </tr>
              </tbody>
            </table>
