@@ -63,7 +63,7 @@
         </div>
         <div class="row">
           <div class="col s12 right-align">
-            <h5>Totale : 7 euro</h5>
+            <h5>Totale: {{ Cart::getTotal() }}&euro;</h5>
           </div>
         </div>
       </div>

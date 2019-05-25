@@ -24,7 +24,7 @@ class ClientOrdersController extends Controller
     }
 
     public function showClientOrders() {
-        $orders = Client::find(Auth::id())->orders()->orderBy('date', 'desc')->get();
+        $orders = Client::find(Auth::id())->orders()->orderBy('delivery_info', 'desc')->get();
         return view('client.orders', ['orders' => $orders]);
     }
 }
