@@ -59,7 +59,7 @@
                   <td id=tot>{{ Cart::session(Auth::id())->getTotal() }}&euro;</td>
                 </tr>
                 <tr>
-                  <div class="row">
+                  <td><div class="row">
                     <div class="col s6 input-field">
                       <input id="date" type="text" class="datepicker">
                       <label for="date">Giorno di consegna</label>
@@ -68,7 +68,7 @@
                       <input id="time" type="text" class="timepicker">
                       <label for="time">Ora di consegna</label>
                     </div>
-                  </div>
+                  </div></td>
                 </tr>
                 <tr>
                   <td><a class="btn waves-effect waves-light" type="submit" name="action" onclick="sendOrder()">Checkout<i class="material-icons right">send</i> </a></td>
