@@ -31,7 +31,24 @@
         </table>
       </div>
       <div class="row">
-        Data di consegna: {{ $order->delivery_info }}
+        @php
+          $date = Carbon::parse($order->delivery_info)
+        @endphp
+        <h5>Informazioni spedizione</h5>
+        <table class="striped">
+          <thead>
+            <tr>
+              <th>Giorno</th>
+              <th>Ora</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>{{ $date->day }} {{ $date->locale('it')->monthName }} {{ $date->year }}</td>
+              <td>{{ $date->format('H:i') }}</td>
+            </tr>
+          </tbody>
+        </table>
       </div>
       <div class="row">
         @if($order->delivered == false)

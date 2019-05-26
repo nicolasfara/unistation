@@ -3,7 +3,7 @@
     @foreach($types as $type)
       @switch($type)
         @case('appetizer')
-          <li class="tab"><a href="#{{ $type }}">Antipasti</a></li>
+          <li class="tab"><a class="active" href="#{{ $type }}">Antipasti</a></li>
           @break
         @case('first')
           <li class="tab"><a href="#{{ $type }}">Primi</a></li>
