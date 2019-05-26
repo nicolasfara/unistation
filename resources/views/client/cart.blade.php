@@ -13,91 +13,91 @@
           <div class="row">
             <div class="col s12 m8">
               <div class="card">
-               <div class="card-content" >
-                <table>
-                  <thead>
-                   <h5 class="center">Il tuo carrello</h5>
-                 </thead>
-                 <tbody>
-                  @foreach($cart_content as $elem)
-                  <tr id="row-{{ $elem->id }}">
-                    <td>{{ $elem->name }}</td>
-                    <td data-th="Quantità">
-                      <div class="input-field col s6">
-                        <input name="qty" id="new_quantity_{{ $elem->id }}" type="number" step="1" class="validate" value="{{ $elem->quantity }}">
-                        <label for="qty">Quantità</label>
-                      </div>
-                    </td>
-                    <td>{{ $elem->price }}&euro;</td>
-                    <td><a onclick="updateQuantity({{ $elem->id }})" class="waves-effect waves-light btn "><i class="material-icons">refresh</i></a></td>
-                    <td><a onclick="removeFromCart({{ $elem->id }})" class="waves-effect waves-light btn "><i class="material-icons">delete</i></a></td>
-                  </tr>
-                  @endforeach
-                </tbody>
-              </table>
+                <div class="card-content" >
+                  <table>
+                    <thead>
+                      <h5 class="center">Il tuo carrello</h5>
+                    </thead>
+                    <tbody>
+                      @foreach($cart_content as $elem)
+                      <tr id="row-{{ $elem->id }}">
+                        <td>{{ $elem->name }}</td>
+                        <td data-th="Quantità">
+                          <div class="input-field col s6">
+                            <input name="qty" id="new_quantity_{{ $elem->id }}" type="number" step="1" class="validate" value="{{ $elem->quantity }}">
+                            <label for="qty">Quantità</label>
+                          </div>
+                        </td>
+                        <td>{{ $elem->price }}&euro;</td>
+                        <td><a onclick="updateQuantity({{ $elem->id }})" class="waves-effect waves-light btn "><i class="material-icons">refresh</i></a></td>
+                        <td><a onclick="removeFromCart({{ $elem->id }})" class="waves-effect waves-light btn "><i class="material-icons">delete</i></a></td>
+                      </tr>
+                      @endforeach
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+            <div class="col s12 m4">
+              <div class="card">
+                <div class="card-content" >
+                  <table>
+                    <thead>
+                      <h5 class="center">Riepilogo</h5>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>Subtotale</td>
+                        <td id="subtot">{{ Cart::session(Auth::id())->getSubTotal() }}&euro;</td>
+                      </tr>
+                      <tr>
+                        <td>Spese di spedizione</td>
+                        <td>Gratis</td>
+                      </tr>
+                      <tr>
+                        <td>Totale</td>
+                        <td id=tot>{{ Cart::session(Auth::id())->getTotal() }}&euro;</td>
+                      </tr>
+                      <tr>
+                        <td><div class="row">
+                          <div class="col s6 input-field">
+                            <input id="date" type="text" class="datepicker">
+                            <label for="date">Giorno di consegna</label>
+                            @error('date')
+                            <span>{{ $message }}</span>
+                            @enderror
+                          </div>
+                          <div class="col s6 input-field">
+                            <input id="time" type="text" class="timepicker">
+                            <label for="time">Ora di consegna</label>
+                            @error('time')
+                            <span>{{ $message }}</span>
+                            @enderror
+                          </div>
+                        </div></td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <div class="row">
+                            <div class="col s6">
+                              <a href="{{ url('client/home') }}" class="btn-flat waves-effect">Indietro</a>
+                            </div>
+                            <div class="col s6">
+                              <a class="btn waves-effect waves-light" type="submit" name="action" onclick="sendOrder()">Checkout<i class="material-icons right">send</i></a>
+                            </div>
+                          </div>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
             </div>
           </div>
         </div>
-        <div class="col s12 m4">
-          <div class="card">
-           <div class="card-content" >
-            <table>
-              <thead>
-                <h5 class="center">Riepilogo</h5>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>Subtotale</td>
-                  <td id="subtot">{{ Cart::session(Auth::id())->getSubTotal() }}&euro;</td>
-                </tr>
-                <tr>
-                  <td>Spese di spedizione</td>
-                  <td>Gratis</td>
-                </tr>
-                <tr>
-                  <td>Totale</td>
-                  <td id=tot>{{ Cart::session(Auth::id())->getTotal() }}&euro;</td>
-                </tr>
-                <tr>
-                  <td><div class="row">
-                    <div class="col s6 input-field">
-                      <input id="date" type="text" class="datepicker">
-                      <label for="date">Giorno di consegna</label>
-                      @error('date')
-                      <span>{{ $message }}</span>
-                      @enderror
-                    </div>
-                    <div class="col s6 input-field">
-                      <input id="time" type="text" class="timepicker">
-                      <label for="time">Ora di consegna</label>
-                      @error('time')
-                      <span>{{ $message }}</span>
-                      @enderror
-                    </div>
-                  </div></td>
-                </tr>
-                <tr>
-                  <td>
-                    <div class="row">
-                      <div class="col s6">
-                        <a href="{{ url('client/home') }}" class="btn-flat waves-effect">Indietro</a>
-                      </div>
-                      <div class="col s6">
-                        <a class="btn waves-effect waves-light" type="submit" name="action" onclick="sendOrder()">Checkout<i class="material-icons right">send</i></a>
-                      </div>
-                    </div>
-                  </td>
-               </tr>
-             </tbody>
-           </table>
-         </div>
-       </div>
-     </div>
-   </div>
- </div>
-</div>
-</div>
-</div>
+      </div>
+    </div>
+  </div>
 </div>
 @endsection
 @section('scripts')
