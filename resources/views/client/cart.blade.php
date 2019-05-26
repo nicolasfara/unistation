@@ -12,31 +12,18 @@
         <div id="" class="col s12">
           <div class="row">
             <div class="col s12 m8">
-              <div class="card">
-                <div class="card-content" >
-                  <table>
-                    <thead>
-                      <h5 class="center">Il tuo carrello</h5>
-                    </thead>
-                    <tbody>
-                      @foreach($cart_content as $elem)
-                      <tr id="row-{{ $elem->id }}">
-                        <td>{{ $elem->name }}</td>
-                        <td data-th="Quantità">
-                          <div class="input-field col s6">
-                            <input name="qty" id="new_quantity_{{ $elem->id }}" type="number" step="1" class="validate" value="{{ $elem->quantity }}">
-                            <label for="qty">Quantità</label>
-                          </div>
-                        </td>
-                        <td>{{ $elem->price }}&euro;</td>
-                        <td><a onclick="updateQuantity({{ $elem->id }})" class="waves-effect waves-light btn "><i class="material-icons">refresh</i></a></td>
-                        <td><a onclick="removeFromCart({{ $elem->id }})" class="waves-effect waves-light btn "><i class="material-icons">delete</i></a></td>
-                      </tr>
-                      @endforeach
-                    </tbody>
-                  </table>
-                </div>
+              <h5 class="center">Il tuo carrello</h5>
+              @foreach($cart_content as $elem)
+              <div class="card-panel row" id="row-{{ $elem->id }}">
+                  <div class="col s10">{{ $elem->name }}</div>
+                  <div class="col s2 right-align">{{ $elem->price }}&euro;</div>
+                  <div class="col s6">
+                    <input placeholder="Quantità" name="qty" id="new_quantity_{{ $elem->id }}" type="number" step="1" value="{{ $elem->quantity }}">
+                  </div>
+                  <div class="col s3"><a onclick="updateQuantity({{ $elem->id }})" class="waves-effect waves-light btn "><i class="material-icons">refresh</i></a></td></div>
+                  <div class="col s3"><a onclick="removeFromCart({{ $elem->id }})" class="waves-effect waves-light btn "><i class="material-icons">delete</i></a></td></div>
               </div>
+              @endforeach
             </div>
             <div class="col s12 m4">
               <div class="card">
