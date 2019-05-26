@@ -20,8 +20,8 @@
                   <div class="col s6">
                     <input placeholder="Quantità" name="qty" id="new_quantity_{{ $elem->id }}" type="number" step="1" value="{{ $elem->quantity }}">
                   </div>
-                  <div class="col s3"><a onclick="updateQuantity({{ $elem->id }})" class="waves-effect waves-light btn "><i class="material-icons">refresh</i></a></td></div>
-                  <div class="col s3"><a onclick="removeFromCart({{ $elem->id }})" class="waves-effect waves-light btn "><i class="material-icons">delete</i></a></td></div>
+                  <div class="col s3"><a onclick="updateQuantity({{ $elem->id }})" class="waves-effect waves-light btn "><i class="material-icons">refresh</i></a></div>
+                  <div class="col s3"><a onclick="removeFromCart({{ $elem->id }})" class="waves-effect waves-light btn "><i class="material-icons">delete</i></a></div>
               </div>
               @endforeach
             </div>
