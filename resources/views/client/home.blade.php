@@ -11,7 +11,23 @@
     <div class="row">
       <ul class="tabs tabs-fixed-width tab-demo z-depth-1">
         @foreach($types as $type)
-        <li class="tab"><a href="#{{ $type }}">{{ $type }}</a></li>
+        @switch($type)
+          @case('appetizer')
+            <li class="tab"><a href="#{{ $type }}">Antipasti</a></li>
+            @break
+          @case('first')
+            <li class="tab"><a href="#{{ $type }}">Primi</a></li>
+            @break
+          @case('second')
+            <li class="tab"><a href="#{{ $type }}">Secondi</a></li>
+            @break
+          @case('salad')
+            <li class="tab"><a href="#{{ $type }}">Insalate</a></li>
+            @break
+          @case('dolci')
+            <li class="tab"><a href="#{{ $type }}">Dolci</a></li>
+            @break
+        @endswitch
         @endforeach
       </ul>
       <div class="section no-pad-bot" id="index-banner">
