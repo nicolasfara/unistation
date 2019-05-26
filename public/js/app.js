@@ -1384,8 +1384,8 @@ __webpack_require__.r(__webpack_exports__);
 
 window.Echo = new laravel_echo__WEBPACK_IMPORTED_MODULE_0__["default"]({
   broadcaster: 'pusher',
-  key: "",
-  cluster: "mt1",
+  key: "4a06878a7e2abf7e04df",
+  cluster: "eu",
   encrypted: true,
   auth: {
     headers: {
