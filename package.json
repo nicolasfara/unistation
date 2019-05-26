@@ -24,11 +24,15 @@
         "vue-template-compiler": "^2.6.10"
     },
     "dependencies": {
+        "es6-shim": "^0.35.5",
         "laravel-echo": "^1.5.3",
         "laravel-echo-server": "^1.5.2",
         "materialize-css": "^1.0.0-rc.2",
         "materialize-social": "^1.0.3",
         "materialize-social-scss": "0.0.2",
-        "pusher-js": "^4.4.0"
+        "pusher-js": "^4.4.0",
+        "reflect-metadata": "^0.1.2",
+        "rxjs": "^5.0.0-beta.6",
+        "zone.js": "^0.6.26"
     }
 }
