@@ -11,7 +11,23 @@
     <div class="row">
       <ul class="tabs tabs-fixed-width tab-demo z-depth-1">
         @foreach($types as $type)
-        <li class="tab"><a href="#{{ $type }}">{{ $type }}</a></li>
+        @switch($type)
+          @case('appetizer')
+            <li class="tab"><a href="#{{ $type }}">Antipasti</a></li>
+            @break
+          @case('first')
+            <li class="tab"><a href="#{{ $type }}">Primi</a></li>
+            @break
+          @case('second')
+            <li class="tab"><a href="#{{ $type }}">Secondi</a></li>
+            @break
+          @case('salad')
+            <li class="tab"><a href="#{{ $type }}">Insalate</a></li>
+            @break
+          @case('dolci')
+            <li class="tab"><a href="#{{ $type }}">Dolci</a></li>
+            @break
+        @endswitch
         @endforeach
       </ul>
       <div class="section no-pad-bot" id="index-banner">
@@ -28,7 +44,7 @@
                  @else
                  <img src="https://s3-eu-west-1.amazonaws.com/unistation/placeholders/imageprofile-placeholder-350x350.png" alt="" class="circle responsive-img">
                  @endif
-                 <a id"add_btn" onclick="addToCart({{ $product->id }})" class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">add_shopping_cart</i></a>
+                 <a id="add_btn" onclick="addToCart({{ $product->id }})" class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">add_shopping_cart</i></a>
                </div>
                <div class="card-content" >
                 <span class="card-title center-align">{{ $product->name }}</span>

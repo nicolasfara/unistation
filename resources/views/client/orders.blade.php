@@ -18,22 +18,25 @@
                     <h5 class="center">I tuoi ordini</h5>
                     <tr>
                       <th>Numero ordine</th>
-                      <th>Prezzo totale</th>
                       <th>Data</th>
+                      <th>Prezzo totale</th>
                       <th>Stato ordine</th>
                     </tr>
                   </thead>
                   <tbody>
                     @foreach($orders as $order)
                     <tr>
+                      @php
+                        $date = Carbon::parse($order->created_at);
+                      @endphp
                       <td data-label="product_order">#{{ $order->id }}</td>
+                      <td data-label="date">{{ $date->day }} {{ $date->locale('it')->monthName }} {{ $date->year }}</td>
                       <td data-label="total">{{ $order->total }} &euro;</td>
-                      <td data-label="date">{{ $order->order_created_at }}</td>
                       <td data-label="order_state">
                         @if($order->delivered == true)
                         Spedito
                         @else
-                        In preaparazione
+                        <b>In preaparazione</b>
                         @endif
                       </td>
                     </tr>

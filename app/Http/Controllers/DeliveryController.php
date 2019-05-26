@@ -30,7 +30,7 @@ class DeliveryController extends Controller
         $client = Client::find($order_query->client_id);
 
         Log::debug($client);
-        Mail::to($client)->send(new OrderShipped());
+        Mail::to($client)->send(new OrderShipped($order_query));
         Log::debug('mail sent?');
         return response()->json([
             'order' => 'ok', //TODO: do a better response

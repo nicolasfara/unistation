@@ -1,7 +1,23 @@
 <div class="section no-pad-bot" id="index-banner">
   <ul class="tabs tabs-fixed-width tab-demo z-depth-1">
     @foreach($types as $type)
-      <li class="tab"><a href="#{{ $type }}">{{ $type }}</a></li>
+      @switch($type)
+        @case('appetizer')
+          <li class="tab"><a class="active" href="#{{ $type }}">Antipasti</a></li>
+          @break
+        @case('first')
+          <li class="tab"><a href="#{{ $type }}">Primi</a></li>
+          @break
+        @case('second')
+          <li class="tab"><a href="#{{ $type }}">Secondi</a></li>
+          @break
+        @case('salad')
+          <li class="tab"><a href="#{{ $type }}">Insalate</a></li>
+          @break
+        @case('dolci')
+          <li class="tab"><a href="#{{ $type }}">Dolci</a></li>
+          @break
+      @endswitch
     @endforeach
   </ul>
   @foreach($types as $type)
@@ -102,7 +118,23 @@
             <select name="new_type">
               <option value="" disabled selected>Tipo</option>
               @foreach($types as $type)
-              <option value="{{ $type }}">{{ $type }}</option>
+              @switch($type)
+                @case('appetizer')
+                  <option value="{{ $type }}">Antipasti</option>
+                  @break
+                @case('first')
+                  <option value="{{ $type }}">Primi</option>
+                  @break
+                @case('second')
+                  <option value="{{ $type }}">Secondi</option>
+                  @break
+                @case('salad')
+                  <option value="{{ $type }}">Insalate</option>
+                  @break
+                @case('dolci')
+                  <option value="{{ $type }}">Dolci</option>
+                  @break
+              @endswitch
               @endforeach
             </select>
             <label>Tipo prodotto</label>
