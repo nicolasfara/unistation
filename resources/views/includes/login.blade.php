@@ -37,7 +37,7 @@
         </div>
         <div class="card-action right-align">
           <input type="reset" id="reset" class="btn-flat grey-text waves-effect">
-          <input type="submit" class="btn teal lighten-1 waves-effect waves-light" value="Login">
+          <button type="submit" class="btn teal lighten-1 waves-effect waves-light">Login</button>
         </div>
       </form>
   </div>
