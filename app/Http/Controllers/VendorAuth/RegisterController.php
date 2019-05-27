@@ -52,7 +52,7 @@ class RegisterController extends Controller
             'name' => 'required|max:255',
             'email' => 'required|email|max:255|unique:vendors',
             'password' => 'required|min:6|confirmed',
-            'p_iva' => 'required|max:11',
+            'p_iva' => 'required|digits:11',
         ]);
     }
 
