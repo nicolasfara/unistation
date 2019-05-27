@@ -131,7 +131,7 @@
                 @case('salad')
                   <option value="{{ $type }}">Insalate</option>
                   @break
-                @case('dolci')
+                @case('dessert')
                   <option value="{{ $type }}">Dolci</option>
                   @break
               @endswitch
