@@ -1414,8 +1414,8 @@ window.Echo = new laravel_echo__WEBPACK_IMPORTED_MODULE_0__["default"]({
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! C:\Users\Leonardo\Documents\Università\TechW\unistation\resources\js\app.js */"./resources/js/app.js");
-module.exports = __webpack_require__(/*! C:\Users\Leonardo\Documents\Università\TechW\unistation\resources\sass\app.scss */"./resources/sass/app.scss");
+__webpack_require__(/*! /home/martina/Documents/uni/tec-web/unistation/resources/js/app.js */"./resources/js/app.js");
+module.exports = __webpack_require__(/*! /home/martina/Documents/uni/tec-web/unistation/resources/sass/app.scss */"./resources/sass/app.scss");
 
 
 /***/ })
