@@ -15,7 +15,12 @@
               <div class="card-content" >
                 <table>
                   <thead>
+                  	<tr> <td><a href="{{ url('client/home') }}" class="btn-flat waves-effect ">Indietro</a></td></tr>
+                  	<tr>
+                  		      
                     <h5 class="center">I tuoi ordini</h5>
+             
+                    </tr>
                     <tr>
                       <th>Numero ordine</th>
                       <th>Data</th>
