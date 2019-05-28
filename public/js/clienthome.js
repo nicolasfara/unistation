@@ -12,10 +12,19 @@ document.addEventListener('DOMContentLoaded', function() {
   M.Dropdown.init(dropdown, { 'coverTrigger': false, 'constrainWidth': false });
   var sidenav = document.querySelectorAll('.sidenav');
   M.Sidenav.init(sidenav, {  });
+  var today = new Date();
   var date = document.querySelectorAll('.datepicker');
-  M.Datepicker.init(date, { 'format': 'd-m-yyyy' });
+  M.Datepicker.init(date, { 
+    'format': 'd-m-yyyy',
+    'firstDay' : 1,
+    'defaultDate' : today,
+    'setDefaultDate' : true
+  });
   var time = document.querySelectorAll('.timepicker');
-  M.Timepicker.init(time, { 'twelveHour' : false });
+  M.Timepicker.init(time, {
+    'twelveHour' : false,
+    'defaultTime' : '12:00'
+  });
 });
 
 

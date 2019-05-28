@@ -54,7 +54,7 @@
                       <tr>
                         <td>
                           <div class="input-field">
-                            <input id="date" type="text" class="datepicker" firstDay="1">
+                            <input id="date" type="text" class="datepicker">
                             <label for="date">Giorno di consegna</label>
                             @error('date')
                             <span>{{ $message }}</span>
