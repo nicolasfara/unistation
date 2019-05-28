@@ -76,7 +76,7 @@ class ClientController extends Controller
         $client_name = $request->input('client_name');
         $client_surname = $request->input('client_surname');
         $client_email = $request->input('client_email');
-        
+
         $client_img = $request->input('newavatar');
 
         if ($client_name != ''){
