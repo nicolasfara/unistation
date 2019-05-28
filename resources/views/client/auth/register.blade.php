@@ -13,7 +13,7 @@
         @csrf
         <div class="row">
           <div class="input-field col s6 form-group{{ $errors->has('name') ? ' has-error' : '' }}">
-            <input name="name" id="name" type="text" class="validate">
+            <input name="name" id="name" type="text" required class="validate">
             <label for="name">Nome</label>
             @if ($errors->has('name'))
             <span class="help-block">
@@ -22,7 +22,7 @@
             @endif
           </div>
           <div class="input-field col s6">
-            <input name="surname" id="surname" type="text" class="validate">
+            <input name="surname" id="surname" type="text" required class="validate">
             <label for="surname">Cognome</label>
             @if ($errors->has('surname'))
             <span class="help-block">
@@ -33,7 +33,7 @@
         </div>
         <div class="row">
           <div class="input-field col s12">
-            <input name="email" id="email" type="email" class="validate" value="{{ old('email') }}">
+            <input name="email" id="email" type="email" required class="validate" value="{{ old('email') }}">
             <label for="email">Email</label>
             @if ($errors->has('email'))
             <span class="help-block">
@@ -44,7 +44,7 @@
         </div>
         <div class="row">
           <div class="input-field col s12">
-            <input name="password" id="password" type="password" class="validate">
+            <input name="password" id="password" type="password" required class="validate">
             <label for="password">Password</label>
             @if ($errors->has('password'))
             <span class="help-block">
@@ -55,7 +55,7 @@
         </div>
         <div class="row">
           <div class="input-field col s12">
-            <input name="password_confirmation" id="password-confirm" type="password" class="validate">
+            <input name="password_confirmation" id="password-confirm" type="password" required class="validate">
             <label for="password-confirm">Ripeti Password</label>
             @if ($errors->has('password_confirmation'))
             <span class="help-block">

@@ -17,7 +17,7 @@
           <div class="row">
             <div class="input-field col s12">
               <label for="email">Indirizzo email</label>
-              <input type="email" class="validate" name="email" id="email" />
+              <input type="email" required class="validate" name="email" id="email" />
               @if ($errors->has('email'))
               <span class="help-block">
                 <strong>{{ $errors->first('email') }}</strong>
@@ -26,7 +26,7 @@
             </div>
             <div class="input-field col s12">
               <label for="password">Password </label>
-              <input type="password" class="validate" name="password" id="password" />
+              <input type="password" required class="validate" name="password" id="password" />
               @if ($errors->has('password'))
               <span class="help-block">
                 <strong>{{ $errors->first('password') }}</strong>
