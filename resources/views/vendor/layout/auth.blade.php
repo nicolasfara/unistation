@@ -34,7 +34,7 @@
                 </button>
 
                 <!-- Branding Image -->
-                <a class="navbar-brand" href="{{ url('/vendor') }}">
+                <a class="navbar-brand" href="{{ url('/vendor/home') }}">
                     {{ config('app.name', 'Laravel Multi Auth Guard') }}: Vendor
                 </a>
             </div>

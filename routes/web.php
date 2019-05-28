@@ -12,6 +12,8 @@
 */
 
 Route::view('/', 'welcome')->name('welcome');
+Route::view('client/home', 'home')->middleware('auth:client');
+Route::view('vendor/home', 'home')->middleware('auth:vendor');
 
 Route::group(['prefix' => 'admin'], function () {
   Route::get('/login', 'AdminAuth\LoginController@showLoginForm')->name('login');
