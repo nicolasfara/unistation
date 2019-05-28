@@ -17,11 +17,11 @@
               <div class="card-panel row" id="row-{{ $elem->id }}">
                   <div class="col s10">{{ $elem->name }}</div>
                   <div class="col s2 right-align">{{ $elem->price }}&euro;</div>
-                  <div class="col s6">
-                    <input placeholder="Quantità" name="qty" id="new_quantity_{{ $elem->id }}" type="number" step="1" value="{{ $elem->quantity }}">
+                  <div class="col s6 m3">
+                    <input placeholder="Quantità" name="qty" id="new_quantity_{{ $elem->id }}" type="number" min="1" step="1" value="{{ $elem->quantity }}">
                   </div>
                   <div class="col s3"><a onclick="updateQuantity({{ $elem->id }})" class="waves-effect waves-light btn "><i class="material-icons">refresh</i></a></div>
-                  <div class="col s3"><a onclick="removeFromCart({{ $elem->id }})" class="waves-effect waves-light btn "><i class="material-icons">delete</i></a></div>
+                  <div class="col s3 m6 right-align"><a onclick="removeFromCart({{ $elem->id }})" class="waves-effect waves-light btn "><i class="material-icons">delete</i></a></div>
               </div>
               @endforeach
             </div>
@@ -54,7 +54,7 @@
                       <tr>
                         <td>
                           <div class="input-field">
-                            <input id="date" type="text" class="datepicker">
+                            <input id="date" type="text" class="datepicker" firstDay="1">
                             <label for="date">Giorno di consegna</label>
                             @error('date')
                             <span>{{ $message }}</span>
