@@ -9678,17 +9678,6 @@ body {
   font-weight: bold;
 }
 
-immagine {
-  width: 300px;
-  z-index: -1;
-  border: 2px solid red;
-}
-
-responsive-img {
-  width: 100%;
-  height: auto;
-}
-
 section#counter-stats {
   display: flex;
   justify-content: center;
@@ -9703,7 +9692,32 @@ section#counter-stats {
 
 .stats .fa {
   color: #008080;
-  font-size: 60px;
+}
+
+#counter-stats .fas {
+  font-size: 3em;
+}
+
+#home-card .material-icons {
+  font-size: 6em;
+}
+
+#home-card h4 {
+  font-size: 4.1em;
+}
+
+@media only screen and (max-width: 992px) {
+  #counter-stats .fas {
+    font-size: 1.7em;
+  }
+
+  #home-card .material-icons {
+    font-size: 3em;
+  }
+
+  #home-card h4 {
+    font-size: 1.7em;
+  }
 }
 
 /*/ end count stats /*/
