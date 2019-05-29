@@ -1,6 +1,6 @@
 <nav class="deep-orange" role="navigation">
   <div class="nav-wrapper container">
-    <a id="logo-container" href="{{ url('/') }}" class="brand-logo deep-orange-text">Unistation</a>
+    <a id="logo-container" href="{{ url('/') }}" class="brand-logo">Unistation</a>
     <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
     <ul class="right hide-on-med-and-down">
       @guest
