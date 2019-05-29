@@ -1,10 +1,11 @@
-<nav class="teal lighten-2" role="navigation">
-  <div class="nav-wrapper container"><a id="logo-container" href="{{ url('client/home') }}" class="brand-logo">Unistation</a>
+<nav class="deep-orange" role="navigation">
+  <div class="nav-wrapper container">
+    <a id="logo-container" href="{{ url('/') }}" class="brand-logo deep-orange-text">Unistation</a>
     <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
     <ul class="right hide-on-med-and-down">
       @guest
-      <li><a href="{{ url('client/login') }}">Accedi</a></li>
-      <li><a href="{{ url('client/register') }}">Registrati</a></li>
+      <li><a class="" href="{{ url('client/login') }}">Accedi</a></li>
+      <li><a class="" href="{{ url('client/register') }}">Registrati</a></li>
       @else
       <ul id="user-dropdown" class="dropdown-content" >
         <li><a href="{{ url('client/orders') }}"><i class="material-icons">shop</i>Ordini</a></li>
@@ -30,7 +31,7 @@
   </div>
 </nav>
 
-<ul class="sidenav" id="mobile-demo">
+<ul class="sidenav deep-orange" id="mobile-demo">
   @guest
   <li><a href="{{ url('client/login') }}">Accedi</a></li>
   <li><a href="{{ url('client/register') }}">Registrati</a></li>

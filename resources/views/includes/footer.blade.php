@@ -1,4 +1,4 @@
-<footer class="teal page-footer">
+<footer class="deep-orange darken-1 page-footer">
   <div class="container">
     <div class="row">
       <div class="col l4 s12">
@@ -11,9 +11,9 @@
       <div class="col l4 s12">
         <h5 class="white-text">Seguici su</h5>
         <a class="waves-effect waves-light btn-floating social facebook">
-        <i class="fa fa-facebook"></i> Sign in with facebook</a>
+        <i class="fab fa-facebook-f"></i> Sign in with facebook</a>
         <a class="waves-effect waves-light btn-floating social instagram">
-          <i class="fa fa-instagram"></i> Sign in with instagram</a>
+          <i class="fab fa-instagram"></i> Sign in with instagram</a>
       </div>
       <div class="col l4 s12">
         <h5 class="white-text">Hai un'attività? Unisciti a noi!</h5>
@@ -24,8 +24,8 @@
       </div>
     </div>
   </div>
-  <div class="teal lighten-1 footer-copyright">
-    <div class="container">
+  <div class="deep-orange darken-3 footer-copyright">
+    <div class="container deep-orange darken-3">
       © Copyright 2019 Unistation - Tutti i diritti riservati.
       <a class="grey-text text-lighten-4 right" href="https://www.unibo.it/it">Unibo</a>
     </div>

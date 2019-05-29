@@ -5,7 +5,7 @@
  * Distributed under terms of the MIT license.
  */
 
-function fadeIn(el, display){
+ function fadeIn(el, display){
   el.style.opacity = 0;
   el.style.display = display || "block";
 
@@ -35,7 +35,6 @@ function show_card_fadein() {
   }, delay, box_elem)
 }
 
-
 document.addEventListener('DOMContentLoaded', function() {
   var sidenav = document.querySelectorAll('.sidenav');
   M.Sidenav.init(sidenav, {  });
@@ -49,10 +48,53 @@ document.addEventListener('DOMContentLoaded', function() {
   M.FormSelect.init(select, {  });
   var dropdowns = document.querySelectorAll('.dropdown-trigger')
   M.Dropdown.init(dropdowns);
+  var carousel = document.querySelectorAll('.carousel');
+  M.Carousel.init(carousel, { fullWidth: true, indicators: true });
+  var slider = document.querySelectorAll('.slider');
+  M.Slider.init(slider, { });
+  var parallax = document.querySelectorAll('.parallax');
+  M.Parallax.init(parallax, { });
   //var cart = document.querySelectorAll('.shopping-cart')
   //M.Dropdown.init(cart, { 'coverTrigger': false, 'constrainWidth': false });
   console.log('Components initialized')
-
-  //
-  show_card_fadein()
 });
+
+// Thanks to PedroDJ46
+$(window).scroll(function(){
+  var flag = false
+  $('.counting').each(function(){
+    if(isScrolledIntoView($(this)) && flag == false){
+      flag = true
+      $('.counting').each(function() {
+        var $this = $(this),
+            countTo = $this.attr('data-count');
+        $({ countNum: $this.text()}).animate({
+          countNum: countTo
+        },
+        {
+          duration: 3000,
+          easing:'linear',
+          step: function() {
+            $this.text(Math.floor(this.countNum));
+          },
+          complete: function() {
+            $this.text(this.countNum);
+          }
+        });
+      });
+    }
+  });
+});
+
+function isScrolledIntoView(elem){
+    var $elem = $(elem);
+    var $window = $(window);
+
+    var docViewTop = $window.scrollTop();
+    var docViewBottom = docViewTop + $window.height();
+
+    var elemTop = $elem.offset().top;
+    var elemBottom = elemTop + $elem.height();
+
+    return ((elemBottom <= docViewBottom) && (elemTop >= docViewTop));
+}

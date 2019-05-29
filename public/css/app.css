@@ -9678,6 +9678,37 @@ body {
   font-weight: bold;
 }
 
+immagine {
+  width: 300px;
+  z-index: -1;
+  border: 2px solid red;
+}
+
+responsive-img {
+  width: 100%;
+  height: auto;
+}
+
+section#counter-stats {
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
+}
+
+.stats {
+  text-align: center;
+  font-size: 35px;
+  font-weight: 700;
+  font-family: "Montserrat", sans-serif;
+}
+
+.stats .fa {
+  color: #008080;
+  font-size: 60px;
+}
+
+/*/ end count stats /*/
+
 .login-box {
   height: 100%;
 }
