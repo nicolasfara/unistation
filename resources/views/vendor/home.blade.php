@@ -13,8 +13,8 @@ header, main, footer {
 }
 </style>
 
-<nav class="teal lighten-2" role="navigation">
-  <div class="nav-wrapper container"><a id="logo-container" href="{{ url('/vendor/home') }}" class="brand-logo">Unistation</a>
+<nav class="deep-orange" role="navigation">
+  <div class="nav-wrapper container"><a id="logo-container" href="{{ url('/vendor/home') }}" class="brand-logo">{{ config('app.name') }}</a>
     <a data-target="slide-out" class="left sidenav-trigger hide-on-medium-and-up"><i class="material-icons">menu</i></a>
   </div>
 </nav>
