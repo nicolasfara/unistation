@@ -17,9 +17,10 @@
       <div class="row" id="home-card">
         <div class="col s4 m4 l4 center-align">
           <div class="card z-depth-0">
-            <div class="card-content top">
-              <h4 class="light flow-text">1</h4>
-            </div>
+            <span class="fa-stack fa-lg row">
+                <i class="far fa-circle fa-stack-2x"></i>
+                <i class="fab fa-stack-1x">1</i>
+            </span>
             <div class="card-image">
               <i class="material-icons deep-orange-text text-lighten-1">edit</i>
               <!--img src="{{ asset('images/logos/First.png') }}" class="responsive-img" alt="first-logo"-->
@@ -31,9 +32,10 @@
         </div>
         <div class="col s4 m4 l4 center-align">
           <div class="card z-depth-0">
-            <div class="card-content top">
-              <h4 class="light flow-text">2</h4>
-            </div>
+            <span class="fa-stack fa-lg row">
+                <i class="far fa-circle fa-stack-2x"></i>
+                <i class="fab fa-stack-1x">2</i>
+            </span>
             <div class="card-image">
               <i class="material-icons deep-orange-text text-lighten-1">assignment</i>
               <!--img src="{{ asset('images/logos/First.png') }}" class="responsive-img" alt="first-logo"-->
@@ -45,6 +47,10 @@
         </div>
         <div class="col s4 m4 l4 center-align">
           <div class="card z-depth-0">
+            <span class="fa-stack fa-lg row">
+                <i class="far fa-circle fa-stack-2x"></i>
+                <i class="fab fa-stack-1x">3</i>
+            </span>
             <div class="card-image ">
               <i class="material-icons deep-orange-text text-lighten-1">free_breakfast</i>
               <!--img src="{{ asset('images/logos/Third.png') }}" class="responsive-img" alt="third-logo"-->
