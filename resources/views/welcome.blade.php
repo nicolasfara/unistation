@@ -70,6 +70,9 @@
     </div>
   </div>
   <div class="section white">
+    <div class="row container center">
+      <h3>I nostri risultati</h3>
+    </div>
     <div class="row container">
       <section id="counter-stats" class="wow fadeInRight" data-wow-duration="1.4s">
         <div class="container">
