@@ -35,24 +35,6 @@ function show_card_fadein() {
   }, delay, box_elem)
 }
 
-function counterAnimation(elem, end){
-  var countTo= elem.getAttribute('data-count');
-  var current = 0;
-  var start = 0;
-  var duration = 1000;
-  var stepTime = Math.abs(Math.floor(duration / end));
-  console.log(end + " : " + stepTime)
-  var increment = end > start ? 1 : -1;
-  var timer = setInterval(function() {
-    current += increment;
-    elem.innerHTML = current
-    if (current >= end) {
-      clearInterval(timer);
-    }
-  }, stepTime);
-}
-
-
 document.addEventListener('DOMContentLoaded', function() {
   var sidenav = document.querySelectorAll('.sidenav');
   M.Sidenav.init(sidenav, {  });
@@ -76,11 +58,21 @@ document.addEventListener('DOMContentLoaded', function() {
   //M.Dropdown.init(cart, { 'coverTrigger': false, 'constrainWidth': false });
   console.log('Components initialized')
 
-  //
-  show_card_fadein()
-  var counter = document.getElementsByClassName('counting')
-  for (var i = 0; i < counter.length; i++){
-    counterAnimation(counter[i], counter[i].getAttribute('data-count'))
-  }
-  
+  $('.counting').each(function() {
+    var $this = $(this),
+        countTo = $this.attr('data-count');
+    $({ countNum: $this.text()}).animate({
+      countNum: countTo
+    },
+    {
+      duration: 3000,
+      easing:'linear',
+      step: function() {
+        $this.text(Math.floor(this.countNum));
+      },
+      complete: function() {
+        $this.text(this.countNum);
+      }
+    });
+  });
 });

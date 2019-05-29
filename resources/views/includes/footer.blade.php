@@ -11,9 +11,9 @@
       <div class="col l4 s12">
         <h5 class="white-text">Seguici su</h5>
         <a class="waves-effect waves-light btn-floating social facebook">
-        <i class="fa fa-facebook"></i> Sign in with facebook</a>
+        <i class="fab fa-facebook-f"></i> Sign in with facebook</a>
         <a class="waves-effect waves-light btn-floating social instagram">
-          <i class="fa fa-instagram"></i> Sign in with instagram</a>
+          <i class="fab fa-instagram"></i> Sign in with instagram</a>
       </div>
       <div class="col l4 s12">
         <h5 class="white-text">Hai un'attività? Unisciti a noi!</h5>
