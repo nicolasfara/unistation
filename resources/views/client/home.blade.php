@@ -27,6 +27,9 @@
         @case('dessert')
         <li class="tab"><a href="#{{ $type }}">Dolci</a></li>
         @break
+        @case('drink')
+        <li class="tab"><a href="#{{ $type }}">Bevande</a></li>
+        @break
         @endswitch
         @endforeach
       </ul>
@@ -35,7 +38,7 @@
         <div id="{{ $type }}" class="col s12 cards-container">
           @foreach($products as $product)
           @if($product->type == $type)
-          <div class="card">
+          <div class="card hoverable">
             <div class="card-image">
               @if($product->image != null)
               <img src="{{ Storage::url($product->image) }}" alt="" class="circle responsive-img">

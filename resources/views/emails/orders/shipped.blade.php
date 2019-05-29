@@ -12,7 +12,7 @@ Hai ordinato:
 | **Totale:**          |                               | {{ $order->total }}&euro;  |
 @endcomponent
 
-Preparati alle: {{ $order->delivery_info }}, uno dei nostri ti aspetterà per la consegna!
+Preparati alle: {{ $date->hour }}:{{ $date->minute }} del {{ $date->day }} {{ $date->month }}, uno dei nostri ti aspetterà per la consegna!
 
 Grazie,<br>
 {{ config('app.name') }}

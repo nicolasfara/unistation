@@ -9,6 +9,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Input;
 use Mail;
 use Log;
+use Carbon;
 
 class DeliveryController extends Controller
 {
@@ -20,18 +21,17 @@ class DeliveryController extends Controller
     }
 
     public function sendNotificationOnDelivery() {
-        Log::debug('mail enter');
         $order_id = Input::get('order_id');
         $order_query = Order::find($order_id);
         $order_query->delivered = true;
         $order_query->save();
 
-        Log::debug("saved");
         $client = Client::find($order_query->client_id);
 
-        Log::debug($client);
-        Mail::to($client)->send(new OrderShipped($order_query));
-        Log::debug('mail sent?');
+        $date = Carbon::parse($order_query->delivery_info);
+
+        Mail::to($client)->send(new OrderShipped($order_query, $date));
+
         return response()->json([
             'order' => 'ok', //TODO: do a better response
         ]);

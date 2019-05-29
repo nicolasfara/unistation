@@ -6,6 +6,12 @@ use Illuminate\Database\Eloquent\Model;
 
 class Product extends Model
 {
+
+    public function vendors()
+    {
+        return $this->belongsTo('App\Vendor');
+    }
+
     public function orders()
     {
         return $this->belongsToMany('App\Order', 'order_product')->withPivot('quantity');
@@ -13,7 +19,7 @@ class Product extends Model
 
     public static function getProductsType()
     {
-        return ['appetizer', 'first', 'second', 'salad', 'dessert'];
+        return ['appetizer', 'first', 'second', 'salad', 'dessert', 'drink'];
     }
 }
 

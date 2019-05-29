@@ -17,6 +17,9 @@
         @case('dessert')
           <li class="tab"><a href="#{{ $type }}">Dolci</a></li>
           @break
+        @case('drink')
+          <li class="tab"><a href="#{{ $type }}">Bevande</a></li>
+          @break
       @endswitch
     @endforeach
   </ul>

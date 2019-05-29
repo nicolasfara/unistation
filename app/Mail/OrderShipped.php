@@ -12,15 +12,17 @@ class OrderShipped extends Mailable
     use Queueable, SerializesModels;
 
     public $order;
+    public $date;
 
     /**
      * Create a new message instance.
      *
      * @return void
      */
-    public function __construct($order)
+    public function __construct($order, $date)
     {
         $this->order = $order;
+        $this->date = $date;
     }
 
     /**
@@ -30,6 +32,9 @@ class OrderShipped extends Mailable
      */
     public function build()
     {
-        return $this->markdown('emails.orders.shipped', ['order' => $this->order]);
+        return $this->markdown('emails.orders.shipped', ['order' => $this->order, 'date' => $this->date]);
     }
 }
+
+
+// vim: set ts=4 sw=4 :
