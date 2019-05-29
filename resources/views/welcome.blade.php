@@ -61,6 +61,42 @@
         </div>
       </div>
     </div>
+    <section id="counter-stats" class="wow fadeInRight" data-wow-duration="1.4s">
+	<div class="container">
+		<div class="row">
+
+			<div class="col s3 stats">
+				<i class="fa fa-code" aria-hidden="true"></i>
+				<div class="counting" data-count="90">0</div>
+				<h5>Lines of code</h5>
+			</div>
+
+			<div class="col s3  stats">
+				<i class="fa fa-check" aria-hidden="true"></i>
+				<div class="counting" data-count="280">0</div>
+				<h5>Projects done</h5>
+			</div>
+
+			<div class="col s3  stats">
+				<i class="fa fa-user" aria-hidden="true"></i>
+				<div class="counting" data-count="75">0</div>
+				<h5>Happy clients</h5>
+			</div>
+
+			<div class="ccol s3  stats">
+				<i class="fa fa-coffee" aria-hidden="true"></i>
+				<div class="counting" data-count="999">0</div>
+				<h5>Cups of coffee</h5>
+			</div>
+
+		</div>
+		<!-- end row -->
+	</div>
+	<!-- end container -->
+
+</section>
+
+<!-- end cont stats -->
 	<div class="parallax-container center valign-wrapper" style = "height: 400px;">
 	  <!-- <div class="container">
 		<img class="responsive-img" src="{{ asset('images/logo.png') }}" style = "display: block; margin-left: auto; margin-right: auto;">
@@ -71,6 +107,12 @@
 	  <div class="parallax">
 	    <img src="https://images.unsplash.com/photo-1429081172764-c0ee67ab9afd?dpr=1&auto=format&fit=crop&w=1500&h=927&q=80&cs=tinysrgb&crop=">
 	  </div>
+	  <!-- start count stats -->
+
+
+
+
+
     </div>
 </div>
 @endsection

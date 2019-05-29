@@ -5,7 +5,7 @@
  * Distributed under terms of the MIT license.
  */
 
-function fadeIn(el, display){
+ function fadeIn(el, display){
   el.style.opacity = 0;
   el.style.display = display || "block";
 
@@ -35,6 +35,23 @@ function show_card_fadein() {
   }, delay, box_elem)
 }
 
+function counterAnimation(elem, end){
+  var countTo= elem.getAttribute('data-count');
+  var current = 0;
+  var start = 0;
+  var duration = 1000;
+  var stepTime = Math.abs(Math.floor(duration / end));
+  console.log(end + " : " + stepTime)
+  var increment = end > start ? 1 : -1;
+  var timer = setInterval(function() {
+    current += increment;
+    elem.innerHTML = current
+    if (current >= end) {
+      clearInterval(timer);
+    }
+  }, stepTime);
+}
+
 
 document.addEventListener('DOMContentLoaded', function() {
   var sidenav = document.querySelectorAll('.sidenav');
@@ -61,4 +78,9 @@ document.addEventListener('DOMContentLoaded', function() {
 
   //
   show_card_fadein()
+  var counter = document.getElementsByClassName('counting')
+  for (var i = 0; i < counter.length; i++){
+    counterAnimation(counter[i], counter[i].getAttribute('data-count'))
+  }
+  
 });
