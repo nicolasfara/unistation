@@ -1,11 +1,11 @@
-<nav class="white" role="navigation">
+<nav class="deep-orange" role="navigation">
   <div class="nav-wrapper container">
-    <a id="logo-container" href="{{ url('/') }}" class="brand-logo deep-orange-text" style = "font-family: bookman;">Unistation</a>
+    <a id="logo-container" href="{{ url('/') }}" class="brand-logo" style = "font-family: bookman;">Unistation</a>
     <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
     <ul class="right hide-on-med-and-down">
       @guest
-      <li><a class="deep-orange-text" href="{{ url('client/login') }}">Accedi</a></li>
-      <li><a class="deep-orange-text" href="{{ url('client/register') }}">Registrati</a></li>
+      <li><a class="" href="{{ url('client/login') }}">Accedi</a></li>
+      <li><a class="" href="{{ url('client/register') }}">Registrati</a></li>
       @else
       <ul id="user-dropdown" class="dropdown-content" >
         <li><a href="{{ url('client/orders') }}"><i class="material-icons">shop</i>Ordini</a></li>

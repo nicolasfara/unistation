@@ -6,23 +6,6 @@
 
 @section('content')
 <div class="no-pad-bot" id="index-banner">
-	<!-- <div class="container section">
-	  <img class="responsive-img" src="{{ asset('images/logo.png') }}" style = "display: block; margin-left: auto; margin-right: auto;">
-	  <div class="row center">
-		<h4 class="header col s12 light"> Il food a portata di un click</h4>
-	  </div>
-	</div> -->
-	<div class="parallax-container center valign-wrapper" style = "height: 400px;">
-	  <!-- <div class="container">
-		<img class="responsive-img" src="{{ asset('images/logo.png') }}" style = "display: block; margin-left: auto; margin-right: auto;">
-		<div class="row center">
-		  <h4 class="header col s12 light"> Il food a portata di un click</h4>
-		</div>
-	  </div> -->
-	  <div class="parallax">
-	    <img src="https://images.unsplash.com/photo-1429081172764-c0ee67ab9afd?dpr=1&auto=format&fit=crop&w=1500&h=927&q=80&cs=tinysrgb&crop=">
-	  </div>
-    </div>
 	<div class="container section">
 	  <img class="responsive-img" src="{{ asset('images/logo.png') }}" style = "display: block; margin-left: auto; margin-right: auto;">
 	  <div class="row center">
@@ -77,6 +60,17 @@
           </div>
         </div>
       </div>
+    </div>
+	<div class="parallax-container center valign-wrapper" style = "height: 400px;">
+	  <!-- <div class="container">
+		<img class="responsive-img" src="{{ asset('images/logo.png') }}" style = "display: block; margin-left: auto; margin-right: auto;">
+		<div class="row center">
+		  <h4 class="header col s12 light"> Il food a portata di un click</h4>
+		</div>
+	  </div>-->
+	  <div class="parallax">
+	    <img src="https://images.unsplash.com/photo-1429081172764-c0ee67ab9afd?dpr=1&auto=format&fit=crop&w=1500&h=927&q=80&cs=tinysrgb&crop=">
+	  </div>
     </div>
 </div>
 @endsection
