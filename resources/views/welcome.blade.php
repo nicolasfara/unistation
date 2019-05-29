@@ -58,6 +58,7 @@
 		</div>
 	</div>
 
+<<<<<<< HEAD
 	<div class="parallax-container">
 		<div class="parallax">
 			<img src="https://images.unsplash.com/photo-1429081172764-c0ee67ab9afd?dpr=1&auto=format&fit=crop&w=1500&h=927&q=80&cs=tinysrgb&crop=">
@@ -73,6 +74,26 @@
 							<div class="counting row" data-count="{{ $products_count }}">0</div>
 							<h5>Prodotti disponibili</h5>
 						</div>
+=======
+  <div class="parallax-container">
+    <div class="parallax">
+      <img src="https://images.unsplash.com/photo-1429081172764-c0ee67ab9afd?dpr=1&auto=format&fit=crop&w=1500&h=927&q=80&cs=tinysrgb&crop=">
+    </div>
+  </div>
+  <div class="section white">
+    <div class="row center">
+      <h3>I nostri risultati</h3>
+    </div>
+    <div class="row container">
+      <section id="counter-stats" class="wow fadeInRight" data-wow-duration="1.4s">
+        <div class="container">
+          <div class="row">
+            <div class="col s3 stats">
+              <div class="row"><i class="fas fa-hamburger orange-text" aria-hidden="true"></i></div>
+              <div class="counting row" data-count="{{ $products_count }}">0</div>
+              <h5>Prodotti disponibili</h5>
+            </div>
+>>>>>>> a98772461342309257f6518138bfc226eb8d471f
 
 						<div class="col s3 stats">
 							<div class="row"><i class="fas fa-store orange-text" aria-hidden="true"></i></div>

@@ -9698,6 +9698,10 @@ section#counter-stats {
   font-size: 3em;
 }
 
+#counter-stats h5 {
+  font-size: 1em;
+}
+
 #home-card .material-icons {
   font-size: 6em;
 }
@@ -9709,6 +9713,10 @@ section#counter-stats {
 @media only screen and (max-width: 992px) {
   #counter-stats .fas {
     font-size: 1.7em;
+  }
+
+  #counter-stats h5 {
+    font-size: 0.4em;
   }
 
   #home-card .material-icons {
