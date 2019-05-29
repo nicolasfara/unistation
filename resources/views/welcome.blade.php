@@ -14,47 +14,43 @@
   </div>
   <div class="container">
     <div class="section">
-      <div class="row">
-        <div class="col s12 m6 l4 center-align">
+      <div class="row" id="home-card">
+        <div class="col s4 m4 l4 center-align">
           <div class="card z-depth-0">
+            <div class="card-content top">
+              <h4 class="light flow-text">1</h4>
+            </div>
             <div class="card-image">
-              <i class="material-icons deep-orange-text text-lighten-1" style="font-size: 130px;">edit</i>
+              <i class="material-icons deep-orange-text text-lighten-1">edit</i>
               <!--img src="{{ asset('images/logos/First.png') }}" class="responsive-img" alt="first-logo"-->
             </div>
-            <div class="card-content">
-              <h4 class = "light">Registrati</h4>
+            <div class="card-content center">
+              <h4 class="light flow-text">Registrati</h4>
             </div>
           </div>
         </div>
-        <div class="col s12 m6 l4 center-align">
+        <div class="col s4 m4 l4 center-align">
           <div class="card z-depth-0">
+            <div class="card-content top">
+              <h4 class="light flow-text">2</h4>
+            </div>
             <div class="card-image">
-              <div class= "left" style="margin-left: -15%; margin-top: 35%;">
-                <i class="material-icons" style="font-size: 50px;">navigate_next</i>
-              </div>
-              <div>
-                <i class="material-icons deep-orange-text text-lighten-1" style="font-size: 130px;">assignment</i>
-              </div>
+              <i class="material-icons deep-orange-text text-lighten-1">assignment</i>
               <!--img src="{{ asset('images/logos/First.png') }}" class="responsive-img" alt="first-logo"-->
             </div>
-            <div class="card-content">
-              <h4 class = "light">Ordina</h4>
+            <div class="card-content center">
+              <h4 class="light">Ordina</h4>
             </div>
           </div>
         </div>
-        <div class="col s12 m6 l4 center-align">
+        <div class="col s4 m4 l4 center-align">
           <div class="card z-depth-0">
             <div class="card-image ">
-              <div class= "left" style="margin-left: -15%; margin-top: 35%;">
-                <i class="material-icons" style="font-size: 50px;">navigate_next</i>
-              </div>
-              <div>
-                <i class="material-icons deep-orange-text text-lighten-1" style="font-size: 130px;">free_breakfast</i>
-              </div>
+              <i class="material-icons deep-orange-text text-lighten-1">free_breakfast</i>
               <!--img src="{{ asset('images/logos/Third.png') }}" class="responsive-img" alt="third-logo"-->
             </div>
             <div class="card-content">
-              <h4 class = "light">Enjoy!</h4>
+              <h4 class="light">Enjoy!</h4>
             </div>
           </div>
         </div>
@@ -73,25 +69,25 @@
         <div class="container">
           <div class="row">
             <div class="col s3 stats">
-              <div class="row"><i class="fas fa-hamburger fa-3x orange-text" aria-hidden="true"></i></div>
+              <div class="row"><i class="fas fa-hamburger orange-text" aria-hidden="true"></i></div>
               <div class="counting row" data-count="{{ $products_count }}">0</div>
               <h5>Prodotti disponibili</h5>
             </div>
 
             <div class="col s3 stats">
-              <div class="row"><i class="fas fa-store fa-3x orange-text" aria-hidden="true"></i></div>
+              <div class="row"><i class="fas fa-store orange-text" aria-hidden="true"></i></div>
               <div class="counting row" data-count="{{ $vendors_count }}">0</div>
               <h5>Venditori registrati</h5>
             </div>
 
             <div class="col s3 stats">
-              <div class="row"><i class="fas fa-user fa-3x orange-text" aria-hidden="true"></i></div>
+              <div class="row"><i class="fas fa-user orange-text" aria-hidden="true"></i></div>
               <div class="counting row" data-count="{{ $clients_count }}">0</div>
               <h5>Clieni soddisfatti</h5>
             </div>
 
             <div class="col s3 stats">
-              <div class="row"><i class="fas fa-shipping-fast fa-3x orange-text" aria-hidden="true"></i></div>
+              <div class="row"><i class="fas fa-shipping-fast orange-text" aria-hidden="true"></i></div>
               <div class="counting row" data-count="{{ $orders_count }}">0</div>
               <h5>Ordini effettuati</h5>
             </div>
