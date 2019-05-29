@@ -34,6 +34,10 @@
                 <span class="card-title center-align">{{ $product->name }}</span>
                 <p class="right-align">{{ $product->price }}&euro;</p>
               </div>
+              <div class="card-reveal">
+                <span class="card-title grey-text text-darken-4">{{ $vendors[$product->vendor_id]->name }}<i class="material-icons right">close</i></span>
+                <p>Here is some more information about this product that is only revealed once clicked on.</p>
+              </div>
             </div>
           </div>
           @endif
