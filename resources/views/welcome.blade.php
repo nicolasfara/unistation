@@ -18,8 +18,8 @@
         <div class="col s4 m4 l4 center-align">
           <div class="card z-depth-0">
             <span class="fa-stack fa-lg row">
-                <i class="far fa-circle fa-stack-2x"></i>
-                <i class="fab fa-stack-1x">1</i>
+              <i class="far fa-circle fa-stack-2x"></i>
+              <i class="fab fa-stack-1x">1</i>
             </span>
             <div class="card-image">
               <i class="material-icons deep-orange-text text-lighten-1">edit</i>
@@ -33,8 +33,8 @@
         <div class="col s4 m4 l4 center-align">
           <div class="card z-depth-0">
             <span class="fa-stack fa-lg row">
-                <i class="far fa-circle fa-stack-2x"></i>
-                <i class="fab fa-stack-1x">2</i>
+              <i class="far fa-circle fa-stack-2x"></i>
+              <i class="fab fa-stack-1x">2</i>
             </span>
             <div class="card-image">
               <i class="material-icons deep-orange-text text-lighten-1">assignment</i>
@@ -48,8 +48,8 @@
         <div class="col s4 m4 l4 center-align">
           <div class="card z-depth-0">
             <span class="fa-stack fa-lg row">
-                <i class="far fa-circle fa-stack-2x"></i>
-                <i class="fab fa-stack-1x">3</i>
+              <i class="far fa-circle fa-stack-2x"></i>
+              <i class="fab fa-stack-1x">3</i>
             </span>
             <div class="card-image ">
               <i class="material-icons deep-orange-text text-lighten-1">free_breakfast</i>
@@ -63,15 +63,13 @@
       </div>
     </div>
   </div>
+
   <div class="parallax-container">
     <div class="parallax">
       <img src="https://images.unsplash.com/photo-1429081172764-c0ee67ab9afd?dpr=1&auto=format&fit=crop&w=1500&h=927&q=80&cs=tinysrgb&crop=">
     </div>
   </div>
   <div class="section white">
-    <div class="row center">
-      <h3>I nostri risultati</h3>
-    </div>
     <div class="row container">
       <section id="counter-stats" class="wow fadeInRight" data-wow-duration="1.4s">
         <div class="container">
@@ -110,7 +108,7 @@
     </div>
   </div>
 </div>
-
+@endsection
 
 @section('footer')
 @include('includes.footer')
@@ -121,3 +119,4 @@
 @endsection
 
 {{-- vim: set ft=html : --}}
+
