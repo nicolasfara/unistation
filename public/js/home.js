@@ -57,22 +57,44 @@ document.addEventListener('DOMContentLoaded', function() {
   //var cart = document.querySelectorAll('.shopping-cart')
   //M.Dropdown.init(cart, { 'coverTrigger': false, 'constrainWidth': false });
   console.log('Components initialized')
+});
 
-  $('.counting').each(function() {
-    var $this = $(this),
-        countTo = $this.attr('data-count');
-    $({ countNum: $this.text()}).animate({
-      countNum: countTo
-    },
-    {
-      duration: 3000,
-      easing:'linear',
-      step: function() {
-        $this.text(Math.floor(this.countNum));
-      },
-      complete: function() {
-        $this.text(this.countNum);
-      }
-    });
+// Thanks to PedroDJ46
+$(window).scroll(function(){
+  var flag = false
+  $('.counting').each(function(){
+    if(isScrolledIntoView($(this)) && flag == false){
+      flag = true
+      $('.counting').each(function() {
+        var $this = $(this),
+            countTo = $this.attr('data-count');
+        $({ countNum: $this.text()}).animate({
+          countNum: countTo
+        },
+        {
+          duration: 3000,
+          easing:'linear',
+          step: function() {
+            $this.text(Math.floor(this.countNum));
+          },
+          complete: function() {
+            $this.text(this.countNum);
+          }
+        });
+      });
+    }
   });
 });
+
+function isScrolledIntoView(elem){
+    var $elem = $(elem);
+    var $window = $(window);
+
+    var docViewTop = $window.scrollTop();
+    var docViewBottom = docViewTop + $window.height();
+
+    var elemTop = $elem.offset().top;
+    var elemBottom = elemTop + $elem.height();
+
+    return ((elemBottom <= docViewBottom) && (elemTop >= docViewTop));
+}
