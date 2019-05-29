@@ -63,7 +63,6 @@
       </div>
     </div>
   </div>
-
   <div class="parallax-container">
     <div class="parallax">
       <img src="https://images.unsplash.com/photo-1429081172764-c0ee67ab9afd?dpr=1&auto=format&fit=crop&w=1500&h=927&q=80&cs=tinysrgb&crop=">
@@ -111,7 +110,7 @@
     </div>
   </div>
 </div>
-@endsection
+
 
 @section('footer')
 @include('includes.footer')
