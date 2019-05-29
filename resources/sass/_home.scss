@@ -69,4 +69,28 @@ section#counter-stats {
   }
 }
 
+.cookie-consent {
+
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1030;
+  height: 10%;
+  background:#999;
+  padding: .5rem !important;
+
+  //position:fixed;
+  //left:0px;
+  //bottom:0px;
+  //height:10%;
+  //width:100%;
+  //background:#999;
+  opacity: 0.9;
+}
+
+.cookie-consent .row {
+  margin-bottom: 0px;
+}
+
 /*/ end count stats /*/

@@ -27,5 +27,7 @@
     <!--script type="text/javascript" src="{{ asset('js/app.js') }}"></script-->
     <script type="text/javascript" src="{{ asset('js/materialize.min.js') }}"></script>
     @yield('scripts')
+
+    @include('cookieConsent::index')
   </body>
 </html>

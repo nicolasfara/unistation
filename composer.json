@@ -20,7 +20,8 @@
         "league/flysystem-aws-s3-v3": "^1.0",
         "nesbot/carbon": "^2.18",
         "pusher/pusher-http-laravel": "^4.2",
-        "pusher/pusher-php-server": "^3.4"
+        "pusher/pusher-php-server": "^3.4",
+        "spatie/laravel-cookie-consent": "^2.8"
     },
     "require-dev": {
         "beyondcode/laravel-dump-server": "^1.0",

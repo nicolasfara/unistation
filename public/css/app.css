@@ -9728,6 +9728,22 @@ section#counter-stats {
   }
 }
 
+.cookie-consent {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1030;
+  height: 10%;
+  background: #999;
+  padding: 0.5rem !important;
+  opacity: 0.9;
+}
+
+.cookie-consent .row {
+  margin-bottom: 0px;
+}
+
 /*/ end count stats /*/
 
 .login-box {
