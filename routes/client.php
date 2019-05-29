@@ -11,7 +11,7 @@ Route::get('/home', function () {
     //dd($users);
     $types = Product::getProductsType();
     $products = Product::all();
-    $vendors = Vendor::all();
+    $vendors = Vendor::orderBy('id','desc');
 
     return view('client.home', ['types' => $types, 'products' => $products, 'vendors' => $vendors ]);
 })->name('home');

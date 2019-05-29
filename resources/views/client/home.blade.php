@@ -24,7 +24,7 @@
               <div class="card">
                 <div class="card-image">
                  @if($product->image != null)
-                 <img src="{{ Storage::url($product->image) }}" alt="" class="circle responsive-img">
+                 <img src="{{ Storage::url($product->image) }}" alt="" class="activator circle responsive-img">
                  @else
                  <img src="https://s3-eu-west-1.amazonaws.com/unistation/placeholders/imageprofile-placeholder-350x350.png" alt="" class="circle responsive-img">
                  @endif
@@ -35,7 +35,7 @@
                 <p class="right-align">{{ $product->price }}&euro;</p>
               </div>
               <div class="card-reveal">
-                <span class="card-title grey-text text-darken-4">{{ $vendors[$product->vendor_id]->name }}<i class="material-icons right">close</i></span>
+                <span class="card-title grey-text text-darken-4">{{ $product->vendor->name }}<i class="material-icons right">close</i></span>
                 <p>Here is some more information about this product that is only revealed once clicked on.</p>
               </div>
             </div>

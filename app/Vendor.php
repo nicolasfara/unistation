@@ -43,6 +43,11 @@ class Vendor extends Authenticatable
     {
         return $this->belongsToMany('App\Order', 'order_vendor');
     }
+
+    public function products()
+    {
+        return $this->hasMany('App\Product');
+    }
 }
 
 // vim: set ts=4 sw=4 :
