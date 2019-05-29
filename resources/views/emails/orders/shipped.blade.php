@@ -1,10 +1,10 @@
 @component('mail::message')
 # Il tuo cibo sta arrivando!
 
-Hai ordinato:
+Riepilogo ordine:
 
 @component('mail::table')
-| Prodotto             | Quantita                      | Prezzo                     |
+| Prodotto             | Quantità                      | Prezzo                     |
 | -------------------- | ----------------------------: | --------------------------:|
 @foreach($order->products as $p)
 | {{ $p->name }}       | {{ $p->pivot->quantity }}     | {{ $p->price }}&euro;      |
@@ -12,7 +12,8 @@ Hai ordinato:
 | **Totale:**          |                               | {{ $order->total }}&euro;  |
 @endcomponent
 
-Preparati alle: {{ $date->hour }}:{{ $date->minute }} del {{ $date->day }} {{ $date->month }}, uno dei nostri ti aspetterà per la consegna!
+Preparati alle **{{ $date->format('H:i') }}** del **{{ $date->day }}/{{ $date->month }}**,
+uno dei nostri collaboratori ti aspetterà per la consegna!
 
 Grazie,<br>
 {{ config('app.name') }}
