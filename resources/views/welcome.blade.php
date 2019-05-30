@@ -15,13 +15,10 @@
                 </div>
             </div>
             <div class="center">
-                <video poster="https://d3i4yxtzktqr9n.cloudfront.net/web-eats/static/images/header_animation_poster-4f02cb7cad.png" autoplay="" loop="" width="300" height="300">
+                <video  class="responsive-video"poster="https://d3i4yxtzktqr9n.cloudfront.net/web-eats/static/images/header_animation_poster-4f02cb7cad.png" autoplay="" loop="" width="300" height="300">
                     <source src="https://d3i4yxtzktqr9n.cloudfront.net/web-eats/static/videos/header_animation-1a60210550.webm" type="video/webm">
                     <source src="https://d3i4yxtzktqr9n.cloudfront.net/web-eats/static/videos/header_animation-c22df1758f.mp4" type="video/mp4">
                 </video>
-                <source src="https://d3i4yxtzktqr9n.cloudfront.net/web-eats/static/videos/header_animation-1a60210550.webm" type="video/webm">
-                <source src="https://d3i4yxtzktqr9n.cloudfront.net/web-eats/static/videos/header_animation-c22df1758f.mp4" type="video/mp4">
-                <source src="https://d3i4yxtzktqr9n.cloudfront.net/web-eats/static/videos/header_animation-c22df1758f.mp4" type="video/mp4">
             </div>
         </div>
     </div>
@@ -79,7 +76,7 @@
 
     <div class="parallax-container">
         <div class="parallax">
-            <img src="{{ asset('images/Food.jpg') }}">
+            <img src="{{ asset('images/food2.jpg') }}">
         </div>
     </div>
     <div class="section white">
@@ -91,25 +88,25 @@
                 <div class="container">
                     <div class="row">
                         <div class="col s3 stats">
-                            <div class="row"><i class="fas fa-hamburger orange-text" aria-hidden="true"></i></div>
+                            <div class="row"><i class="fas fa-hamburger deep-orange-text" aria-hidden="true"></i></div>
                             <div class="counting row" data-count="{{ $products_count }}">0</div>
                             <h5>Prodotti disponibili</h5>
                         </div>
 
                         <div class="col s3 stats">
-                            <div class="row"><i class="fas fa-store orange-text" aria-hidden="true"></i></div>
+                            <div class="row"><i class="fas fa-store deep-orange-text" aria-hidden="true"></i></div>
                             <div class="counting row" data-count="{{ $vendors_count }}">0</div>
                             <h5>Venditori registrati</h5>
                         </div>
 
                         <div class="col s3 stats">
-                            <div class="row"><i class="fas fa-user orange-text" aria-hidden="true"></i></div>
+                            <div class="row"><i class="fas fa-user deep-orange-text" aria-hidden="true"></i></div>
                             <div class="counting row" data-count="{{ $clients_count }}">0</div>
                             <h5>Clienti soddisfatti</h5>
                         </div>
 
                         <div class="col s3 stats">
-                            <div class="row"><i class="fas fa-shipping-fast orange-text" aria-hidden="true"></i></div>
+                            <div class="row"><i class="fas fa-shipping-fast deep-orange-text" aria-hidden="true"></i></div>
                             <div class="counting row" data-count="{{ $orders_count }}">0</div>
                             <h5>Ordini effettuati</h5>
                         </div>
