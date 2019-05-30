@@ -8,13 +8,13 @@
 <div class="no-pad-bot" id="index-banner">
     <div class="container section">
         <div class="row ">
-            <div class="logo col s6">
+            <div class="logo col s12 m6">
                 <img class="responsive-img" src="{{ asset('images/logo.png') }}" style="display: block; margin-left: auto; margin-right: auto;">
                 <div class="row center title-home">
                     <h4 class="header col s12 light"> Il food a portata di un click</h4>
                 </div>
             </div>
-            <div class="center col s6">
+            <div class="center col s12 m6">
             	<video id="video_player" class="responsive-video" poster="https://d3i4yxtzktqr9n.cloudfront.net/web-eats/static/images/header_animation_poster-4f02cb7cad.png" playsinline autoplay loop muted width="300" height="300">
             		<source src="https://d3i4yxtzktqr9n.cloudfront.net/web-eats/static/videos/header_animation-1a60210550.webm" type="video/webm">
                     <source src="https://d3i4yxtzktqr9n.cloudfront.net/web-eats/static/videos/header_animation-c22df1758f.mp4" type="video/mp4">
