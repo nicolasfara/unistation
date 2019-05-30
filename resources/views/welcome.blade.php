@@ -7,14 +7,14 @@
 @section('content')
 <div class="no-pad-bot" id="index-banner">
     <div class="container section">
-        <div class="row">
-            <div class="logo">
+        <div class="row ">
+            <div class="logo col s6">
                 <img class="responsive-img" src="{{ asset('images/logo.png') }}" style="display: block; margin-left: auto; margin-right: auto;">
-                <div class="row center">
+                <div class="row center title-home">
                     <h4 class="header col s12 light"> Il food a portata di un click</h4>
                 </div>
             </div>
-            <div class="center">
+            <div class="center col s6">
             	<video id="video_player" class="responsive-video" poster="https://d3i4yxtzktqr9n.cloudfront.net/web-eats/static/images/header_animation_poster-4f02cb7cad.png" playsinline autoplay loop muted width="300" height="300">
             		<source src="https://d3i4yxtzktqr9n.cloudfront.net/web-eats/static/videos/header_animation-1a60210550.webm" type="video/webm">
                     <source src="https://d3i4yxtzktqr9n.cloudfront.net/web-eats/static/videos/header_animation-c22df1758f.mp4" type="video/mp4">
@@ -25,7 +25,7 @@
             </div>
         </div>
     </div>
-    <div class="container">
+   <!-- <div class="container">
         <div class="section">
             <div class="row" id="home-card">
                 <div class="col s4 m4 l4 center-align">
@@ -36,7 +36,6 @@
 						</span>
                         <div class="card-image">
                             <i class="material-icons deep-orange-text text-lighten-1">edit</i>
-                            <!--img src="{{ asset('images/logos/First.png') }}" class="responsive-img" alt="first-logo"-->
                         </div>
                         <div class="card-content center">
                             <h4 class="light flow-text">Registrati</h4>
@@ -51,7 +50,6 @@
 						</span>
                         <div class="card-image">
                             <i class="material-icons deep-orange-text text-lighten-1">assignment</i>
-                            <!--img src="{{ asset('images/logos/First.png') }}" class="responsive-img" alt="first-logo"-->
                         </div>
                         <div class="card-content center">
                             <h4 class="light">Ordina</h4>
@@ -66,7 +64,6 @@
 							</span>
                         <div class="card-image ">
                             <i class="material-icons deep-orange-text text-lighten-1">free_breakfast</i>
-                            <!--img src="{{ asset('images/logos/Third.png') }}" class="responsive-img" alt="third-logo"-->
                         </div>
                         <div class="card-content">
                             <h4 class="light">Enjoy!</h4>
@@ -76,7 +73,7 @@
             </div>
         </div>
     </div>
-
+ -->
     <div class="parallax-container">
         <div class="parallax">
             <img src="{{ asset('images/Food.jpg') }}">
