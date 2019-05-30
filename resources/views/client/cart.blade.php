@@ -76,7 +76,7 @@
                           <a href="{{ url('client/home') }}" class="btn-flat waves-effect">Indietro</a>
                         </td>
                         <td>
-                          <a class="btn waves-effect waves-light hoverable" type="submit" name="action" onclick="sendOrder()">Checkout<i class="material-icons right">send</i></a>
+                          <a class="btn waves-effect waves-light hoverable deep-orange" type="submit" name="action" onclick="sendOrder()">Checkout<i class="material-icons right">send</i></a>
                         </td>
                       </tr>
                     </tbody>

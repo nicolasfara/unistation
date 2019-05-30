@@ -83,7 +83,7 @@
           <a href="{{ url('client/cart') }}" class="btn-flat waves-effect waves-light">Indietro</a>
         </div>
         <div class="right-align col s6">
-          <button type="submit" class="btn teal lighten-1 waves-effect waves-light hoverable">Paga Ora</button>
+          <button type="submit" class="btn deep-orange waves-effect waves-light hoverable">Paga Ora</button>
         </div>
       </div>
     </form>

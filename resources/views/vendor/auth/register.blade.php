@@ -68,7 +68,7 @@
         </div>
         <div class="card-action right-align">
           <input type="reset" id="reset" class="btn-flat grey-text waves-effect">
-          <button type="submit" class="btn teal lighten-1 waves-effect waves-light">Registra</button>
+          <button type="submit" class="btn deep-orange waves-effect waves-light">Registra</button>
         </div>
       </form>
     </div>
