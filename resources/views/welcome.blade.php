@@ -79,7 +79,7 @@
 
     <div class="parallax-container">
         <div class="parallax">
-            <img src="https://images.unsplash.com/photo-1429081172764-c0ee67ab9afd?dpr=1&auto=format&fit=crop&w=1500&h=927&q=80&cs=tinysrgb&crop=">
+            <img src="{{ asset('images/Food.jpg') }}">
         </div>
     </div>
     <div class="section white">
@@ -120,7 +120,7 @@
     </div>
     <div class="parallax-container">
         <div class="parallax">
-            <img src="https://images.unsplash.com/photo-1429081172764-c0ee67ab9afd?dpr=1&auto=format&fit=crop&w=1500&h=927&q=80&cs=tinysrgb&crop=">
+            <img src="{{ asset('images/Food.jpg') }}">
         </div>
     </div>
 </div>
