@@ -16,19 +16,13 @@
             <div  class="col s4">
               <label class="radio-inline">
                 <input name="group1" type="radio" checked />
-                <span><i class=" fa fa-cc-mastercard  fa-2x"></i></span>
+                <span><i class=" fab fa-cc-mastercard fa-2x"></i></span> 
               </label>
             </div>
             <div  class="col s4">
               <label class="radio-inline">
                 <input name="group1" type="radio" />
-                <span><i class="fa fa-cc-visa fa-2x"></i></span>
-              </label>
-            </div>
-            <div  class="col s4">
-              <label class="radio-inline">
-                <input name="group1" type="radio" />
-                <span><i class="fa fa-cc-paypal fa-2x"></i></span>
+                <span><i class="fab fa-cc-visa fa-2x"></i></span>
               </label>
             </div>
           </div>
@@ -89,7 +83,7 @@
           <a href="{{ url('client/cart') }}" class="btn-flat waves-effect waves-light">Indietro</a>
         </div>
         <div class="right-align col s6">
-          <button type="submit" class="btn teal lighten-1 waves-effect waves-light">Paga Ora</button>
+          <button type="submit" class="btn teal lighten-1 waves-effect waves-light hoverable">Paga Ora</button>
         </div>
       </div>
     </form>

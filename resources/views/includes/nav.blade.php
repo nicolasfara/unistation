@@ -33,7 +33,7 @@
 
 <ul class="sidenav deep-orange" id="mobile-demo">
   @guest
-  <li><a href="{{ url('client/login') }}">Accedi</a></li>
+  <li><a href="{{ url('client/login') }}">Accedi</a></li> 
   <li><a href="{{ url('client/register') }}">Registrati</a></li>
   @else
   <li><a href="{{ url('client/cart') }}"><i class="material-icons">shopping_cart</i>Carrello</a></li>
