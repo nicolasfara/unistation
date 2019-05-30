@@ -54,6 +54,7 @@ document.addEventListener('DOMContentLoaded', function() {
   M.Slider.init(slider, { });
   var parallax = document.querySelectorAll('.parallax');
   M.Parallax.init(parallax, { });
+
   //var cart = document.querySelectorAll('.shopping-cart')
   //M.Dropdown.init(cart, { 'coverTrigger': false, 'constrainWidth': false });
   console.log('Components initialized')
@@ -98,3 +99,7 @@ function isScrolledIntoView(elem){
 
     return ((elemBottom <= docViewBottom) && (elemTop >= docViewTop));
 }
+
+$(document).ready(function(){
+  $('.parallax').parallax();
+});
