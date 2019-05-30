@@ -12,6 +12,7 @@
         "darryldecode/cart": "^4.0",
         "doctrine/dbal": "^2.9",
         "fideloper/proxy": "^4.0",
+        "guzzlehttp/guzzle": "^6.3",
         "hesto/multi-auth": "^2.0",
         "laravel-validation-rules/credit-card": "^1.1",
         "laravel/framework": "5.8.*",
