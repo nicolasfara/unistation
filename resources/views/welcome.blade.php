@@ -80,6 +80,61 @@
         </div>
     </div>
     <div class="section white">
+    	<div class="container">
+        <div class="section">
+            <div class="row" id="home-card">
+                <div class="col s4 m4 l4 center-align">
+                    <div class="card z-depth-0">
+                        <span class="fa-stack fa-lg row">
+							<i class="far fa-circle fa-stack-2x"></i>
+							<i class="fab fa-stack-1x">1</i>
+						</span>
+                        <div class="card-image">
+                            <i class="material-icons deep-orange-text text-lighten-1">edit</i>
+                        </div>
+                        <div class="card-content center">
+                            <h4 class="light flow-text">Registrati</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col s4 m4 l4 center-align">
+                    <div class="card z-depth-0">
+                        <span class="fa-stack fa-lg row">
+							<i class="far fa-circle fa-stack-2x"></i>
+							<i class="fab fa-stack-1x">2</i>
+						</span>
+                        <div class="card-image">
+                            <i class="material-icons deep-orange-text text-lighten-1">assignment</i>
+                        </div>
+                        <div class="card-content center">
+                            <h4 class="light">Ordina</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col s4 m4 l4 center-align">
+                    <div class="card z-depth-0">
+                        <span class="fa-stack fa-lg row">
+						 	<i class="far fa-circle fa-stack-2x"></i>
+							<i class="fab fa-stack-1x">3</i>
+							</span>
+                        <div class="card-image ">
+                            <i class="material-icons deep-orange-text text-lighten-1">free_breakfast</i>
+                        </div>
+                        <div class="card-content">
+                            <h4 class="light">Enjoy!</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div class="parallax-container">
+        <div class="parallax">
+            <img src="{{ asset('images/food3.jpg') }}">
+        </div>
+    </div>
+    <div class="section white">
         <div class="row container center">
             <h3>I nostri risultati</h3>
         </div>
