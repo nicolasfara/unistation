@@ -137,6 +137,9 @@
                 @case('dessert')
                   <option value="{{ $type }}">Dolci</option>
                   @break
+                  @case('drink')
+                  <option value="{{ $type }}">Bevande</option>
+                  @break
               @endswitch
               @endforeach
             </select>
