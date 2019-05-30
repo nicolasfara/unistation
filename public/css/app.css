@@ -9750,8 +9750,14 @@ section#counter-stats {
 
 @media only screen and (max-width: 992px) {
   .title-home > h4 {
-    font-size: 14px;
+    font-size: 30px;
   }
+}
+
+.parallax {
+  -webkit-transform: none !important;
+          transform: none !important;
+  width: 100% !important;
 }
 
 .login-box {
