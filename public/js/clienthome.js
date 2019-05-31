@@ -18,12 +18,18 @@ document.addEventListener('DOMContentLoaded', function() {
     'format': 'd-m-yyyy',
     'firstDay' : 1,
     'defaultDate' : today,
-    'setDefaultDate' : true
+    'setDefaultDate' : true,
+	'autoClose' : true,
+	'minDate' : today
   });
-  var time = document.querySelectorAll('.timepicker');
+  
+  var timer = document.querySelectorAll('.timepicker');
   M.Timepicker.init(time, {
     'twelveHour' : false,
-    'defaultTime' : '12:00'
+    'defaultTime' : 'now'
+	/*onCloseStart: function(){
+		console.log(timer.time); 
+	}*/
   });
 });
 
