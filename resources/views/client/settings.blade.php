@@ -32,7 +32,7 @@
           </div>
           <div class="row">
             <div class="file-field input-field">
-              <div class="btn">
+              <div class="btn deep-orange">
                 <span>File</span>
                 <input name="newavatar" type="file">
               </div>
@@ -43,7 +43,7 @@
           </div>
         </div>
         <div class="card-action right-align">
-          <input type="submit" class="btn teal lighten-1 waves-effect waves-light" value="Aggiorna">
+          <input type="submit" class="btn deep-orange waves-effect waves-light" value="Aggiorna">
         </div>
       </form>
     </div>

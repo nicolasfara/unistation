@@ -79,7 +79,7 @@
               </div>
               <div class="row">
                 <div class="file-field input-field col s12 m6">
-                  <div class="btn">
+                  <div class="btn deep-orange">
                     <span>Carica</span>
                     <input name="productimg" type="file">
                   </div>
@@ -88,7 +88,7 @@
                   </div>
                 </div>
               </div>
-              <button class="waves-effect waves-light btn" type="submit">Aggiorna</button>
+              <button class="waves-effect waves-light btn deep-orange" type="submit">Aggiorna</button>
             </form>
             <form id="delete-product{{ $product->id }}-form" action="{{ route('products.destroy', $product->id) }}" method="POST" style="display: none;">
               @csrf
@@ -153,7 +153,7 @@
       </form>
     </div>
     <div class="modal-footer">
-      <a onclick="event.preventDefault(); document.getElementById('add-product-form').submit();" class="waves-effect waves-green btn-flat">Aggiungi</a>
+      <a onclick="event.preventDefault(); document.getElementById('add-product-form').submit();" class="waves-effect waves-green btn-flat deep-orange">Aggiungi</a>
       <a class="modal-close waves-effect waves-green btn-flat">Chiudi</a>
     </div>
   </div>
