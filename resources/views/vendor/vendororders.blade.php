@@ -1,4 +1,4 @@
-<h1>Riepilogo ordini</h1>
+<h4 class="center">Riepilogo ordini</h4>
 <ul class="collapsible popout">
 @forelse($orders as $order)
   <li id="order-{{ $order->id }}">

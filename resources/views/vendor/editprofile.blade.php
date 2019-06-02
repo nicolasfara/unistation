@@ -1,5 +1,5 @@
 <div class="container">
-  <h1>Modifica profilo</h1>
+  <h4 class="center">Modifica profilo</h4>
   <div class="valign-wrapper row login-box">
     <div class="col card hoverable s12">
       <form class="form-horizontal" enctype="multipart/form-data" method="POST" action="{{ route('vendor-edit.update', Auth::id()) }}">
