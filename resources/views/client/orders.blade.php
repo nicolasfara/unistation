@@ -7,18 +7,20 @@
 @section('content')
 <div class="section no-pad-bot" id="index-banner">
   <div class="container">
-    <div class="row">
-      <div class="section no-pad-bot" id="index-banner">
-        <div id="" class="col s12">
+        <div class="col s12">
           <div class="row">
             <div class="card">
               <div class="card-content" >
-                <table class="responsive-table">
+              	<div class="row">
+              		<div class="col s6">
+                		<a href="{{ url('client/home') }}" class="btn-flat waves-effect ">Indietro</a>
+                	</div>
+                	<div class="col s6">
+                    	<h5 class="">I tuoi ordini</h5>
+                    </div>
+                </div>
+                <table class="centered">
                   <thead>
-                  	<tr> <td><a href="{{ url('client/home') }}" class="btn-flat waves-effect ">Indietro</a></td></tr>
-                  	<tr>     
-                    <h5 class="center">I tuoi ordini</h5>
-                    </tr>
                     <tr>
                       <th>Numero ordine</th>
                       <th>Data</th>
