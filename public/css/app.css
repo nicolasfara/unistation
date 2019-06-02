@@ -9786,6 +9786,10 @@ tabs .tab a:active,
   background-color: #F27620;
 }
 
+.dropdown-content li > a {
+  color: #ff5722;
+}
+
 .login-box {
   height: 100%;
 }
@@ -9796,6 +9800,10 @@ tabs .tab a:active,
 
 .collapsible-header {
   display: block;
+}
+
+.secondary-content {
+  color: #ff5722;
 }
 
 @media only screen and (max-width: 600px) {
