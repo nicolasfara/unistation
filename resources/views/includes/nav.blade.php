@@ -1,6 +1,10 @@
 <nav class="deep-orange" role="navigation">
   <div class="nav-wrapper container">
+    @if(Request::is('client/*'))
     <a id="logo-container" href="{{ url('client/home') }}" class="brand-logo">{{ config('app.name') }}</a>
+    @else
+    <a id="logo-container" class="brand-logo">{{ config('app.name') }}</a>
+    @endif
     <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
     <ul class="right hide-on-med-and-down">
       @guest
