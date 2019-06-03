@@ -76,11 +76,21 @@
                           <a href="{{ url('client/home') }}" class="btn-flat waves-effect">Indietro</a>
                         </td>
                         <td>
-                          <a class="btn waves-effect waves-light hoverable deep-orange" type="submit" name="action" onclick="sendOrder()">Checkout<i class="material-icons right">send</i></a>
+                          <a id="send_order" class="btn waves-effect waves-light hoverable deep-orange" type="submit" name="action" onclick="sendOrder()">Checkout<i class="material-icons right">send</i></a>
                         </td>
                       </tr>
                     </tbody>
                   </table>
+                  <!-- Modal Structure -->
+                  <div id="modal1" class="modal">
+                    <div class="modal-content">
+                      <h4>Modal Header</h4>
+                      <p>A bunch of text</p>
+                    </div>
+                    <div class="modal-footer">
+                      <a href="#!" class="modal-close waves-effect waves-green btn-flat">Agree</a>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
