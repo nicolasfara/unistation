@@ -1,6 +1,6 @@
 <?php
 
 return [
-    'message' => "Questo sito fa uso di cookie per migliorare l’esperienza di navigazione degli utenti e per raccogliere informazioni sull’utilizzo del sito stesso. Utilizziamo sia cookie tecnici sia cookie di parti terze per inviare messaggi promozionali sulla base dei comportamenti degli utenti. Può conoscere i dettagli consultando la nostra privacy policy qui. Proseguendo nella navigazione si accetta l’uso dei cookie; in caso contrario è possibile abbandonare il sito.",
+    'message' => "Questo sito web utilizza cookie tecnici per fornire alcuni servizi. Continuando la navigazione, o cliccando sul pulsante di seguito, acconsenti al loro utilizzo in conformità alla nostra Informativa sulla Privacy e Cookie Policy. Il consenso può essere revocato in qualsiasi momento",
     'agree' => 'Accetta',
 ];
