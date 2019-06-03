@@ -41,7 +41,7 @@
           <div class="card hoverable">
             <div class="card-image">
               @if($product->image != null)
-                <img src="{{ Storage::url($product->image) }}" alt="" class="activator circle responsive-img">
+                <img src="{{ Storage::url($product->image) }}" alt="" class="activator responsive-img">
               @else
                 <img src="https://s3-eu-west-1.amazonaws.com/unistation/placeholders/imageprofile-placeholder-350x350.png" alt="" class="activator circle responsive-img">
               @endif
@@ -54,7 +54,7 @@
             <div class="card-reveal">
               <span class="card-title grey-text text-darken-4">{{ $product->vendor->name }}<i class="material-icons right">close</i></span>
               @if($product->vendor->image != null)
-                <img src="{{ Storage::url($product->vendor->image) }}" alt="" class="activator responsive-img">
+                <img src="{{ Storage::url($product->vendor->image) }}" alt="" class="activator circle responsive-img">
               @else
                 <img src="https://s3-eu-west-1.amazonaws.com/unistation/placeholders/imageprofile-placeholder-350x350.png" alt="" class="activator circle responsive-img">
               @endif

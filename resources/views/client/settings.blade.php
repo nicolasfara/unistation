@@ -11,7 +11,15 @@
         @csrf
         @method('PATCH')
         <div class="card-content">
-        	<span class="card-title">Modifica il tuo profilo</span>
+          <div class="row center">
+                <span class="card-title">Modifica il tuo profilo</span>
+          </div>
+          <div class="row center">
+              <img src="{{ Storage::url(Auth::user()->image) }}" alt="" class="circle responsive-img" style="max-width: 40%;">
+           
+            
+          </div>
+        
           <div class="row">
             <div class="input-field col s12">
               <label for="client_name">Nome</label>
@@ -43,7 +51,7 @@
           </div>
         </div>
         <div class="card-action right-align">
-          <input type="submit" class="btn deep-orange waves-effect waves-light" value="Aggiorna">
+          <button type="submit" class="btn deep-orange waves-effect waves-light">Aggiorna</button>
         </div>
       </form>
     </div>
