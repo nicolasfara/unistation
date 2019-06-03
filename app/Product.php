@@ -19,7 +19,7 @@ class Product extends Model
 
     public static function getProductsType()
     {
-        return ['appetizer', 'first', 'second', 'salad', 'dessert', 'drink'];
+        return ['appetizer', 'first', 'second', 'salad', 'dessert'];
     }
 }
 
