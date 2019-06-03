@@ -79,7 +79,7 @@
             <img src="{{ asset('images/Food.jpg') }}">
         </div>
     </div>
-    <div class="section white">
+    <!-- <div class="section white">
     	<div class="container">
         <div class="section">
             <div class="row" id="home-card">
@@ -128,7 +128,20 @@
             </div>
         </div>
     </div>
-    </div>
+    </div> -->
+	<div class="section white">
+		<div class = "row">
+			<div class = "col s4">
+				<div class = "center aligned column" style = "border: 1px solid rgb(219, 219, 219)">
+					<img style = "max-width: 128px; heigh: auto;" src = "{{ asset('images/how_to_2.png') }}">
+				</div>
+			</div>
+			<div class = "col s4">
+			</div>
+			<div class = "col s4">
+			</div>
+		</div>
+	</div>
     <div class="parallax-container">
         <div class="parallax">
             <img src="{{ asset('images/food3.jpg') }}">

@@ -4,7 +4,7 @@
     <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
     <ul class="right hide-on-med-and-down">
       @guest
-      <li><a class="" href="{{ url('client/login') }}">Accedi</a></li>
+      <li><a class=""  href="{{ url('client/login') }}">Accedi</a></li>
       <li><a class="" href="{{ url('client/register') }}">Registrati</a></li>
       @else
       <ul id="user-dropdown" class="dropdown-content " >
