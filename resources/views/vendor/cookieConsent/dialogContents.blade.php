@@ -6,6 +6,7 @@
     <p class="cookie-consent__message">
         {!! trans('cookieConsent::texts.message') !!}
     </p>
+    <p><a href="https://www.garanteprivacy.it/cookie" style="color:black;  text-decoration: underline;">Informativa Cookie completa</a></p>
   </div>
 
   <div class=" button-cookie col s4 right-align">
