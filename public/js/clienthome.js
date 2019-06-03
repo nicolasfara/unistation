@@ -14,16 +14,27 @@ document.addEventListener('DOMContentLoaded', function() {
   M.Sidenav.init(sidenav, {  });
   var today = new Date();
   var date = document.querySelectorAll('.datepicker');
-  M.Datepicker.init(date, { 
+  var di = M.Datepicker.init(date, {
     'format': 'd-m-yyyy',
     'firstDay' : 1,
     'defaultDate' : today,
-    'setDefaultDate' : true
+    'setDefaultDate' : true,
+    'minDate': new Date(),
   });
-  var time = document.querySelectorAll('.timepicker');
-  M.Timepicker.init(time, {
+  var time = document.querySelectorAll('.timepicker')
+  var st = M.Timepicker.init(time, {
     'twelveHour' : false,
-    'defaultTime' : '12:00'
+    'defaultTime' : '12:00',
+    'onCloseEnd': function() {
+      var delivery_date = new Date(di[0].date)
+      delivery_date.setHours(st[0].time.split(':')[0])
+      delivery_date.setMinutes(st[0].time.split(':')[1])
+      if (delivery_date < Date.now()) {
+        document.getElementById("send_order").classList.add('disabled');
+      } else {
+        document.getElementById("send_order").classList.remove('disabled');
+      }
+    },
   });
 });
 
