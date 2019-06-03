@@ -53,6 +53,11 @@
             </div>
             <div class="card-reveal">
               <span class="card-title grey-text text-darken-4">{{ $product->vendor->name }}<i class="material-icons right">close</i></span>
+              @if($product->vendor->image != null)
+                <img src="{{ Storage::url($product->vendor->image) }}" alt="" class="activator responsive-img">
+              @else
+                <img src="https://s3-eu-west-1.amazonaws.com/unistation/placeholders/imageprofile-placeholder-350x350.png" alt="" class="activator circle responsive-img">
+              @endif
               <p class="material-icons">
                 @for ($i = 1; $i <= $product->vendor->rating; $i++)
                     grade

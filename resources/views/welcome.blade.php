@@ -145,25 +145,25 @@
                         <div class="col s3 stats">
                             <div class="row"><i class="fas fa-hamburger deep-orange-text" aria-hidden="true"></i></div>
                             <div class="counting row" data-count="{{ $products_count }}">0</div>
-                            <h5>Prodotti disponibili</h5>
+                            <h4>Prodotti disponibili</h4>
                         </div>
 
                         <div class="col s3 stats">
                             <div class="row"><i class="fas fa-store deep-orange-text" aria-hidden="true"></i></div>
                             <div class="counting row" data-count="{{ $vendors_count }}">0</div>
-                            <h5>Venditori registrati</h5>
+                            <h4>Venditori registrati</h4>
                         </div>
 
                         <div class="col s3 stats">
                             <div class="row"><i class="fas fa-user deep-orange-text" aria-hidden="true"></i></div>
                             <div class="counting row" data-count="{{ $clients_count }}">0</div>
-                            <h5>Clienti soddisfatti</h5>
+                            <h4>Clienti soddisfatti</h4>
                         </div>
 
                         <div class="col s3 stats">
                             <div class="row"><i class="fas fa-shipping-fast deep-orange-text" aria-hidden="true"></i></div>
                             <div class="counting row" data-count="{{ $orders_count }}">0</div>
-                            <h5>Ordini effettuati</h5>
+                            <h4>Ordini effettuati</h4>
                         </div>
                     </div>
                 </div>

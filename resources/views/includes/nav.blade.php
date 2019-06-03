@@ -1,6 +1,6 @@
 <nav class="deep-orange" role="navigation">
   <div class="nav-wrapper container">
-    <a id="logo-container" href="{{ url('/') }}" class="brand-logo">{{ config('app.name') }}</a>
+    <a id="logo-container" href="{{ url('client/home') }}" class="brand-logo">{{ config('app.name') }}</a>
     <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
     <ul class="right hide-on-med-and-down">
       @guest
