@@ -11,7 +11,7 @@
       <div class="section no-pad-bot" id="index-banner">
         <div id="" class="col s12">
           <div class="row">
-            <div class="col s12 m8">
+            <div class="col s12 l8">
               <h5 class="center">Il tuo carrello</h5>
               @foreach($cart_content as $elem)
               <div class="card-panel row" id="row-{{ $elem->id }}">
@@ -25,7 +25,7 @@
               </div>
               @endforeach
             </div>
-            <div class="col s12 m4">
+            <div class="col s12 l4">
               <div class="card">
                 <div class="card-content" >
                   <table>
