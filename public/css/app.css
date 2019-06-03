@@ -9858,3 +9858,9 @@ input[type=number] {
   /* Firefox */
 }
 
+.btn,
+.btn-large,
+.btn-small {
+  background-color: #ff5722;
+}
+
