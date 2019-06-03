@@ -90,7 +90,9 @@ class ClientController extends Controller
         if ($request->hasFile('newavatar')){
             $file = $request->file('newavatar');
             $path = Storage::putFile('avatar', $file, 'public');
-            Storage::delete($client->image);
+            if ($client->image != 'placeholders/imageprofile-placeholder-350x350.png') {
+                Storage::delete($client->image);
+            }
             $client->image = $path;
         }
 
