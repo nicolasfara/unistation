@@ -109,12 +109,11 @@ class ProductController extends Controller
         if ($request->hasFile('productimg')) {
             $file = $request->file('productimg');
             $path = Storage::putFile('products', $file, 'public');
-            Storage::delete($update_product->image);
+            if ($update_product->image != 'placeholders/imageprofile-placeholder-350x350.png') {
+                Storage::delete($update_product->image);
+            }
             $update_product->image = $path;
-            Log::debug("in");
         }
-
-        Log::debug("out");
 
         $update_product->save();
 
