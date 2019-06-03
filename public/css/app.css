@@ -9734,10 +9734,24 @@ section#counter-stats {
   bottom: 0;
   left: 0;
   z-index: 1030;
-  height: 13%;
   background: #999;
   padding: 0.5rem !important;
   opacity: 0.9;
+  margin-top: 5px;
+}
+
+.cookie-consent__agree {
+  margin-top: 5px;
+}
+
+.button-cookie {
+  margin-top: 30px;
+}
+
+@media only screen and (max-width: 992px) {
+  .button-cookie {
+    margin-top: 80px;
+  }
 }
 
 .cookie-consent .row {
