@@ -13,23 +13,29 @@ document.addEventListener('DOMContentLoaded', function() {
   var sidenav = document.querySelectorAll('.sidenav');
   M.Sidenav.init(sidenav, {  });
   var today = new Date();
-  var date = document.querySelectorAll('.datepicker');
-  M.Datepicker.init(date, { 
+  var selected;
+  var datepicker = document.querySelectorAll('.datepicker');
+  M.Datepicker.init(datepicker, { 
     'format': 'd-m-yyyy',
     'firstDay' : 1,
     'defaultDate' : today,
     'setDefaultDate' : true,
 	'autoClose' : true,
-	'minDate' : today
+	'minDate' : today,
+	onClose: function() {
+		document.getElementById("time").disabled = false;
+	}
   });
   
   var timer = document.querySelectorAll('.timepicker');
+  document.getElementById("time").disabled = true;
   M.Timepicker.init(time, {
     'twelveHour' : false,
-    'defaultTime' : 'now'
-	/*onCloseStart: function(){
-		console.log(timer.time); 
-	}*/
+    'defaultTime' : 'now',
+	onOpenStart: function() {
+		var today = new Date();
+		console.log(today);
+	}
   });
 });
 
