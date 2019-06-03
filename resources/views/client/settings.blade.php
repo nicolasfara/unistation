@@ -16,10 +16,9 @@
           </div>
           <div class="row center user-view">
             <a>
-                <img src="{{ Storage::url(Auth::user()->image) }}" alt="" class="circle responsive-img" style="width: 100px; height: 100px;">
+              <img src="{{ Storage::url(Auth::user()->image) }}" alt="" class="circle responsive-img" style="width: 100px; height: 100px;">
             </a>
           </div>
-        
           <div class="row">
             <div class="input-field col s12">
               <label for="client_name">Nome</label>

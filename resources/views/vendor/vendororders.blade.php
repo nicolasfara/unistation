@@ -32,7 +32,7 @@
       </div>
       <div class="row">
         @php
-          $date = Carbon::parse($order->delivery_info)
+          $date = Carbon::parse($order->delivery_info, 'Europe/Rome')
         @endphp
         <h5>Informazioni spedizione</h5>
         <table class="striped">

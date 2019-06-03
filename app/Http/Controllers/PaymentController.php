@@ -61,7 +61,11 @@ class PaymentController extends Controller
 
         $cart_content = Cart::session(Auth::id())->getContent();
 
-        $date = Carbon::createFromFormat('d-m-Y H:m', $request->input('date') . ' ' . $request->input('time'));
+        try {
+            $date = Carbon::createFromFormat('j-n-Y G:i', $request->input('date') . ' ' . $request->input('time'), 'Europe/Rome');
+        } catch (Exception $ex) {
+            Log::debug("Date format exception");
+        }
 
         $new_order = new Order();
         $new_order->client_id = Auth::id();
