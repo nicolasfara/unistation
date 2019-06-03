@@ -8,8 +8,8 @@
     </p>
   </div>
 
-  <div class=" button-cookie col s4 valign-wrapper">
-    <button class="js-cookie-consent-agree cookie-consent__agree btn">
+  <div class=" button-cookie col s4 right-align">
+    <button class="js-cookie-consent-agree cookie-consent__agree btn right-align">
         {{ trans('cookieConsent::texts.agree') }}
     </button>
   </div>
