@@ -14,10 +14,10 @@
           <div class="row center">
                 <span class="card-title">Modifica il tuo profilo</span>
           </div>
-          <div class="row center">
-              <img src="{{ Storage::url(Auth::user()->image) }}" alt="" class="circle responsive-img" style="max-width: 40%; max-height: 40%">
-           
-            
+          <div class="row center user-view">
+            <a>
+                <img src="{{ Storage::url(Auth::user()->image) }}" alt="" class="circle responsive-img" style="width: 100px; height: 100px;">
+            </a>
           </div>
         
           <div class="row">
