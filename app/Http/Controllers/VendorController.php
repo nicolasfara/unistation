@@ -93,7 +93,9 @@ class VendorController extends Controller
         if ($request->hasFile('newavatar')){
             $file = $request->file('newavatar');
             $path = Storage::putFile('avatar', $file, 'public');
-            Storage::delete($vendor->image);
+            if ($vendor->image != 'placeholders/imageprofile-placeholder-350x350.png') {
+                Storage::delete($vendor->image);
+            }
             $vendor->image = $path;
         }
 
