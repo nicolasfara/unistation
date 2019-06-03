@@ -16,12 +16,12 @@
               @foreach($cart_content as $elem)
               <div class="card-panel row" id="row-{{ $elem->id }}">
                   <div class="col s10 m4">{{ $elem->name }}</div>
-                  <div class="col s2 m2 right-align">{{ $elem->price }}&euro;</div>
-                  <div class="col s6 m2">
+                  <div class="col s2 m2 push-m6 right-align">{{ $elem->price }}&euro;</div>
+                  <div class="col s6 m2 pull-m2">
                     <input placeholder="Quantità" name="qty" id="new_quantity_{{ $elem->id }}" type="number" min="1" step="1" value="{{ $elem->quantity }}">
                   </div>
-                  <div class="col s3 m2"><a onclick="updateQuantity({{ $elem->id }})" class="deep-orange waves-effect waves-light btn "><i class="material-icons">refresh</i></a></div>
-                  <div class="col s3 m2 right-align"><a onclick="removeFromCart({{ $elem->id }})" class="deep-orange waves-effect waves-light btn "><i class="material-icons">delete</i></a></div>
+                  <div class="col s3 m2 pull-m2"><a onclick="updateQuantity({{ $elem->id }})" class="deep-orange waves-effect waves-light btn "><i class="material-icons">refresh</i></a></div>
+                  <div class="col s3 m2 pull-m2 right-align"><a onclick="removeFromCart({{ $elem->id }})" class="deep-orange waves-effect waves-light btn "><i class="material-icons">delete</i></a></div>
               </div>
               @endforeach
             </div>
