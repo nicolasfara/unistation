@@ -22,14 +22,7 @@ header, main, footer {
 <ul id="slide-out" class="sidenav sidenav-fixed">
   <li>
     <div class="user-view">
-      <!--div class="background">
-        <img class="responsive-img" src="{{ asset('images/placeholders/imageprofile-placeholder-350x350.png') }}">
-      </div-->
-      @if(Auth::user()->image != null)
       <a><img class="responsive-img circle" src="{{ url(Storage::url(Auth::user()->image)) }}"></a>
-      @else
-      <a><img class="responsive-img circle" src="{{ url('https://s3-eu-west-1.amazonaws.com/unistation/placeholders/imageprofile-placeholder-350x350.png') }}"></a>
-      @endif
       <a><span class="black-text name">{{ Auth::user()->name }}</span></a>
       <a><span class="black-text email">{{ Auth::user()->email }}</span></a>
     </div>

@@ -84,7 +84,7 @@
         <div class="section">
             <div class="row" id="home-card">
                 <div class="col s4 m4 l4 center-align">
-                    <div class="card z-depth-0">
+                    <div class="card z-depth-0 ">
                         <span class="fa-stack fa-lg row">
 							<i class="far fa-circle fa-stack-2x"></i>
 							<i class="fab fa-stack-1x">1</i>
@@ -92,7 +92,7 @@
                         <div class="card-image">
                             <i class="material-icons deep-orange-text text-lighten-1">edit</i>
                         </div>
-                        <div class="card-content center">
+                        <div class="card-content center welcome-card">
                             <h4 class="light flow-text">Registrati</h4>
                         </div>
                     </div>
@@ -106,7 +106,7 @@
                         <div class="card-image">
                             <i class="material-icons deep-orange-text text-lighten-1">assignment</i>
                         </div>
-                        <div class="card-content center">
+                        <div class="card-content center welcome-card">
                             <h4 class="light">Ordina</h4>
                         </div>
                     </div>
@@ -120,7 +120,7 @@
                         <div class="card-image ">
                             <i class="material-icons deep-orange-text text-lighten-1">free_breakfast</i>
                         </div>
-                        <div class="card-content">
+                        <div class="card-content welcome-card">
                             <h4 class="light">Enjoy!</h4>
                         </div>
                     </div>
@@ -145,25 +145,25 @@
                         <div class="col s3 stats">
                             <div class="row"><i class="fas fa-hamburger deep-orange-text" aria-hidden="true"></i></div>
                             <div class="counting row" data-count="{{ $products_count }}">0</div>
-                            <h4>Prodotti disponibili</h4>
+                            <h5>Prodotti disponibili</h5>
                         </div>
 
                         <div class="col s3 stats">
                             <div class="row"><i class="fas fa-store deep-orange-text" aria-hidden="true"></i></div>
                             <div class="counting row" data-count="{{ $vendors_count }}">0</div>
-                            <h4>Venditori registrati</h4>
+                            <h5>Venditori registrati</h5>
                         </div>
 
                         <div class="col s3 stats">
                             <div class="row"><i class="fas fa-user deep-orange-text" aria-hidden="true"></i></div>
                             <div class="counting row" data-count="{{ $clients_count }}">0</div>
-                            <h4>Clienti soddisfatti</h4>
+                            <h5>Clienti soddisfatti</h5>
                         </div>
 
                         <div class="col s3 stats">
                             <div class="row"><i class="fas fa-shipping-fast deep-orange-text" aria-hidden="true"></i></div>
                             <div class="counting row" data-count="{{ $orders_count }}">0</div>
-                            <h4>Ordini effettuati</h4>
+                            <h5>Ordini effettuati</h5>
                         </div>
                     </div>
                 </div>
