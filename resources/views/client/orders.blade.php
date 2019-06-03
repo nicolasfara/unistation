@@ -11,12 +11,12 @@
           <div class="row">
             <div class="card">
               <div class="card-content" >
-              	<div class="row">
-              		<div class="col s6">
-                		<a href="{{ url('client/home') }}" class="btn-flat waves-effect ">Indietro</a>
-                	</div>
-                	<div class="col s6">
-                    	<h5 class="">I tuoi ordini</h5>
+                <div class="row">
+                  <div class="col s5">
+                    <a href="{{ url('client/home') }}" class="btn-flat waves-effect ">Indietro</a>
+                  </div>
+                  <div class="col s7">
+                      <h5 class="">I tuoi ordini</h5>
                     </div>
                 </div>
                 <table class="centered">
@@ -29,7 +29,7 @@
                     </tr>
                   </thead>
                   <tbody>
-                    @foreach($orders as $order)
+                    @forelse($orders as $order)
                     <tr>
                       @php
                         $date = Carbon::parse($order->created_at);
@@ -45,7 +45,11 @@
                         @endif
                       </td>
                     </tr>
-                    @endforeach
+                    @empty
+                    <tr>
+                      <td colspan='4'><h5>Non ci sono ancora ordini!<h5></td>
+                    </tr>
+                    @endforelse
                   </tbody>
                 </table>
               </div>
