@@ -52,13 +52,17 @@
               <p class="right-align">{{ $product->price }}&euro;</p>
             </div>
             <div class="card-reveal">
-              <span class="card-title grey-text text-darken-4">{{ $product->vendor->name }}<i class="material-icons right">close</i></span>
+              <div class=" row center">
+              <span class="card-title left-align grey-text text-darken-4">{{ $product->vendor->name }}<i class="material-icons right">close</i></span>
+              </div> 
+              <div class="row center">
               @if($product->vendor->image != null)
-                <img src="{{ Storage::url($product->vendor->image) }}" alt="" class="activator circle responsive-img">
+                <img src="{{ Storage::url($product->vendor->image) }}" alt="" class="activator circle responsive-img" style="width: 100px; height: 100px;">
               @else
                 <img src="https://s3-eu-west-1.amazonaws.com/unistation/placeholders/imageprofile-placeholder-350x350.png" alt="" class="activator circle responsive-img">
               @endif
-              <p class="material-icons">
+            </div>
+              <p class="material-icons center">
                 @for ($i = 1; $i <= $product->vendor->rating; $i++)
                     grade
                 @endfor
