@@ -13,7 +13,7 @@
           <div class="row">
             <div class="col s12 l8">
               <h5 class="center">Il tuo carrello</h5>
-              @foreach($cart_content as $elem)
+              @forelse($cart_content as $elem)
               <div class="card-panel row" id="row-{{ $elem->id }}">
                   <div class="col s12 m4">{{ $elem->name }}</div>
                   <div class="col s3 m2">
@@ -23,7 +23,11 @@
                   <div class="col s3 m2 right-align" style="margin-top: 8px">{{ $elem->price }}&euro;</div>
                   <div class="col s3 m2 right-align"><a onclick="removeFromCart({{ $elem->id }})" class="btn-flat"><i class="material-icons">delete</i></a></div>
               </div>
-              @endforeach
+              @empty
+              <div class="row center card-panel">
+                <h5>Il tuo carrello è vuoto!</h5>
+              </div>
+              @endforelse
             </div>
             <div class="col s12 l4">
               <div class="card">
@@ -76,7 +80,11 @@
                           <a href="{{ url('client/home') }}" class="btn-flat waves-effect">Indietro</a>
                         </td>
                         <td>
+                          @if(Cart::session(Auth::id())->isEmpty())
+                          <a id="send_order" class="btn waves-effect waves-light hoverable deep-orange disabled" type="submit" name="action" onclick="sendOrder()">Checkout<i class="material-icons right">send</i></a>
+                          @else
                           <a id="send_order" class="btn waves-effect waves-light hoverable deep-orange" type="submit" name="action" onclick="sendOrder()">Checkout<i class="material-icons right">send</i></a>
+                          @endif
                         </td>
                       </tr>
                     </tbody>
