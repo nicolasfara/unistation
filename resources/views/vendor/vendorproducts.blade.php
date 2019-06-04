@@ -48,9 +48,9 @@
               </div>
             </div-->
             <ul class="collection">
-            	<div class="row">     
+              <div class="row">     
               <li class="collection-item avatar">
-              	   
+                   
                 @if($product->image != null)
                 <img src="{{ Storage::url($product->image) }}" alt="" class="circle responsive-img">
                 @else
@@ -58,7 +58,7 @@
                 @endif
                 
                 <div class="col s9">
-                	
+                  
                 <p class="title">{{ $product->name }}</p>
                 <!--p>First Line</p-->
                 </div>
@@ -120,7 +120,7 @@
   <div id="add-new-product" class="modal modal-fixed-footer">
     <div class="modal-content">
       <h4>Aggiungi nuovo prodotto</h4>
-      <form id="add-product-form" class="col s12" action="{{ url('products') }}" method="POST">
+      <form id="add-product-form" class="col s12" enctype="multipart/form-data" action="{{ url('products') }}" method="POST">
         @csrf
         <div class="row">
           <div class="input-field col s4 m8">
@@ -160,10 +160,21 @@
             <label for="new_dish_price">Prezzo</label>
           </div>
         </div>
+        <div class="row">
+          <div class="file-field input-field col s12">
+            <div class="btn">
+              <span>Carica</span>
+              <input type="file" multiple>
+            </div>
+            <div class="file-path-wrapper">
+              <input class="file-path validate" type="text" placeholder="Carica un'immagine">
+            </div>
+          </div>
+        </div>
       </form>
     </div>
     <div class="modal-footer">
-      <a onclick="event.preventDefault(); document.getElementById('add-product-form').submit();" class="waves-effect waves-green btn-flat deep-orange">Aggiungi</a>
+      <button onclick="event.preventDefault(); document.getElementById('add-product-form').submit();" class="waves-effect waves-green btn-flat deep-orange">Aggiungi</button>
       <a class="modal-close waves-effect waves-green btn-flat">Chiudi</a>
     </div>
   </div>

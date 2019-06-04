@@ -51,8 +51,6 @@ class ProductController extends Controller
 
         $post_data = $request->all();
 
-        Log::debug($post_data);
-
         $new_product = new Product;
         $new_product->name = $request->input('new_dish_name');
         $new_product->price = $request->input('new_dish_price');
