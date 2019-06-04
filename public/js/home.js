@@ -48,8 +48,6 @@ document.addEventListener('DOMContentLoaded', function() {
   M.FormSelect.init(select, {  });
   var dropdowns = document.querySelectorAll('.dropdown-trigger')
   M.Dropdown.init(dropdowns);
-  var elems = document.querySelectorAll('.carousel');
-    var instances = M.Carousel.init(elems, { });
   var slider = document.querySelectorAll('.slider');
   M.Slider.init(slider, { });
   var parallax = document.querySelectorAll('.parallax');
@@ -102,4 +100,8 @@ function isScrolledIntoView(elem){
 
 $(document).ready(function(){
   $('.parallax').parallax();
+  $('.carousel').carousel({
+	  fullWidth: true,
+	  indicators: true
+  }).height(300);
 });

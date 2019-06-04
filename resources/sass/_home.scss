@@ -69,6 +69,18 @@ font-size: 1.7em;
 }
 }
 
+@media (max-width: 500px) {
+#carouselpc {
+display:none;
+}
+}
+
+@media (min-width: 500px) {
+#carouselmobile {
+display:none;
+}
+}
+
 .cookie-consent {
 
 position: fixed;
