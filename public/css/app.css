@@ -9735,24 +9735,18 @@ section#counter-stats {
   left: 0;
   z-index: 1030;
   background: #999;
-  padding: 0.5rem !important;
   opacity: 0.9;
 }
 
-/*.cookie-consent__agree{
-  margin-top:5px;
+.button-cookie {
+  margin-top: 30px;
 }
-.button-cookie{
-	margin-top :30px;
+
+@media only screen and (max-width: 992px) {
+  .button-cookie {
+    margin-top: 80px;
+  }
 }
-@media only screen and (max-width : 992px){
-  .button-cookie{
-	margin-top :80px;
-}
-}
-.cookie-consent .row {
-  margin-bottom: 0px;
-}*/
 
 .logo {
   margin-top: 40px;
