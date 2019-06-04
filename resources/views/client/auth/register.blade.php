@@ -64,9 +64,13 @@
             @endif
           </div>
         </div>
-        <div class="card-action right-align">
-          <input type="reset" id="reset" class="btn-flat grey-text waves-effect">
-          <button type="submit" class="btn deep-orange waves-effect waves-light">Registra</button>
+        <div class="card-action row">
+          <div class="col s6 left-align">
+            <input type="reset" id="reset" class="btn-flat grey-text waves-effect">
+          </div>
+          <div class="col s6 right-align">
+            <button type="submit" class="btn deep-orange waves-effect waves-light">Registra</button>
+        </div>
         </div>
       </form>
     </div>
