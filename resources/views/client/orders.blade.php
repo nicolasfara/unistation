@@ -76,7 +76,7 @@
                     </form>
                     @empty
                     <tr>
-                      <td colspan='4'><h5>Non ci sono ancora ordini!<h5></td>
+                      <td colspan='5'><h5>Non ci sono ancora ordini!<h5></td>
                     </tr>
                     @endforelse
                   </tbody>
