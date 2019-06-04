@@ -48,15 +48,25 @@
               </div>
             </div-->
             <ul class="collection">
+            	<div class="row">     
               <li class="collection-item avatar">
+              	   
                 @if($product->image != null)
                 <img src="{{ Storage::url($product->image) }}" alt="" class="circle responsive-img">
                 @else
                 <img src="https://s3-eu-west-1.amazonaws.com/unistation/placeholders/imageprofile-placeholder-350x350.png" alt="" class="circle responsive-img">
                 @endif
-                <span class="title">{{ $product->name }}</span>
+                
+                <div class="col s9">
+                	
+                <p class="title">{{ $product->name }}</p>
                 <!--p>First Line</p-->
+                </div>
+                <div class="col s3">
                 <div class="secondary-content">{{ $product->price }}&euro;</div>
+                </div>
+                </div>
+
               </li>
             </ul>
           </div>
@@ -65,7 +75,7 @@
               @csrf
               @method('PATCH')
               <div class="row">
-                <div class="input-field col s9">
+                <div class="input-field col s8">
                   <input name="update_dish_name" id="update_dish_name" type="text" class="validate" value="{{ $product->name }}">
                   <label for="update_dish_name">Nome Piatto</label>
                 </div>
@@ -73,7 +83,7 @@
                   <input name="update_dish_price" id="update_dish_price" type="number" step="0.01" class="validate" value="{{ $product->price }}">
                   <label for="update_dish_price">Prezzo</label>
                 </div>
-                <div class="input-field col s1">
+                <div class="input-field col s2">
                   <a onclick="event.preventDefault(); document.getElementById('delete-product{{ $product->id }}-form').submit();" class="btn-flat"><i class="material-icons">delete</i></a>
                 </div>
               </div>
