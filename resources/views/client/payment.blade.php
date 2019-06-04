@@ -63,7 +63,7 @@
             </div>
           </div>
           <div class="input-field col s6">
-            <input name="expiration_year" id="exipration_year" type="number" class="validate" value="">
+            <input name="expiration_year" id="expiration_year" type="number" class="validate" value="">
             <label for="expiration_year">Anno scadenza</label>
             @error('expiration_year')
             <span>{{ $message }}</span>
