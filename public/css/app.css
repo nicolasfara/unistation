@@ -9732,10 +9732,6 @@ section#counter-stats {
   #carouselpc {
     display: none;
   }
-
-  #carouselmobile {
-    height: 300px;
-  }
 }
 
 @media (min-width: 800px) {

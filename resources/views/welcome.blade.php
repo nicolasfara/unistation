@@ -160,7 +160,7 @@
 		</div>
 	</div> -->
 	<div class = "row" style = "margin-bottom: 0px; min-height: 300px;">
-		<div id = "carouselpc">
+		<div class = "hide-on-med-and-down show-on-large">
 			<div class="center aligned col l3 m3 s3">
 				<div class="normalText" style="padding: 60px 30px; position: relative;">
 					<div class="ui centered middle aligned one column grid flat_grid" style="background-color: #ff5722; color: white; width: 2em; height: 2em; border-radius: 1em; position: absolute; left: 25px; top: 25px;">
@@ -198,7 +198,7 @@
 				</div>
 			</div>
 		</div>	
-		<div id = "carouselmobile" class="carousel carousel-slider center" style = "min-height: 300px; width: auto;">
+		<div class="carousel carousel-slider center hide-on-large-only show-on-medium-and-down" style = "min-height: 300px; width: auto;">
 			<div class="left" style = "position: absolute; top: 50%; left: 0%;">
 				<a href="Previo" style = "color: white;" class="movePrevCarousel middle-indicator-text waves-effect waves-light content-indicator "><i class="material-icons left  middle-indicator-text deep-orange">chevron_left</i></a>
 			</div>
