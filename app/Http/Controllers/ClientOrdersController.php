@@ -8,6 +8,7 @@ use Illuminate\Foundation\Auth\AuthenticatesUsers;
 use Illuminate\Support\Facades\Auth;
 use Hesto\MultiAuth\Traits\LogsoutGuard;
 use App\Client;
+use App\Order;
 
 class ClientOrdersController extends Controller
 {
@@ -27,7 +28,24 @@ class ClientOrdersController extends Controller
         $orders = Client::find(Auth::id())->orders()->orderBy('order_created_at', 'desc')->get();
         return view('client.orders', ['orders' => $orders]);
     }
+    
+    /**
+     * Update the specified resource in storage.
+     *
+     * @param  \Illuminate\Http\Request  $request
+     * @param  int  $id
+     * @return \Illuminate\Http\Response
+     */
+    public function update(Request $request, $id)
+    {
+        $order = Order::find($id);
+        
+        if (!empty($order)) {
+          $order->feedback = true;
+          $order->save();
+        }
+
+        return $this->showClientOrders();
+    }
 }
-
-
 // vim: set ts=4 sw=4 :
