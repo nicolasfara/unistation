@@ -57,9 +57,10 @@ class ProductController extends Controller
         $new_product->type = $request->input('new_type');
         $new_product->vendor_id = Auth::id();
 
-        if ($request->hasFile('product_img')) {
-            $path = $request->file('product_img')->save('products');
-            Storage::delete($new_product->image);
+        if ($request->hasFile('productimg')) {
+            Log::debug("New image add");
+            $file = $request->file('productimg');
+            $path = Storage::putFile('products', $file, 'public');
             $new_product->image = $path;
         }
 

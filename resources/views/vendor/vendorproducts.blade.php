@@ -115,7 +115,7 @@
 <div id="add-new-product" class="modal modal-fixed-footer">
   <div class="modal-content">
     <h4>Aggiungi nuovo prodotto</h4>
-    <form id="add-product-form" class="col s12" action="{{ url('products') }}" method="POST">
+    <form id="add-product-form" class="col s12" enctype="multipart/form-data" action="{{ url('products') }}" method="POST">
       @csrf
       <div class="row">
         <div class="input-field col l4 s12">
@@ -159,7 +159,7 @@
         <div class="file-field input-field col s12">
           <div class="btn">
             <span>Carica</span>
-            <input type="file" multiple>
+            <input name="productimg" type="file" multiple>
           </div>
           <div class="file-path-wrapper">
             <input class="file-path validate" type="text" placeholder="Carica un'immagine">
