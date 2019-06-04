@@ -19,13 +19,14 @@
                       <h5 class="">I tuoi ordini</h5>
                     </div>
                 </div>
-                <table class="centered">
+                <table class="centered responsive-table">
                   <thead>
                     <tr>
                       <th>Numero ordine</th>
                       <th>Data</th>
                       <th>Prezzo totale</th>
                       <th>Stato ordine</th>
+                      <th>Feedback</th>
                     </tr>
                   </thead>
                   <tbody>
@@ -44,6 +45,16 @@
                         <b>In preaparazione</b>
                         @endif
                       </td>
+                      <td data-label="feedback">
+                        <!-- Modal Trigger -->
+                        <a class="waves-effect waves-light deep-orange btn modal-trigger
+                            @if($order->feedback)
+                              disabled 
+                            @endif"
+                            href="#modal1">
+                            <i class="material-icons">grade</i>
+                        </a>
+                      </td>
                     </tr>
                     @empty
                     <tr>
@@ -58,6 +69,20 @@
         </div>
       </div>
     </div>
+  </div>
+</div>
+<!-- Modal Structure -->
+<div id="modal1" class="modal">
+  <div class="modal-content">
+    <h4>Come valuti il servizio?</h4>
+    <div>
+    @for ($i = 1; $i <= 5; $i++)
+      <i class="material-icons rate" onmouseover = "fillStar(this)">star_border</i>
+    @endfor
+    </div>
+  </div>
+  <div class="modal-footer">
+    <a href="#!" class="modal-close waves-effect waves-green btn-flat">Invia</a>
   </div>
 </div>
 @endsection

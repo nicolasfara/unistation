@@ -36,8 +36,22 @@ document.addEventListener('DOMContentLoaded', function() {
       }
     },
   });
+  //modal trigger
+  var elems = document.querySelectorAll('.modal');
+  var instances = M.Modal.init(elems);
 });
 
+//modal interaction
+function fillStar(id){
+  var i=id;
+  do{
+    i.innerHTML = "grade";
+  }while(i=i.previousSibling);
+  i=id.nextSibling;
+  while(i=i.nextSibling){
+    i.innerHTML = "star_border";
+  }
+}
 
 var HttpClient = function() {
   this.get = function(aUrl, aCallback) {
