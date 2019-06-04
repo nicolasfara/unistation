@@ -102,6 +102,18 @@ $(document).ready(function(){
   $('.parallax').parallax();
   $('.carousel').carousel({
 	  fullWidth: true,
-	  indicators: true
+	  //indicators: true
   }).height(300);
+});
+
+$('.moveNextCarousel').click(function(e){
+      e.preventDefault();
+      e.stopPropagation();
+      $('.carousel').carousel('next');
+});
+
+$('.movePrevCarousel').click(function(e){
+      e.preventDefault();
+      e.stopPropagation();
+      $('.carousel').carousel('prev');
 });

@@ -79,58 +79,7 @@
             <img src="{{ asset('images/Food.jpg') }}">
         </div>
     </div>
-    <!-- <div class="section white">
-    	<div class="container">
-        <div class="section">
-            <div class="row" id="home-card">
-                <div class="col s4 m4 l4 center-align">
-                    <div class="card z-depth-0 ">
-                        <span class="fa-stack fa-lg row">
-							<i class="far fa-circle fa-stack-2x"></i>
-							<i class="fab fa-stack-1x">1</i>
-						</span>
-                        <div class="card-image">
-                            <i class="material-icons deep-orange-text text-lighten-1">edit</i>
-                        </div>
-                        <div class="card-content center welcome-card">
-                            <h4 class="light flow-text">Registrati</h4>
-                        </div>
-                    </div>
-                </div>
-                <div class="col s4 m4 l4 center-align">
-                    <div class="card z-depth-0">
-                        <span class="fa-stack fa-lg row">
-							<i class="far fa-circle fa-stack-2x"></i>
-							<i class="fab fa-stack-1x">2</i>
-						</span>
-                        <div class="card-image">
-                            <i class="material-icons deep-orange-text text-lighten-1">assignment</i>
-                        </div>
-                        <div class="card-content center welcome-card">
-                            <h4 class="light">Ordina</h4>
-                        </div>
-                    </div>
-                </div>
-                <div class="col s4 m4 l4 center-align">
-                    <div class="card z-depth-0">
-                        <span class="fa-stack fa-lg row">
-						 	<i class="far fa-circle fa-stack-2x"></i>
-							<i class="fab fa-stack-1x">3</i>
-							</span>
-                        <div class="card-image ">
-                            <i class="material-icons deep-orange-text text-lighten-1">free_breakfast</i>
-                        </div>
-                        <div class="card-content welcome-card">
-                            <h4 class="light">Enjoy!</h4>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    </div> -->
-	<!-- <div class="section white"> -->
-	<div id = "carouselpc" class = "row" style = "margin-bottom: 0px; height: auto; width: auto;">
+	<!-- <div id = "carouselpc" class = "row" style = "margin-bottom: 0px; height: auto; width: auto;">
 		<div class="center aligned col s3">
 			<div class="normalText" style="padding: 60px 30px; position: relative;">
 				<div class="ui centered middle aligned one column grid flat_grid" style="background-color: black; color: white; width: 2em; height: 2em; border-radius: 1em; position: absolute; left: 25px; top: 25px;">
@@ -209,14 +158,94 @@
 				</a>
 			</div>
 		</div>
-	</div>
-	<!-- <div class="carousel carousel-slider">
-		<a class="carousel-item" href="#one!"><img style = "max-width: 128px; heigh: auto;" src="{{ asset('images/how_to_2.png') }}"></a>
-		<a class="carousel-item" href="#two!"><img  style = "max-width: 128px; heigh: auto;" src="{{ asset('images/how_to_4.png') }}"></a>
-		<a class="carousel-item" href="#three!"><img  style = "max-width: 128px; heigh: auto;" src="{{ asset('images/how_to_3.png') }}"></a>
-		<a class="carousel-item" href="#four!"><img style = "max-width: 128px; heigh: auto;" src="{{ asset('images/how_to_1.png') }}"></a>
 	</div> -->
-	<!-- </div> -->
+	<div class = "row" style = "margin-bottom: 0px; min-height: 300px;">
+		<div id = "carouselpc">
+			<div class="center aligned col l3 m3 s3">
+				<div class="normalText" style="padding: 60px 30px; position: relative;">
+					<div class="ui centered middle aligned one column grid flat_grid" style="background-color: #ff5722; color: white; width: 2em; height: 2em; border-radius: 1em; position: absolute; left: 25px; top: 25px;">
+						<div class="center aligned middle aligned column no-padding">1</div>
+					</div>
+					<img class="ui inline image" src="{{ asset('images/how_to_2.png') }}" style="max-width: 128px; height: auto;">
+					<p style="color: rgb(50, 50, 50); font-size: 15px; font-weight: 300; margin-top: 40px;">Registrati e accedi come utente Unistation</p>
+				</div>
+			</div>
+			<div class="center aligned col l3 m3 s3" style="border-right: 1px solid rgb(219, 219, 219); border-left: 1px solid rgb(219, 219, 219);">
+				<div class="normalText" style="padding: 60px 30px; position: relative;">
+					<div class="ui centered middle aligned one column grid flat_grid" style="background-color: #ff5722; color: white; width: 2em; height: 2em; border-radius: 1em; position: absolute; left: 25px; top: 25px;">
+						<div class="center aligned middle aligned column no-padding">2</div>
+					</div>
+					<img class="ui inline image" src="{{ asset('images/how_to_4.png') }}" style="max-width: 128px; height: auto;">
+					<p style="color: rgb(50, 50, 50); font-size: 15px; font-weight: 300; margin-top: 40px;">Seleziona le varie portate e completa l'ordine indicando l'ora di consegna</p>
+				</div>
+			</div>
+			<div class="center aligned col l3 m3 s3">
+				<div class="normalText" style="padding: 60px 30px; position: relative;">
+					<div class="ui centered middle aligned one column grid flat_grid" style="background-color: #ff5722; color: white; width: 2em; height: 2em; border-radius: 1em; position: absolute; left: 25px; top: 25px;">
+						<div class="center aligned middle aligned column no-padding">3</div>
+					</div>
+					<img class="ui inline image" src="{{ asset('images/how_to_3.png') }}" style="max-width: 128px; height: auto;">
+					<p style="color: rgb(50, 50, 50); font-size: 15px; font-weight: 300; margin-top: 40px;">Concludi l'ordine e attendi la notifica per email della tua freccia</p>
+				</div>
+			</div>
+			<div class="center aligned col l3 m3 s3" style="border-left: 1px solid rgb(219, 219, 219); height: 100%;">
+				<div class="normalText" style="padding: 60px 30px; position: relative;">
+					<div class="ui centered middle aligned one column grid flat_grid" style="background-color: #ff5722; color: white; width: 2em; height: 2em; border-radius: 1em; position: absolute; left: 25px; top: 25px;">
+						<div class="center aligned middle aligned column no-padding">4</div>
+					</div>
+					<img class="ui inline image" src="{{ asset('images/how_to_1.png') }}" style="max-width: 128px; height: auto;">
+					<p style="color: rgb(50, 50, 50); font-size: 15px; font-weight: 300; margin-top: 40px;">La freccia consegnerà l'ordine nella fascia oraria stabilita</p>
+				</div>
+			</div>
+		</div>	
+		<div id = "carouselmobile" class="carousel carousel-slider center" style = "min-height: 300px; width: auto;">
+			<div class="left" style = "position: absolute; top: 50%; left: 0%;">
+				<a href="Previo" style = "color: white;" class="movePrevCarousel middle-indicator-text waves-effect waves-light content-indicator "><i class="material-icons left  middle-indicator-text deep-orange">chevron_left</i></a>
+			</div>
+			<div class="right" style = "position: absolute; top: 50%; right: 0%;">
+				<a href="Siguiente" style = "color: white;" class=" moveNextCarousel middle-indicator-text waves-effect waves-light content-indicator #ff5722"><i class="material-icons right middle-indicator-text deep-orange">chevron_right</i></a>
+			</div>
+			<div class="center aligned col s12 m12">
+				<a class="carousel-item" href="#one!">
+					<div class="normalText" style="padding: 60px 30px; position: relative;">
+						<div class="ui centered middle aligned one column grid flat_grid" style="background-color: #ff5722; color: white; width: 2em; height: 2em; border-radius: 1em; position: absolute; left: 25px; top: 25px;">
+							<div class="center aligned middle aligned column no-padding">1</div>
+						</div>
+						<img class="ui inline image" src="{{ asset('images/how_to_2.png') }}" style="max-width: 128px; height: auto;">
+						<p style="color: rgb(50, 50, 50); font-size: 15px; font-weight: 300; margin-top: 40px;">Registrati e accedi come utente Unistation</p>
+					</div>
+				</a>
+				<a class="carousel-item" href="#two!">
+					<div class="normalText" style="padding: 60px 30px; position: relative;">
+						<div class="ui centered middle aligned one column grid flat_grid" style="background-color: #ff5722; color: white; width: 2em; height: 2em; border-radius: 1em; position: absolute; left: 25px; top: 25px;">
+							<div class="center aligned middle aligned column no-padding">2</div>
+						</div>
+						<img class="ui inline image" src="{{ asset('images/how_to_4.png') }}" style="max-width: 128px; height: auto;">
+						<p style="color: rgb(50, 50, 50); font-size: 15px; font-weight: 300; margin-top: 40px;">Seleziona le varie portate e completa l'ordine indicando l'ora di consegna</p>
+					</div>
+				</a>
+				<a class="carousel-item" href="#three!">
+					<div class="normalText" style="padding: 60px 30px; position: relative;">
+						<div class="ui centered middle aligned one column grid flat_grid" style="background-color: #ff5722; color: white; width: 2em; height: 2em; border-radius: 1em; position: absolute; left: 25px; top: 25px;">
+							<div class="center aligned middle aligned column no-padding">3</div>
+						</div>
+						<img class="ui inline image" src="{{ asset('images/how_to_3.png') }}" style="max-width: 128px; height: auto;">
+						<p style="color: rgb(50, 50, 50); font-size: 15px; font-weight: 300; margin-top: 40px;">Concludi l'ordine e attendi la notifica per email della tua freccia</p>
+					</div>
+				</a>
+				<a class="carousel-item" href="#four!">
+					<div class="normalText" style="padding: 60px 30px; position: relative;">
+						<div class="ui centered middle aligned one column grid flat_grid" style="background-color: #ff5722; color: white; width: 2em; height: 2em; border-radius: 1em; position: absolute; left: 25px; top: 25px;">
+							<div class="center aligned middle aligned column no-padding">4</div>
+						</div>
+						<img class="ui inline image" src="{{ asset('images/how_to_1.png') }}" style="max-width: 128px; height: auto;">
+						<p style="color: rgb(50, 50, 50); font-size: 15px; font-weight: 300; margin-top: 40px;">La freccia consegnerà l'ordine nella fascia oraria stabilita</p>
+					</div>
+				</a>
+			</div>
+		</div>
+	</div>
+	
     <div class="parallax-container">
         <div class="parallax">
             <img src="{{ asset('images/food3.jpg') }}">
@@ -228,7 +257,7 @@
         </div>
         <div class="row container">
             <section id="counter-stats" class="wow fadeInRight" data-wow-duration="1.4s">
-                <div class="container">
+                <!-- <div class="container"> -->
                     <div class="row">
                         <div class="col s3 stats">
                             <div class="row"><i class="fas fa-hamburger deep-orange-text" aria-hidden="true"></i></div>
@@ -254,7 +283,7 @@
                             <h5>Ordini effettuati</h5>
                         </div>
                     </div>
-                </div>
+                <!-- </div> -->
             </section>
         </div>
     </div>
