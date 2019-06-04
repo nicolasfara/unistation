@@ -129,19 +129,74 @@
         </div>
     </div>
     </div> -->
-	<div class="section white">
+	<!-- <div class="section white">
 		<div class = "row">
-			<div class = "col s4">
-				<div class = "center aligned column" style = "border: 1px solid rgb(219, 219, 219)">
+			<div class = "col s3">
+				<div class = "center aligned column" style = "border: 1px solid rgb(219, 219, 219); height: 250px;">
 					<img style = "max-width: 128px; heigh: auto;" src = "{{ asset('images/how_to_2.png') }}">
+					<p style="color: rgb(50, 50, 50); font-size: 15px; font-weight: 300; margin-top: 40px;"> Registrati e accedi come utente Unistation</p>
 				</div>
 			</div>
-			<div class = "col s4">
+			<div class = "col s3">
+				<div class = "center aligned column" style = "border: 1px solid rgb(219, 219, 219)">
+					<img style = "max-width: 128px; heigh: auto;" src = "{{ asset('images/how_to_4.png') }}">
+					<p style="color: rgb(50, 50, 50); font-size: 15px; font-weight: 300; margin-top: 40px;"> Seleziona le varie portate e completa l'ordine indicando l'ora di consegna</p>
+				</div>
 			</div>
-			<div class = "col s4">
+			<div class = "col s3">
+				<div class = "center aligned column" style = "border: 1px solid rgb(219, 219, 219)">
+					<img style = "max-width: 128px; heigh: auto;" src = "{{ asset('images/how_to_3.png') }}">
+					<p style="color: rgb(50, 50, 50); font-size: 15px; font-weight: 300; margin-top: 40px;"> Concludi l'ordine e attendi la notifica per email della tua freccia</p>
+				</div>
+			</div>
+			<div class = "col s3">
+				<div class = "center aligned column" style = "border: 1px solid rgb(219, 219, 219)">
+					<img style = "max-width: 128px; heigh: auto;" src = "{{ asset('images/how_to_1.png') }}">
+					<p style="color: rgb(50, 50, 50); font-size: 15px; font-weight: 300; margin-top: 40px;"> La freccia consegnerà l'ordine nella fascia oraria stabilita</p>
+				</div>
 			</div>
 		</div>
-	</div>
+	</div> -->
+	<!-- <div class="section white"> -->
+		<div class = "row" style = "margin-bottom: 0px;">
+			<div class="center aligned col s3" style="border: 1px solid rgb(219, 219, 219);">
+				<div class="normalText" style="padding: 60px 30px; position: relative;">
+					<div class="ui centered middle aligned one column grid flat_grid" style="background-color: black; color: white; width: 2em; height: 2em; border-radius: 1em; position: absolute; left: 25px; top: 25px;">
+						<div class="center aligned middle aligned column no-padding">1</div>
+					</div>
+					<img class="ui inline image" src="{{ asset('images/how_to_2.png') }}" style="max-width: 128px; height: auto;">
+					<p style="color: rgb(50, 50, 50); font-size: 15px; font-weight: 300; margin-top: 40px;">Registrati e accedi come utente Unistation</p>
+				</div>
+			</div>
+			<div class="center aligned col s3" style="border-top: 1px solid rgb(219, 219, 219); border-right: 1px solid rgb(219, 219, 219); border-width: 1px; border-color: rgb(219, 219, 219);">
+				<div class="normalText" style="padding: 60px 30px; position: relative;">
+					<div class="ui centered middle aligned one column grid flat_grid" style="background-color: black; color: white; width: 2em; height: 2em; border-radius: 1em; position: absolute; left: 25px; top: 25px;">
+						<div class="center aligned middle aligned column no-padding">2</div>
+					</div>
+					<img class="ui inline image" src="{{ asset('images/how_to_4.png') }}" style="max-width: 128px; height: auto;">
+					<p style="color: rgb(50, 50, 50); font-size: 15px; font-weight: 300; margin-top: 40px;">Seleziona le varie portate e completa l'ordine indicando l'ora di consegna</p>
+				</div>
+			</div>
+			<div class="center aligned col s3" style="border-top: 1px solid rgb(219, 219, 219); border-right: 1px solid rgb(219, 219, 219); border-width: 1px; border-color: rgb(219, 219, 219);">
+				<div class="normalText" style="padding: 60px 30px; position: relative;">
+					<div class="ui centered middle aligned one column grid flat_grid" style="background-color: black; color: white; width: 2em; height: 2em; border-radius: 1em; position: absolute; left: 25px; top: 25px;">
+						<div class="center aligned middle aligned column no-padding">3</div>
+					</div>
+					<img class="ui inline image" src="{{ asset('images/how_to_3.png') }}" style="max-width: 128px; height: auto;">
+					<p style="color: rgb(50, 50, 50); font-size: 15px; font-weight: 300; margin-top: 40px;">Concludi l'ordine e attendi la notifica per email della tua freccia</p>
+				</div>
+			</div>
+			<div class="center aligned col s3" style="border-top: 1px solid rgb(219, 219, 219); border-right: 1px solid rgb(219, 219, 219); border-width: 1px; border-color: rgb(219, 219, 219);">
+				<div class="normalText" style="padding: 60px 30px; position: relative;">
+					<div class="ui centered middle aligned one column grid flat_grid" style="background-color: black; color: white; width: 2em; height: 2em; border-radius: 1em; position: absolute; left: 25px; top: 25px;">
+						<div class="center aligned middle aligned column no-padding">4</div>
+					</div>
+					<img class="ui inline image" src="{{ asset('images/how_to_1.png') }}" style="max-width: 128px; height: auto;">
+					<p style="color: rgb(50, 50, 50); font-size: 15px; font-weight: 300; margin-top: 40px;">La freccia consegnerà l'ordine nella fascia oraria stabilita</p>
+				</div>
+			</div>
+		</div>
+	<!-- </div> -->
     <div class="parallax-container">
         <div class="parallax">
             <img src="{{ asset('images/food3.jpg') }}">
