@@ -19,7 +19,7 @@
                       <h5 class="">I tuoi ordini</h5>
                     </div>
                 </div>
-                <table class="centered responsive-table">
+                <table class="centered order-table">
                   <thead>
                     <tr>
                       <th>Numero ordine</th>
