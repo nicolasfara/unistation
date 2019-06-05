@@ -46,7 +46,7 @@ document.addEventListener('DOMContentLoaded', function() {
   var url = new URL(window.location.href)
   var new_item = url.searchParams.get('new_item')
   if (new_item == 'true'){
-    M.toast({html: 'Hai un nuovo ordine!', classes: 'rounded'})
+    M.toast({html: 'Hai un nuovo ordine!', classes: 'rounded', displayLength: 6000})
   }
 });
 
