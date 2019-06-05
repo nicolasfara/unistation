@@ -17,15 +17,19 @@ class OrderMade implements ShouldBroadcast
     use Dispatchable, InteractsWithSockets, SerializesModels;
 
     public $message;
+    public $order;
+    public $date;
 
     /**
      * Create a new event instance.
      *
      * @return void
      */
-    public function __construct($message)
+    public function __construct($message, $order, $date)
     {
         $this->message = $message;
+        $this->order = $order;
+        $this->date = $date;
     }
 
     /**

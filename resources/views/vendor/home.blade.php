@@ -77,13 +77,13 @@ var pusher = new Pusher('4a06878a7e2abf7e04df', {
 var channel = pusher.subscribe('unistation-development');
 channel.bind('App\\Events\\OrderMade', data => {
   console.log(data.message)
-  var data = JSON.parse(data.message)
-  console.log(data)
-  if (data.vendors.includes({{ Auth::id() }})) {
+  var vendor = JSON.parse(data.message)
+  if (vendor.vendors.includes({{ Auth::id() }})) {
     //var btn = document.getElementById('vendor-order-btn')
     //btn.insertAdjacentHTML('beforeend', "<span id="new-badge" class='new badge'></span>")
-    location.reload()
-    M.toast({html: 'Hai un nuovo ordine!', classes: 'rounded'})
+    //location.reload()
+    location.href = '{{ url('vendor/home') }}' + '?new_item=true';
+    //M.toast({html: 'Hai un nuovo ordine!', classes: 'rounded'})
   }
 });
 

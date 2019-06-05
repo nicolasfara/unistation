@@ -41,6 +41,13 @@ document.addEventListener('DOMContentLoaded', function() {
   document.getElementById("editprofile-btn").addEventListener("click", show_vendor_edit_profile);
   document.getElementById("vendor-order-btn").addEventListener("click", show_vendor_orders);
   document.getElementById("vendor-edit-products-btn").addEventListener("click", show_vendor_products);
+
+
+  var url = new URL(window.location.href)
+  var new_item = url.searchParams.get('new_item')
+  if (new_item == 'true'){
+    M.toast({html: 'Hai un nuovo ordine!', classes: 'rounded'})
+  }
 });
 
 

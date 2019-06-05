@@ -88,7 +88,8 @@ class PaymentController extends Controller
             'vendors' => $this->getVendorsFromCart($cart_content),
         );
         $json_data = json_encode($data);
-        event(new OrderMade($json_data));
+        $order_data = json_encode($new_order);
+        event(new OrderMade($json_data, $order_data, $new_order->delivery_info));
 
         Cart::session(Auth::id())->clear();
 
