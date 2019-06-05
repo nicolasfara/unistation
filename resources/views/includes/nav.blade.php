@@ -48,3 +48,4 @@
   <li><a onclick="event.preventDefault(); document.getElementById('logout-form').submit();"><i class="material-icons">exit_to_app</i>{{ __('Logout') }}</a></li>
   @endguest
 </ul>
+
