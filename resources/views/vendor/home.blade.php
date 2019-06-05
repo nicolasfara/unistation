@@ -83,6 +83,7 @@ channel.bind('App\\Events\\OrderMade', data => {
     //var btn = document.getElementById('vendor-order-btn')
     //btn.insertAdjacentHTML('beforeend', "<span id="new-badge" class='new badge'></span>")
     location.reload()
+    M.toast({html: 'Hai un nuovo ordine!', classes: 'rounded'})
   }
 });
 
