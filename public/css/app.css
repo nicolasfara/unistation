@@ -9931,3 +9931,9 @@ input[type=number] {
 	margin-right:5px;
 }*/
 
+@media only screen and (max-width: 992px) {
+  .slides > h5 {
+    max-width: 120px;
+  }
+}
+

@@ -173,23 +173,23 @@
                 <ul class="slides">
                     <li>
                         <span class="step ui">1</span>
-                        <img class="ui inline image" src="{{ asset('images/how_to_2.png') }}" style="max-width: 128px; height: auto; margin-top: 70px;">
-                        <h5 style="color: rgb(50, 50, 50);   margin-top: 20px;margin-left:5px;margin-right:5px;">Registrati e accedi come utente Unistation</h5>
+                        <img class="ui inline image" src="{{ asset('images/how_to_2.png') }}" style="max-width: 150px; height: auto; ">
+                        <h5 style="color: rgb(50, 50, 50);   margin-left:5px;margin-right:5px;">Registrati e accedi come utente Unistation</h5>
                     </li>
                     <li>
                         <span class="step ui">2</span>
-                        <img class="ui inline image" src="{{ asset('images/how_to_4.png') }}" style="max-width: 128px; height: auto;margin-top: 70px;">
-                        <h5 style="color: rgb(50, 50, 50); margin-top: 20px;margin-left:5px;margin-right:5px;">Seleziona le varie portate e completa l'ordine indicando l'ora di consegna</h5>
+                        <img class="ui inline image" src="{{ asset('images/how_to_4.png') }}" style="max-width: 150px; height: auto;">
+                        <h5 style="color: rgb(50, 50, 50); margin-left:5px;margin-right:5px;">Seleziona le varie portate e completa l'ordine indicando l'ora di consegna</h5>
                     </li>
                     <li>
                         <span class="step ui">3</span>
-                        <img class="ui inline image" src="{{ asset('images/how_to_3.png') }}" style="max-width: 128px; height: auto;margin-top: 70px;">
-                        <h5 style="color: rgb(50, 50, 50); margin-top: 20px;margin-left:5px;margin-right:5px;">Concludi l'ordine e attendi la notifica per email della tua freccia</h5>
+                        <img class="ui inline image" src="{{ asset('images/how_to_3.png') }}" style="max-width: 150px; height: auto;">
+                        <h5 style="color: rgb(50, 50, 50); margin-left:5px;margin-right:5px;">Concludi l'ordine e attendi la notifica per email della tua freccia</h5>
                     </li>
                     <li>
                         <span class="step ui">4</span>
-                        <img class="ui inline image" src="{{ asset('images/how_to_1.png') }}" style="max-width: 128px; height: auto;margin-top: 70px;">
-                        <h5 style="color: rgb(50, 50, 50);  margin-top: 20px margin-left:5px;margin-right:5px;">La freccia consegnerà l'ordine nella fascia oraria stabilita</h5>
+                        <img class="ui inline image" src="{{ asset('images/how_to_1.png') }}" style="max-width: 150px; height: auto;">
+                        <h5 style="color: rgb(50, 50, 50); margin-left:5px;margin-right:5px;">La freccia consegnerà l'ordine nella fascia oraria stabilita</h5>
                     </li>
                 </ul> 
             </div>
