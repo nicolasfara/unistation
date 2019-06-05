@@ -5,7 +5,7 @@ Riepilogo ordine:
 
 @component('mail::table')
 | Prodotto             | Quantità                      | Prezzo                     |
-| -------------------- | ----------------------------: | --------------------------:|
+| -------------------- | :---------------------------: | --------------------------:|
 @foreach($order->products as $p)
 | {{ $p->name }}       | {{ $p->pivot->quantity }}     | {{ $p->price }}&euro;      |
 @endforeach
