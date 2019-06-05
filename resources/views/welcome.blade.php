@@ -19,12 +19,12 @@
             		<source src="https://d3i4yxtzktqr9n.cloudfront.net/web-eats/static/videos/header_animation-1a60210550.webm" type="video/webm">
                         <source src="https://d3i4yxtzktqr9n.cloudfront.net/web-eats/static/videos/header_animation-c22df1758f.mp4" type="video/mp4">
                             <source src="https://d3i4yxtzktqr9n.cloudfront.net/web-eats/static/videos/header_animation-1a60210550.webm" type="video/webm">
-                               <source src="https://d3i4yxtzktqr9n.cloudfront.net/web-eats/static/videos/header_animation-c22df1758f.mp4" type="video/mp4">
-                                   <source src="https://d3i4yxtzktqr9n.cloudfront.net/web-eats/static/videos/header_animation-c22df1758f.mp4" type="video/mp4">
-                                   </video>
-                               </div>
-                           </div>
-                       </div>
+                             <source src="https://d3i4yxtzktqr9n.cloudfront.net/web-eats/static/videos/header_animation-c22df1758f.mp4" type="video/mp4">
+                                 <source src="https://d3i4yxtzktqr9n.cloudfront.net/web-eats/static/videos/header_animation-c22df1758f.mp4" type="video/mp4">
+                                 </video>
+                             </div>
+                         </div>
+                     </div>
    <!-- <div class="container">
         <div class="section">
             <div class="row" id="home-card">
@@ -159,40 +159,49 @@
 			</div>
 		</div>
 	</div> -->
+    <div class="section">
+        <div class="row center">
+            <div class="col s2">
+                <div class="left" style = "position: absolute; top: 50%; left: 0%;">
+                    <a href="Previo" style = "color: black;" class="movePrevCarousel middle-indicator-text waves-effect waves-light content-indicator "><i class="material-icons left  middle-indicator-text deep-orange">chevron_left</i></a>
+                </div>
+            </div>
+            <div class="col s8">
+             <div class="slider center">
 
-   <div class="slider center">
 
-    <div class="left" style = "position: absolute; top: 50%; left: 0%; z-index: -1;">
-            <a href="Previo" style = "color: black;" class="movePrevCarousel middle-indicator-text waves-effect waves-light content-indicator "><i class="material-icons left  middle-indicator-text deep-orange">chevron_left</i></a>
+                <ul class="slides">
+                    <li>
+                        <span class="step ui">1</span>
+                        <img class="ui inline image" src="{{ asset('images/how_to_2.png') }}" style="max-width: 128px; height: auto; margin-top: 70px;">
+                        <p style="color: rgb(50, 50, 50); font-size: 15px; font-weight: 300; margin-top: 20px;margin-left:5px;margin-right:5px;">Registrati e accedi come utente Unistation</p>
+                    </li>
+                    <li>
+                        <span class="step ui">2</span>
+                        <img class="ui inline image" src="{{ asset('images/how_to_4.png') }}" style="max-width: 128px; height: auto;margin-top: 70px;">
+                        <p style="color: rgb(50, 50, 50); font-size: 15px; font-weight: 300; margin-top: 20px;margin-left:5px;margin-right:5px;">Seleziona le varie portate e completa l'ordine indicando l'ora di consegna</p>
+                    </li>
+                    <li>
+                        <span class="step ui">3</span>
+                        <img class="ui inline image" src="{{ asset('images/how_to_3.png') }}" style="max-width: 128px; height: auto;margin-top: 70px;">
+                        <p style="color: rgb(50, 50, 50); font-size: 15px; font-weight: 300; margin-top: 20px;margin-left:5px;margin-right:5px;">Concludi l'ordine e attendi la notifica per email della tua freccia</p>
+                    </li>
+                    <li>
+                        <span class="step ui">4</span>
+                        <img class="ui inline image" src="{{ asset('images/how_to_1.png') }}" style="max-width: 128px; height: auto;margin-top: 70px;">
+                        <p style="color: rgb(50, 50, 50); font-size: 15px; font-weight: 300; margin-top: 20px margin-left:5px;margin-right:5px;">La freccia consegnerà l'ordine nella fascia oraria stabilita</p>
+                    </li>
+                </ul> 
+            </div>
+        </div> 
+        <div class="col s2">
+            <div class="right" style = "position: absolute; top: 50%; right: 0%;">
+                <a href="Siguiente" style = "color: black;" class=" moveNextCarousel middle-indicator-text waves-effect waves-light content-indicator #ff5722"><i class="material-icons right middle-indicator-text deep-orange">chevron_right</i></a>
+            </div>
+
         </div>
-        <div class="right" style = "position: absolute; top: 50%; right: 0%; z-index: -1;">
-            <a href="Siguiente" style = "color: black;" class=" moveNextCarousel middle-indicator-text waves-effect waves-light content-indicator #ff5722"><i class="material-icons right middle-indicator-text deep-orange">chevron_right</i></a>
-        </div>
-
-    <ul class="slides" style="z-index: 1;">
-
-        <li>
-            <span class="step ui">1</span>
-            <img class="ui inline image" src="{{ asset('images/how_to_2.png') }}" style="max-width: 128px; height: auto; margin-top: 70px;">
-            <p style="color: rgb(50, 50, 50); font-size: 15px; font-weight: 300; margin-top: 20px;margin-left:5px;margin-right:5px;">Registrati e accedi come utente Unistation</p>
-        </li>
-        <li>
-            <span class="step ui">2</span>
-            <img class="ui inline image" src="{{ asset('images/how_to_4.png') }}" style="max-width: 128px; height: auto;margin-top: 70px;">
-            <p style="color: rgb(50, 50, 50); font-size: 15px; font-weight: 300; margin-top: 20px;margin-left:5px;margin-right:5px;">Seleziona le varie portate e completa l'ordine indicando l'ora di consegna</p>
-        </li>
-        <li>
-            <span class="step ui">3</span>
-            <img class="ui inline image" src="{{ asset('images/how_to_3.png') }}" style="max-width: 128px; height: auto;margin-top: 70px;">
-            <p style="color: rgb(50, 50, 50); font-size: 15px; font-weight: 300; margin-top: 20px;margin-left:5px;margin-right:5px;">Concludi l'ordine e attendi la notifica per email della tua freccia</p>
-        </li>
-        <li>
-            <span class="step ui">4</span>
-            <img class="ui inline image" src="{{ asset('images/how_to_1.png') }}" style="max-width: 128px; height: auto;margin-top: 70px;">
-            <p style="color: rgb(50, 50, 50); font-size: 15px; font-weight: 300; margin-top: 20px margin-left:5px;margin-right:5px;">La freccia consegnerà l'ordine nella fascia oraria stabilita</p>
-        </li>
-    </ul> 
-</div> 
+    </div>
+</div>
 <div class="parallax-container">
     <div class="parallax">
         <img src="{{ asset('images/food3.jpg') }}">
