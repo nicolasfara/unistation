@@ -109,11 +109,12 @@ $(document).ready(function(){
 $('.moveNextCarousel').click(function(e){
       e.preventDefault();
       e.stopPropagation();
-      $('.carousel').carousel('next');
+      $('.slider').next();
 });
 
 $('.movePrevCarousel').click(function(e){
       e.preventDefault();
       e.stopPropagation();
-      $('.carousel').carousel('prev');
+      $('.slider').prev();
+      
 });

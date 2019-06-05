@@ -17,14 +17,14 @@
             <div class="center col s12 m6">
             	<video id="video_player" class="responsive-video" poster="https://d3i4yxtzktqr9n.cloudfront.net/web-eats/static/images/header_animation_poster-4f02cb7cad.png" playsinline autoplay loop muted width="300" height="300">
             		<source src="https://d3i4yxtzktqr9n.cloudfront.net/web-eats/static/videos/header_animation-1a60210550.webm" type="video/webm">
-                    <source src="https://d3i4yxtzktqr9n.cloudfront.net/web-eats/static/videos/header_animation-c22df1758f.mp4" type="video/mp4">
-                    <source src="https://d3i4yxtzktqr9n.cloudfront.net/web-eats/static/videos/header_animation-1a60210550.webm" type="video/webm">
-                	<source src="https://d3i4yxtzktqr9n.cloudfront.net/web-eats/static/videos/header_animation-c22df1758f.mp4" type="video/mp4">
-                	<source src="https://d3i4yxtzktqr9n.cloudfront.net/web-eats/static/videos/header_animation-c22df1758f.mp4" type="video/mp4">
-                </video>
-            </div>
-        </div>
-    </div>
+                        <source src="https://d3i4yxtzktqr9n.cloudfront.net/web-eats/static/videos/header_animation-c22df1758f.mp4" type="video/mp4">
+                            <source src="https://d3i4yxtzktqr9n.cloudfront.net/web-eats/static/videos/header_animation-1a60210550.webm" type="video/webm">
+                               <source src="https://d3i4yxtzktqr9n.cloudfront.net/web-eats/static/videos/header_animation-c22df1758f.mp4" type="video/mp4">
+                                   <source src="https://d3i4yxtzktqr9n.cloudfront.net/web-eats/static/videos/header_animation-c22df1758f.mp4" type="video/mp4">
+                                   </video>
+                               </div>
+                           </div>
+                       </div>
    <!-- <div class="container">
         <div class="section">
             <div class="row" id="home-card">
@@ -73,12 +73,12 @@
             </div>
         </div>
     </div>
- -->
-    <div class="parallax-container">
-        <div class="parallax">
-            <img src="{{ asset('images/Food.jpg') }}">
-        </div>
+-->
+<div class="parallax-container">
+    <div class="parallax">
+        <img src="{{ asset('images/Food.jpg') }}">
     </div>
+</div>
 	<!-- <div id = "carouselpc" class = "row" style = "margin-bottom: 0px; height: auto; width: auto;">
 		<div class="center aligned col s3">
 			<div class="normalText" style="padding: 60px 30px; position: relative;">
@@ -159,130 +159,77 @@
 			</div>
 		</div>
 	</div> -->
-	<div class = "row" style = "margin-bottom: 0px; min-height: 300px;">
-		<div class = "hide-on-med-and-down show-on-large">
-			<div class="center aligned col l3 m3 s3">
-				<div class="normalText" style="padding: 60px 30px; position: relative;">
-					<div class="ui centered middle aligned one column grid flat_grid" style="background-color: #ff5722; color: white; width: 2em; height: 2em; border-radius: 1em; position: absolute; left: 25px; top: 25px;">
-						<div class="center aligned middle aligned column no-padding">1</div>
-					</div>
-					<img class="ui inline image" src="{{ asset('images/how_to_2.png') }}" style="max-width: 128px; height: auto;">
-					<p style="color: rgb(50, 50, 50); font-size: 15px; font-weight: 300; margin-top: 40px;">Registrati e accedi come utente Unistation</p>
-				</div>
-			</div>
-			<div class="center aligned col l3 m3 s3" style="border-right: 1px solid rgb(219, 219, 219); border-left: 1px solid rgb(219, 219, 219);">
-				<div class="normalText" style="padding: 60px 30px; position: relative;">
-					<div class="ui centered middle aligned one column grid flat_grid" style="background-color: #ff5722; color: white; width: 2em; height: 2em; border-radius: 1em; position: absolute; left: 25px; top: 25px;">
-						<div class="center aligned middle aligned column no-padding">2</div>
-					</div>
-					<img class="ui inline image" src="{{ asset('images/how_to_4.png') }}" style="max-width: 128px; height: auto;">
-					<p style="color: rgb(50, 50, 50); font-size: 15px; font-weight: 300; margin-top: 40px;">Seleziona le varie portate e completa l'ordine indicando l'ora di consegna</p>
-				</div>
-			</div>
-			<div class="center aligned col l3 m3 s3">
-				<div class="normalText" style="padding: 60px 30px; position: relative;">
-					<div class="ui centered middle aligned one column grid flat_grid" style="background-color: #ff5722; color: white; width: 2em; height: 2em; border-radius: 1em; position: absolute; left: 25px; top: 25px;">
-						<div class="center aligned middle aligned column no-padding">3</div>
-					</div>
-					<img class="ui inline image" src="{{ asset('images/how_to_3.png') }}" style="max-width: 128px; height: auto;">
-					<p style="color: rgb(50, 50, 50); font-size: 15px; font-weight: 300; margin-top: 40px;">Concludi l'ordine e attendi la notifica per email della tua freccia</p>
-				</div>
-			</div>
-			<div class="center aligned col l3 m3 s3" style="border-left: 1px solid rgb(219, 219, 219); height: 100%;">
-				<div class="normalText" style="padding: 60px 30px; position: relative;">
-					<div class="ui centered middle aligned one column grid flat_grid" style="background-color: #ff5722; color: white; width: 2em; height: 2em; border-radius: 1em; position: absolute; left: 25px; top: 25px;">
-						<div class="center aligned middle aligned column no-padding">4</div>
-					</div>
-					<img class="ui inline image" src="{{ asset('images/how_to_1.png') }}" style="max-width: 128px; height: auto;">
-					<p style="color: rgb(50, 50, 50); font-size: 15px; font-weight: 300; margin-top: 40px;">La freccia consegnerà l'ordine nella fascia oraria stabilita</p>
-				</div>
-			</div>
-		</div>	
-		<div class="carousel carousel-slider center hide-on-large-only show-on-medium-and-down" style = "min-height: 300px; width: auto;">
-			<div class="left" style = "position: absolute; top: 50%; left: 0%;">
-				<a href="Previo" style = "color: white;" class="movePrevCarousel middle-indicator-text waves-effect waves-light content-indicator "><i class="material-icons left  middle-indicator-text deep-orange">chevron_left</i></a>
-			</div>
-			<div class="right" style = "position: absolute; top: 50%; right: 0%;">
-				<a href="Siguiente" style = "color: white;" class=" moveNextCarousel middle-indicator-text waves-effect waves-light content-indicator #ff5722"><i class="material-icons right middle-indicator-text deep-orange">chevron_right</i></a>
-			</div>
-			<div class="center aligned col s12 m12">
-				<a class="carousel-item" href="#one!">
-					<div class="normalText" style="padding: 60px 30px; position: relative;">
-						<div class="ui centered middle aligned one column grid flat_grid" style="background-color: #ff5722; color: white; width: 2em; height: 2em; border-radius: 1em; position: absolute; left: 25px; top: 25px;">
-							<div class="center aligned middle aligned column no-padding">1</div>
-						</div>
-						<img class="ui inline image" src="{{ asset('images/how_to_2.png') }}" style="max-width: 128px; height: auto;">
-						<p style="color: rgb(50, 50, 50); font-size: 15px; font-weight: 300; margin-top: 40px;">Registrati e accedi come utente Unistation</p>
-					</div>
-				</a>
-				<a class="carousel-item" href="#two!">
-					<div class="normalText" style="padding: 60px 30px; position: relative;">
-						<div class="ui centered middle aligned one column grid flat_grid" style="background-color: #ff5722; color: white; width: 2em; height: 2em; border-radius: 1em; position: absolute; left: 25px; top: 25px;">
-							<div class="center aligned middle aligned column no-padding">2</div>
-						</div>
-						<img class="ui inline image" src="{{ asset('images/how_to_4.png') }}" style="max-width: 128px; height: auto;">
-						<p style="color: rgb(50, 50, 50); font-size: 15px; font-weight: 300; margin-top: 40px;">Seleziona le varie portate e completa l'ordine indicando l'ora di consegna</p>
-					</div>
-				</a>
-				<a class="carousel-item" href="#three!">
-					<div class="normalText" style="padding: 60px 30px; position: relative;">
-						<div class="ui centered middle aligned one column grid flat_grid" style="background-color: #ff5722; color: white; width: 2em; height: 2em; border-radius: 1em; position: absolute; left: 25px; top: 25px;">
-							<div class="center aligned middle aligned column no-padding">3</div>
-						</div>
-						<img class="ui inline image" src="{{ asset('images/how_to_3.png') }}" style="max-width: 128px; height: auto;">
-						<p style="color: rgb(50, 50, 50); font-size: 15px; font-weight: 300; margin-top: 40px;">Concludi l'ordine e attendi la notifica per email della tua freccia</p>
-					</div>
-				</a>
-				<a class="carousel-item" href="#four!">
-					<div class="normalText" style="padding: 60px 30px; position: relative;">
-						<div class="ui centered middle aligned one column grid flat_grid" style="background-color: #ff5722; color: white; width: 2em; height: 2em; border-radius: 1em; position: absolute; left: 25px; top: 25px;">
-							<div class="center aligned middle aligned column no-padding">4</div>
-						</div>
-						<img class="ui inline image" src="{{ asset('images/how_to_1.png') }}" style="max-width: 128px; height: auto;">
-						<p style="color: rgb(50, 50, 50); font-size: 15px; font-weight: 300; margin-top: 40px;">La freccia consegnerà l'ordine nella fascia oraria stabilita</p>
-					</div>
-				</a>
-			</div>
-		</div>
-	</div>
-	
-    <div class="parallax-container">
-        <div class="parallax">
-            <img src="{{ asset('images/food3.jpg') }}">
+
+   <div class="slider center">
+
+    <div class="left" style = "position: absolute; top: 50%; left: 0%; z-index: -1;">
+            <a href="Previo" style = "color: black;" class="movePrevCarousel middle-indicator-text waves-effect waves-light content-indicator "><i class="material-icons left  middle-indicator-text deep-orange">chevron_left</i></a>
         </div>
+        <div class="right" style = "position: absolute; top: 50%; right: 0%; z-index: -1;">
+            <a href="Siguiente" style = "color: black;" class=" moveNextCarousel middle-indicator-text waves-effect waves-light content-indicator #ff5722"><i class="material-icons right middle-indicator-text deep-orange">chevron_right</i></a>
+        </div>
+
+    <ul class="slides" style="z-index: 1;">
+
+        <li>
+            <span class="step ui">1</span>
+            <img class="ui inline image" src="{{ asset('images/how_to_2.png') }}" style="max-width: 128px; height: auto; margin-top: 70px;">
+            <p style="color: rgb(50, 50, 50); font-size: 15px; font-weight: 300; margin-top: 20px;margin-left:5px;margin-right:5px;">Registrati e accedi come utente Unistation</p>
+        </li>
+        <li>
+            <span class="step ui">2</span>
+            <img class="ui inline image" src="{{ asset('images/how_to_4.png') }}" style="max-width: 128px; height: auto;margin-top: 70px;">
+            <p style="color: rgb(50, 50, 50); font-size: 15px; font-weight: 300; margin-top: 20px;margin-left:5px;margin-right:5px;">Seleziona le varie portate e completa l'ordine indicando l'ora di consegna</p>
+        </li>
+        <li>
+            <span class="step ui">3</span>
+            <img class="ui inline image" src="{{ asset('images/how_to_3.png') }}" style="max-width: 128px; height: auto;margin-top: 70px;">
+            <p style="color: rgb(50, 50, 50); font-size: 15px; font-weight: 300; margin-top: 20px;margin-left:5px;margin-right:5px;">Concludi l'ordine e attendi la notifica per email della tua freccia</p>
+        </li>
+        <li>
+            <span class="step ui">4</span>
+            <img class="ui inline image" src="{{ asset('images/how_to_1.png') }}" style="max-width: 128px; height: auto;margin-top: 70px;">
+            <p style="color: rgb(50, 50, 50); font-size: 15px; font-weight: 300; margin-top: 20px margin-left:5px;margin-right:5px;">La freccia consegnerà l'ordine nella fascia oraria stabilita</p>
+        </li>
+    </ul> 
+</div> 
+<div class="parallax-container">
+    <div class="parallax">
+        <img src="{{ asset('images/food3.jpg') }}">
     </div>
-    <div class="section white">
-        <div class="row container center">
-            <h3>I nostri risultati</h3>
-        </div>
-        <div class="row container">
-            <section id="counter-stats" class="wow fadeInRight" data-wow-duration="1.4s">
-                <!-- <div class="container"> -->
-                    <div class="row">
-                        <div class="col s3 stats">
-                            <div class="row"><i class="fas fa-hamburger deep-orange-text" aria-hidden="true"></i></div>
-                            <div class="counting row" data-count="{{ $products_count }}">0</div>
-                            <h5>Prodotti disponibili</h5>
-                        </div>
-
-                        <div class="col s3 stats">
-                            <div class="row"><i class="fas fa-store deep-orange-text" aria-hidden="true"></i></div>
-                            <div class="counting row" data-count="{{ $vendors_count }}">0</div>
-                            <h5>Venditori registrati</h5>
-                        </div>
-
-                        <div class="col s3 stats">
-                            <div class="row"><i class="fas fa-user deep-orange-text" aria-hidden="true"></i></div>
-                            <div class="counting row" data-count="{{ $clients_count }}">0</div>
-                            <h5>Clienti soddisfatti</h5>
-                        </div>
-
-                        <div class="col s3 stats">
-                            <div class="row"><i class="fas fa-shipping-fast deep-orange-text" aria-hidden="true"></i></div>
-                            <div class="counting row" data-count="{{ $orders_count }}">0</div>
-                            <h5>Ordini effettuati</h5>
-                        </div>
+</div>
+<div class="section white">
+    <div class="row container center">
+        <h3>I nostri risultati</h3>
+    </div>
+    <div class="row container">
+        <section id="counter-stats" class="wow fadeInRight" data-wow-duration="1.4s">
+            <!-- <div class="container"> -->
+                <div class="row">
+                    <div class="col s3 stats">
+                        <div class="row"><i class="fas fa-hamburger deep-orange-text" aria-hidden="true"></i></div>
+                        <div class="counting row" data-count="{{ $products_count }}">0</div>
+                        <h5>Prodotti disponibili</h5>
                     </div>
+
+                    <div class="col s3 stats">
+                        <div class="row"><i class="fas fa-store deep-orange-text" aria-hidden="true"></i></div>
+                        <div class="counting row" data-count="{{ $vendors_count }}">0</div>
+                        <h5>Venditori registrati</h5>
+                    </div>
+
+                    <div class="col s3 stats">
+                        <div class="row"><i class="fas fa-user deep-orange-text" aria-hidden="true"></i></div>
+                        <div class="counting row" data-count="{{ $clients_count }}">0</div>
+                        <h5>Clienti soddisfatti</h5>
+                    </div>
+
+                    <div class="col s3 stats">
+                        <div class="row"><i class="fas fa-shipping-fast deep-orange-text" aria-hidden="true"></i></div>
+                        <div class="counting row" data-count="{{ $orders_count }}">0</div>
+                        <h5>Ordini effettuati</h5>
+                    </div>
+                </div>
                 <!-- </div> -->
             </section>
         </div>
