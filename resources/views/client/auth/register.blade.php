@@ -81,11 +81,11 @@
 @include('includes.footer')
 @endsection
 
+@section('scripts')
 <script>
 document.addEventListener('DOMContentLoaded', function() {
   var sidenav = document.querySelectorAll('.sidenav');
   M.Sidenav.init(sidenav, {  });
 });
 </script>
-
-<!-- vim:set sw=2 ts=2 sts=2 ft=html expandtab:-->
+@endsection
