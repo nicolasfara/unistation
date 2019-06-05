@@ -9728,6 +9728,18 @@ section#counter-stats {
   }
 }
 
+@media (max-width: 799px) {
+  #carouselpc {
+    display: none;
+  }
+}
+
+@media (min-width: 800px) {
+  #carouselmobile {
+    display: none;
+  }
+}
+
 .cookie-consent {
   position: fixed;
   right: 0;
@@ -9739,7 +9751,7 @@ section#counter-stats {
 }
 
 .button-cookie {
-  margin-top: 30px;
+  margin-top: 35px;
 }
 
 @media only screen and (max-width: 992px) {
@@ -9792,6 +9804,37 @@ tabs .tab a:active,
 
 .dropdown-content li > a {
   color: #ff5722;
+}
+
+.indicators {
+  display: none;
+}
+
+.slides > li {
+  background-color: white;
+  max-height: 300px;
+}
+
+.slides {
+  max-height: 300px;
+}
+
+.slider {
+  max-height: 300px;
+}
+
+span.step {
+  background: #cccccc;
+  border-radius: 0.8em;
+  -moz-border-radius: 0.8em;
+  -webkit-border-radius: 0.8em;
+  color: #ffffff;
+  display: inline-block;
+  font-weight: bold;
+  line-height: 1.6em;
+  margin-right: 5px;
+  text-align: center;
+  width: 1.6em;
 }
 
 .login-box {
@@ -9873,4 +9916,18 @@ input[type=number] {
     font-size: 10px;
   }
 }
+
+/*.slides > .image{
+	 max-width: 128px;
+	 height: auto; 
+	 margin-top: 70px;
+}
+.slides > p{
+	color: rgb(50, 50, 50); 
+	font-size: 15px; 
+	font-weight: 300; 
+	margin-top: 20px;
+	margin-left:5px;
+	margin-right:5px;
+}*/
 
