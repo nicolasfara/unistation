@@ -61,7 +61,7 @@
                     <li>
                         <span class="step ui">4</span>
                         <img class="ui inline image" src="{{ asset('images/how_to_1.png') }}" style="max-width: 150px; height: auto; margin-top: 30px;" alt = "Mappa con bussola">
-                        <h5 style="color: rgb(50, 50, 50); margin-top: 20px;margin-left:5px;margin-right:5px;">La freccia consegnerà l'ordine nella fascia oraria stabilita</h5>6
+                        <h5 style="color: rgb(50, 50, 50); margin-top: 20px;margin-left:5px;margin-right:5px;">La freccia consegnerà l'ordine nella fascia oraria stabilita</h5>
                     </li>
                 </ul> 
             </div>
