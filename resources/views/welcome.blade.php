@@ -174,22 +174,22 @@
                     <li>
                         <span class="step ui">1</span>
                         <img class="ui inline image" src="{{ asset('images/how_to_2.png') }}" style="max-width: 128px; height: auto; margin-top: 70px;">
-                        <p style="color: rgb(50, 50, 50); font-size: 15px; font-weight: 300; margin-top: 20px;margin-left:5px;margin-right:5px;">Registrati e accedi come utente Unistation</p>
+                        <p style="color: rgb(50, 50, 50);   margin-top: 20px;margin-left:5px;margin-right:5px;">Registrati e accedi come utente Unistation</p>
                     </li>
                     <li>
                         <span class="step ui">2</span>
                         <img class="ui inline image" src="{{ asset('images/how_to_4.png') }}" style="max-width: 128px; height: auto;margin-top: 70px;">
-                        <p style="color: rgb(50, 50, 50); font-size: 15px; font-weight: 300; margin-top: 20px;margin-left:5px;margin-right:5px;">Seleziona le varie portate e completa l'ordine indicando l'ora di consegna</p>
+                        <p style="color: rgb(50, 50, 50); margin-top: 20px;margin-left:5px;margin-right:5px;">Seleziona le varie portate e completa l'ordine indicando l'ora di consegna</p>
                     </li>
                     <li>
                         <span class="step ui">3</span>
                         <img class="ui inline image" src="{{ asset('images/how_to_3.png') }}" style="max-width: 128px; height: auto;margin-top: 70px;">
-                        <p style="color: rgb(50, 50, 50); font-size: 15px; font-weight: 300; margin-top: 20px;margin-left:5px;margin-right:5px;">Concludi l'ordine e attendi la notifica per email della tua freccia</p>
+                        <p style="color: rgb(50, 50, 50); margin-top: 20px;margin-left:5px;margin-right:5px;">Concludi l'ordine e attendi la notifica per email della tua freccia</p>
                     </li>
                     <li>
                         <span class="step ui">4</span>
                         <img class="ui inline image" src="{{ asset('images/how_to_1.png') }}" style="max-width: 128px; height: auto;margin-top: 70px;">
-                        <p style="color: rgb(50, 50, 50); font-size: 15px; font-weight: 300; margin-top: 20px margin-left:5px;margin-right:5px;">La freccia consegnerà l'ordine nella fascia oraria stabilita</p>
+                        <p style="color: rgb(50, 50, 50);  margin-top: 20px margin-left:5px;margin-right:5px;">La freccia consegnerà l'ordine nella fascia oraria stabilita</p>
                     </li>
                 </ul> 
             </div>
