@@ -97,7 +97,7 @@ class ClientController extends Controller
         }
 
         $client->save();
-        return redirect()->route('client.home');
+        return redirect()->route('settings');
     }
 
     /**
