@@ -67,7 +67,8 @@
           </div>
         </div>
         <div class="card-action right-align">
-          <input type="reset" id="reset" class="btn-flat grey-text waves-effect">
+          <label for="reset" style="display: none;">Password </label>
+          <button type="reset" id="reset" class="btn-flat waves-effect">Reset</button>
           <button type="submit" class="btn deep-orange waves-effect waves-light">Registra</button>
         </div>
       </form>

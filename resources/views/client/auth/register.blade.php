@@ -65,10 +65,9 @@
           </div>
         </div>
         <div class="card-action row">
-          <div class="col s6 left-align">
-            <input type="reset" id="reset" class="btn-flat grey-text waves-effect">
-          </div>
-          <div class="col s6 right-align">
+          <div class="right-align">
+            <label for="reset" style="display: none;">Password </label>
+            <button type="reset" id="reset" class="btn-flat waves-effect">Reset</button>
             <button type="submit" class="btn deep-orange waves-effect waves-light">Registra</button>
         </div>
         </div>
