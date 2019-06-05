@@ -87,11 +87,7 @@ function delivered(order_id) {
   console.log('Delivered')
   var req = new HttpClient()
   req.get("{{ url('vendor/order-delivered') }}?order_id=" + order_id, function(response) {
-    //var badge = document.getElementById('badge-' + order_id)
-    //if (badge != null)
-    //  badge.parentNode.removeChild(badge)
-    //M.toast({html: 'Ordine spedito!'})
-    location.reload()
+    location.href = '{{ url('vendor/home') }}';
     console.log("refresh")
   })
 }
