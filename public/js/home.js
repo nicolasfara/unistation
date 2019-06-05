@@ -133,7 +133,7 @@ function animate() {
   div.style.left = parseInt(div.style.left)+1+'px';//Sposta il div verso destra di un pixel alla volta
   if( parseInt(div.style.left) >= screen.width){
 	console.log("prova");
-	div.style.left = '0px';
+	div.style.left = '-100px';
   }
   id = setTimeout(animate,msec);//Ripete lo spostamento per tot millisecondi
 }
