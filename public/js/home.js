@@ -117,3 +117,25 @@ $('.movePrevCarousel').click(function(e){
       e.stopPropagation();
        $('.slider').slider('prev');
 });
+
+var div = null;
+var msec = 15;
+var id = 0;
+
+function init() {
+  div = document.getElementById('biker'); //DIV da animare
+  div.style.left = '0px'; //Punto di partenza dell'animazione
+  div.style.bottom = '0px';
+  animate(); //Chiamata alla funzione che anima il div
+}
+
+function animate() {
+  div.style.left = parseInt(div.style.left)+1+'px';//Sposta il div verso destra di un pixel alla volta
+  if( parseInt(div.style.left) >= screen.width){
+	console.log("prova");
+	div.style.left = '0px';
+  }
+  id = setTimeout(animate,msec);//Ripete lo spostamento per tot millisecondi
+}
+
+window.onload = init;
