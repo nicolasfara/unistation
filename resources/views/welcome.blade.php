@@ -160,16 +160,16 @@
 		</div>
 	</div> -->
     <div class="section">
-        <div class="row center">
+        <div class="row center valign-wrapper">
             <div class="col s2">
-                <div class="left" style = "position: absolute; top: 50%; left: 0%;">
-                    <a href="Previo" style = "color: black;" class="movePrevCarousel middle-indicator-text waves-effect waves-light content-indicator "><i class="material-icons left  middle-indicator-text deep-orange">chevron_left</i></a>
-                </div>
+
+                    <a href="Previo" class="movePrevCarousel">
+                        <i class="large material-icons middle-indicator-text deep-orange-text left">chevron_left</i>
+                    </a>
+               
             </div>
             <div class="col s8">
              <div class="slider center">
-
-
                 <ul class="slides">
                     <li>
                         <span class="step ui">1</span>
@@ -195,9 +195,11 @@
             </div>
         </div> 
         <div class="col s2">
-            <div class="right" style = "position: absolute; top: 50%; right: 0%;">
-                <a href="Siguiente" style = "color: black;" class=" moveNextCarousel middle-indicator-text waves-effect waves-light content-indicator #ff5722"><i class="material-icons right middle-indicator-text deep-orange">chevron_right</i></a>
-            </div>
+
+                <a href="Siguiente"  class=" moveNextCarousel right ">
+                    <i class="large material-icons middle-indicator-text deep-orange-text right">chevron_right</i>
+                </a>
+           
 
         </div>
     </div>
