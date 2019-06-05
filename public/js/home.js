@@ -100,10 +100,15 @@ function isScrolledIntoView(elem){
 
 $(document).ready(function(){
   $('.parallax').parallax();
-  $('.carousel').carousel({
-	  fullWidth: true,
-	  //indicators: true
-  }).height(300);
+});
+
+$(window).on('load', function(){
+	$('.carousel').carousel({
+		fullWidth: true,
+		//indicators: true
+	}).height(300);
+	$("#carouselmobile").addClass("hide-on-large-only");
+	$("#carouselmobile").addClass("show-on-medium-and-down"); 
 });
 
 $('.moveNextCarousel').click(function(e){

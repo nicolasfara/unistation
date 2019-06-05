@@ -25,142 +25,13 @@
             </div>
         </div>
     </div>
-   <!-- <div class="container">
-        <div class="section">
-            <div class="row" id="home-card">
-                <div class="col s4 m4 l4 center-align">
-                    <div class="card z-depth-0">
-                        <span class="fa-stack fa-lg row">
-							<i class="far fa-circle fa-stack-2x"></i>
-							<i class="fab fa-stack-1x">1</i>
-						</span>
-                        <div class="card-image">
-                            <i class="material-icons deep-orange-text text-lighten-1">edit</i>
-                        </div>
-                        <div class="card-content center">
-                            <h4 class="light flow-text">Registrati</h4>
-                        </div>
-                    </div>
-                </div>
-                <div class="col s4 m4 l4 center-align">
-                    <div class="card z-depth-0">
-                        <span class="fa-stack fa-lg row">
-							<i class="far fa-circle fa-stack-2x"></i>
-							<i class="fab fa-stack-1x">2</i>
-						</span>
-                        <div class="card-image">
-                            <i class="material-icons deep-orange-text text-lighten-1">assignment</i>
-                        </div>
-                        <div class="card-content center">
-                            <h4 class="light">Ordina</h4>
-                        </div>
-                    </div>
-                </div>
-                <div class="col s4 m4 l4 center-align">
-                    <div class="card z-depth-0">
-                        <span class="fa-stack fa-lg row">
-						 	<i class="far fa-circle fa-stack-2x"></i>
-							<i class="fab fa-stack-1x">3</i>
-							</span>
-                        <div class="card-image ">
-                            <i class="material-icons deep-orange-text text-lighten-1">free_breakfast</i>
-                        </div>
-                        <div class="card-content">
-                            <h4 class="light">Enjoy!</h4>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
- -->
     <div class="parallax-container">
         <div class="parallax">
             <img src="{{ asset('images/Food.jpg') }}">
         </div>
     </div>
-	<!-- <div id = "carouselpc" class = "row" style = "margin-bottom: 0px; height: auto; width: auto;">
-		<div class="center aligned col s3">
-			<div class="normalText" style="padding: 60px 30px; position: relative;">
-				<div class="ui centered middle aligned one column grid flat_grid" style="background-color: black; color: white; width: 2em; height: 2em; border-radius: 1em; position: absolute; left: 25px; top: 25px;">
-					<div class="center aligned middle aligned column no-padding">1</div>
-				</div>
-				<img class="ui inline image" src="{{ asset('images/how_to_2.png') }}" style="max-width: 128px; height: auto;">
-				<p style="color: rgb(50, 50, 50); font-size: 15px; font-weight: 300; margin-top: 40px;">Registrati e accedi come utente Unistation</p>
-			</div>
-		</div>
-		<div class="center aligned col s3" style="border-right: 1px solid rgb(219, 219, 219); border-left: 1px solid rgb(219, 219, 219);">
-			<div class="normalText" style="padding: 60px 30px; position: relative;">
-				<div class="ui centered middle aligned one column grid flat_grid" style="background-color: black; color: white; width: 2em; height: 2em; border-radius: 1em; position: absolute; left: 25px; top: 25px;">
-					<div class="center aligned middle aligned column no-padding">2</div>
-				</div>
-				<img class="ui inline image" src="{{ asset('images/how_to_4.png') }}" style="max-width: 128px; height: auto;">
-				<p style="color: rgb(50, 50, 50); font-size: 15px; font-weight: 300; margin-top: 40px;">Seleziona le varie portate e completa l'ordine indicando l'ora di consegna</p>
-			</div>
-		</div>
-		<div class="center aligned col s3">
-			<div class="normalText" style="padding: 60px 30px; position: relative;">
-				<div class="ui centered middle aligned one column grid flat_grid" style="background-color: black; color: white; width: 2em; height: 2em; border-radius: 1em; position: absolute; left: 25px; top: 25px;">
-					<div class="center aligned middle aligned column no-padding">3</div>
-				</div>
-				<img class="ui inline image" src="{{ asset('images/how_to_3.png') }}" style="max-width: 128px; height: auto;">
-				<p style="color: rgb(50, 50, 50); font-size: 15px; font-weight: 300; margin-top: 40px;">Concludi l'ordine e attendi la notifica per email della tua freccia</p>
-			</div>
-		</div>
-		<div class="center aligned col s3" style="border-left: 1px solid rgb(219, 219, 219); height: 100%;">
-			<div class="normalText" style="padding: 60px 30px; position: relative;">
-				<div class="ui centered middle aligned one column grid flat_grid" style="background-color: black; color: white; width: 2em; height: 2em; border-radius: 1em; position: absolute; left: 25px; top: 25px;">
-					<div class="center aligned middle aligned column no-padding">4</div>
-				</div>
-				<img class="ui inline image" src="{{ asset('images/how_to_1.png') }}" style="max-width: 128px; height: auto;">
-				<p style="color: rgb(50, 50, 50); font-size: 15px; font-weight: 300; margin-top: 40px;">La freccia consegnerà l'ordine nella fascia oraria stabilita</p>
-			</div>
-		</div>
-	</div>
-	<div id = "carouselmobile" class = "row">
-		<div class="center aligned col s12">
-			<div class="carousel carousel-slider">
-				<a class="carousel-item" href="#one!">
-					<div class="normalText" style="padding: 60px 30px; position: relative;">
-						<div class="ui centered middle aligned one column grid flat_grid" style="background-color: black; color: white; width: 2em; height: 2em; border-radius: 1em; position: absolute; left: 25px; top: 25px;">
-							<div class="center aligned middle aligned column no-padding">1</div>
-						</div>
-						<img class="ui inline image" src="{{ asset('images/how_to_2.png') }}" style="max-width: 128px; height: auto;">
-						<p style="color: rgb(50, 50, 50); font-size: 15px; font-weight: 300; margin-top: 40px;">Registrati e accedi come utente Unistation</p>
-					</div>
-				</a>
-				<a class="carousel-item" href="#two!">
-					<div class="normalText" style="padding: 60px 30px; position: relative;">
-						<div class="ui centered middle aligned one column grid flat_grid" style="background-color: black; color: white; width: 2em; height: 2em; border-radius: 1em; position: absolute; left: 25px; top: 25px;">
-							<div class="center aligned middle aligned column no-padding">2</div>
-						</div>
-						<img class="ui inline image" src="{{ asset('images/how_to_4.png') }}" style="max-width: 128px; height: auto;">
-						<p style="color: rgb(50, 50, 50); font-size: 15px; font-weight: 300; margin-top: 40px;">Seleziona le varie portate e completa l'ordine indicando l'ora di consegna</p>
-					</div>
-				</a>
-				<a class="carousel-item" href="#three!">
-					<div class="normalText" style="padding: 60px 30px; position: relative;">
-						<div class="ui centered middle aligned one column grid flat_grid" style="background-color: black; color: white; width: 2em; height: 2em; border-radius: 1em; position: absolute; left: 25px; top: 25px;">
-							<div class="center aligned middle aligned column no-padding">3</div>
-						</div>
-						<img class="ui inline image" src="{{ asset('images/how_to_3.png') }}" style="max-width: 128px; height: auto;">
-						<p style="color: rgb(50, 50, 50); font-size: 15px; font-weight: 300; margin-top: 40px;">Concludi l'ordine e attendi la notifica per email della tua freccia</p>
-					</div>
-				</a>
-				<a class="carousel-item" href="#four!">
-					<div class="normalText" style="padding: 60px 30px; position: relative;">
-						<div class="ui centered middle aligned one column grid flat_grid" style="background-color: black; color: white; width: 2em; height: 2em; border-radius: 1em; position: absolute; left: 25px; top: 25px;">
-							<div class="center aligned middle aligned column no-padding">4</div>
-						</div>
-						<img class="ui inline image" src="{{ asset('images/how_to_1.png') }}" style="max-width: 128px; height: auto;">
-						<p style="color: rgb(50, 50, 50); font-size: 15px; font-weight: 300; margin-top: 40px;">La freccia consegnerà l'ordine nella fascia oraria stabilita</p>
-					</div>
-				</a>
-			</div>
-		</div>
-	</div> -->
 	<div class = "row" style = "margin-bottom: 0px; min-height: 300px;">
-		<div class = "hide-on-med-and-down show-on-large">
+		<div id = "carouselpc" class = "hide-on-med-and-down show-on-large">
 			<div class="center aligned col l3 m3 s3">
 				<div class="normalText" style="padding: 60px 30px; position: relative;">
 					<div class="ui centered middle aligned one column grid flat_grid" style="background-color: #ff5722; color: white; width: 2em; height: 2em; border-radius: 1em; position: absolute; left: 25px; top: 25px;">
@@ -198,7 +69,7 @@
 				</div>
 			</div>
 		</div>	
-		<div class="carousel carousel-slider center hide-on-large-only show-on-medium-and-down" style = "min-height: 300px; width: auto;">
+		<div id = "carouselmobile" class="carousel carousel-slider" style = "min-height: 300px; width: auto;">
 			<div class="left" style = "position: absolute; top: 50%; left: 0%;">
 				<a href="Previo" style = "color: white;" class="movePrevCarousel middle-indicator-text waves-effect waves-light content-indicator "><i class="material-icons left  middle-indicator-text deep-orange">chevron_left</i></a>
 			</div>
@@ -304,4 +175,3 @@
 @endsection
 
 {{-- vim: set ft=html : --}}
-
