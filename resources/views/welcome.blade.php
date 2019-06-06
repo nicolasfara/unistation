@@ -33,13 +33,13 @@
     <div class="section">
         <div class="row center valign-wrapper">
             <div class="col s2">
-                <a href="Previo" class="movePrevCarousel">
+                <a href="Previo" class="movePrevCarousel left">
                     <i class="large material-icons middle-indicator-text deep-orange-text left">chevron_left</i>
                 </a>
             </div>
             <div class="col s8">
                 <div class="slider center">
-                    <ul class="slides">
+                    <ul class="slides white">
                         <li>
                             <span class="step ui">1</span>
                             <img class="ui inline image" src="{{ asset('images/how_to_2.png') }}" style="max-width: 150px; height: auto; margin-top: 30px;" alt="Rubrica di contatti">
