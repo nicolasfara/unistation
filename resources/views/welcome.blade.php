@@ -110,9 +110,6 @@
         <div class="parallax">
             <img src="{{ asset('images/food2.jpg') }}" alt="Salmone crudo circondato da frutta secca e legumi">
         </div>
-        <div id="biker">
-            <img src="{{ asset('images/biker.svg') }}">
-        </div>
     </div>
 </div>
 @endsection
