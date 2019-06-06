@@ -66,7 +66,7 @@ $(window).scroll(function(){
       flag = true
       $('.counting').each(function() {
         var $this = $(this),
-            countTo = $this.attr('data-count');
+        countTo = $this.attr('data-count');
         $({ countNum: $this.text()}).animate({
           countNum: countTo
         },
@@ -86,36 +86,36 @@ $(window).scroll(function(){
 });
 
 function isScrolledIntoView(elem){
-    var $elem = $(elem);
-    var $window = $(window);
+  var $elem = $(elem);
+  var $window = $(window);
 
-    var docViewTop = $window.scrollTop();
-    var docViewBottom = docViewTop + $window.height();
+  var docViewTop = $window.scrollTop();
+  var docViewBottom = docViewTop + $window.height();
 
-    var elemTop = $elem.offset().top;
-    var elemBottom = elemTop + $elem.height();
+  var elemTop = $elem.offset().top;
+  var elemBottom = elemTop + $elem.height();
 
-    return ((elemBottom <= docViewBottom) && (elemTop >= docViewTop));
+  return ((elemBottom <= docViewBottom) && (elemTop >= docViewTop));
 }
 
 $(document).ready(function(){
   $('.parallax').parallax();
   $('.carousel').carousel({
-	  fullWidth: true,
+   fullWidth: true,
 	  //indicators: true
   }).height(300);
 });
 
 $('.moveNextCarousel').click(function(e){
-      e.preventDefault();
-      e.stopPropagation();
-         $('.slider').slider('next');
+  e.preventDefault();
+  e.stopPropagation();
+  $('.slider').slider('next');
 });
 
 $('.movePrevCarousel').click(function(e){
-      e.preventDefault();
-      e.stopPropagation();
-       $('.slider').slider('prev');
+  e.preventDefault();
+  e.stopPropagation();
+  $('.slider').slider('prev');
 });
 
 var div = null;
@@ -132,9 +132,9 @@ function init() {
 function animate() {
   div.style.left = parseInt(div.style.left)+1+'px';//Sposta il div verso destra di un pixel alla volta
   if( parseInt(div.style.left) >= screen.width){
-	console.log("prova");
-	div.style.left = '-100px';
-  }
+   console.log("prova");
+   div.style.left = '-100px';
+ }
   id = setTimeout(animate,msec);//Ripete lo spostamento per tot millisecondi
 }
 

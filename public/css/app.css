@@ -9823,20 +9823,6 @@ tabs .tab a:active,
   max-height: 300px;
 }
 
-span.step {
-  background: #cccccc;
-  border-radius: 0.8em;
-  -moz-border-radius: 0.8em;
-  -webkit-border-radius: 0.8em;
-  color: #ffffff;
-  display: inline-block;
-  font-weight: bold;
-  line-height: 1.6em;
-  margin-right: 5px;
-  text-align: center;
-  width: 1.6em;
-}
-
 .login-box {
   height: 100%;
 }
@@ -9940,5 +9926,23 @@ input[type=number] {
 
 #biker {
   position: absolute;
+}
+
+.slider > ul > li {
+  border-style: white;
+}
+
+span.step {
+  background: #cccccc;
+  border-radius: 0.8em;
+  -moz-border-radius: 0.8em;
+  -webkit-border-radius: 0.8em;
+  color: #ffffff;
+  display: inline-block;
+  font-weight: bold;
+  line-height: 1.6em;
+  margin-right: 5px;
+  text-align: center;
+  width: 1.6em;
 }
 
