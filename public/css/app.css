@@ -9917,23 +9917,28 @@ input[type=number] {
   }
 }
 
-/*.slides > .image{
-	 max-width: 128px;
-	 height: auto; 
-	 margin-top: 70px;
+.slider > ul > li > p {
+  font-size: 20px;
+  color: black;
+  margin-top: 20px;
+  margin-left: 5px;
+  margin-right: 5px;
 }
-.slides > p{
-	color: rgb(50, 50, 50); 
-	font-size: 15px; 
-	font-weight: 300; 
-	margin-top: 20px;
-	margin-left:5px;
-	margin-right:5px;
-}*/
 
 @media only screen and (max-width: 992px) {
-  .slides > h5 {
-    max-width: 120px;
+  .slider > ul > li > p {
+    font-size: 12px;
+    text-align: center;
   }
+}
+
+.logo-home {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#biker {
+  position: absolute;
 }
 
