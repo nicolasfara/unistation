@@ -9924,10 +9924,6 @@ input[type=number] {
   margin-right: auto;
 }
 
-#biker {
-  position: absolute;
-}
-
 .slider > ul > li {
   border-style: white;
 }
@@ -9944,5 +9940,15 @@ span.step {
   margin-right: 5px;
   text-align: center;
   width: 1.6em;
+}
+
+.movePrevCarousel {
+  outline: none;
+  text-decoration: none;
+}
+
+.moveNextCarousel {
+  outline: none;
+  text-decoration: none;
 }
 
